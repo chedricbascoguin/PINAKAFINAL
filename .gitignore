@@ -1,0 +1,14 @@
+node_modules/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+uploads/
+logs/
+scratch/
+outputs/
+archives/
+.vscode/
+*.log
+database/*with_data*

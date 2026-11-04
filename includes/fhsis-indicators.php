@@ -1,0 +1,17562 @@
+<?php
+// Supplied-template definitions. Keep with the matching workbook.
+return array (
+  'version' => 1,
+  'template_sha256' => '7ce4ced5c4be0fbce22687c5511691b60bea0f5017fcfcac9594b2fa8936e973',
+  'indicators' => 
+  array (
+    's2.A6' => 
+    array (
+      'key' => 's2.A6',
+      'sheet' => 2,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'a. No. of women who delivered and completed at least 8ANC',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'minimum_visits' => 8,
+    ),
+    's2.A7' => 
+    array (
+      'key' => 's2.A7',
+      'sheet' => 2,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'a1. No. of women who delivered and provided 1st to 8th ANC on schedule (Resident)',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A6',
+      ),
+      'scheduled' => true,
+      'minimum_visits' => 8,
+    ),
+    's2.A8' => 
+    array (
+      'key' => 's2.A8',
+      'sheet' => 2,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'a2. No. of women who delivered and completed at least 8ANC TRANS-IN from other LGUs',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A6',
+      ),
+      'minimum_visits' => 8,
+    ),
+    's2.A9' => 
+    array (
+      'key' => 's2.A9',
+      'sheet' => 2,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'b. No. of women who delivered and who were tracked during pregnancy',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A10' => 
+    array (
+      'key' => 's2.A10',
+      'sheet' => 2,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'b1. No. of women who delivered and who were tracked during pregnancy (Resident)',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A9',
+      ),
+    ),
+    's2.A11' => 
+    array (
+      'key' => 's2.A11',
+      'sheet' => 2,
+      'row' => 11,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'b2. No. of TRANS-IN from other LGUs',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A9',
+      ),
+    ),
+    's2.A12' => 
+    array (
+      'key' => 's2.A12',
+      'sheet' => 2,
+      'row' => 12,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'b3. No. of TRANS-OUT (with MOV) before completing 8ANC',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'minimum_visits' => 8,
+    ),
+    's2.A13' => 
+    array (
+      'key' => 's2.A13',
+      'sheet' => 2,
+      'row' => 13,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2. No. of pregnant women assessed for nutritional status during the first trimester',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A14' => 
+    array (
+      'key' => 's2.A14',
+      'sheet' => 2,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2a. Normal BMI',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A15' => 
+    array (
+      'key' => 's2.A15',
+      'sheet' => 2,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2b. Low BMI',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A16' => 
+    array (
+      'key' => 's2.A16',
+      'sheet' => 2,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2c. High BMI',
+      'context' => '1. Antenatal Care',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A18' => 
+    array (
+      'key' => 's2.A18',
+      'sheet' => 2,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '3a. Number of women pregnant for the first time given at least 2 doses of Td vaccination',
+      'context' => '3. Tetanus diphtheria (Td) Containing Vaccination Status',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A19' => 
+    array (
+      'key' => 's2.A19',
+      'sheet' => 2,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '3b. Number of pregnant women for the 2nd or more times given at least 3 doses of Td vaccination (Td2 Plus)',
+      'context' => '3. Tetanus diphtheria (Td) Containing Vaccination Status',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A21' => 
+    array (
+      'key' => 's2.A21',
+      'sheet' => 2,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '1. Total Deliveries',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A22' => 
+    array (
+      'key' => 's2.A22',
+      'sheet' => 2,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2. No. of deliveries attended by Skilled Health Professionals (SHP)',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's11.A31',
+      ),
+    ),
+    's2.A23' => 
+    array (
+      'key' => 's2.A23',
+      'sheet' => 2,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2a. Physicians',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A22',
+      ),
+    ),
+    's2.A24' => 
+    array (
+      'key' => 's2.A24',
+      'sheet' => 2,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2b. Nurses',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A22',
+      ),
+    ),
+    's2.A25' => 
+    array (
+      'key' => 's2.A25',
+      'sheet' => 2,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '2c. Midwives',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A22',
+      ),
+    ),
+    's2.A26' => 
+    array (
+      'key' => 's2.A26',
+      'sheet' => 2,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '3. No. of Facility Based Deliveries (FBD)',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's11.A33',
+      ),
+    ),
+    's2.A27' => 
+    array (
+      'key' => 's2.A27',
+      'sheet' => 2,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '3a. Public facility',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A26',
+      ),
+    ),
+    's2.A28' => 
+    array (
+      'key' => 's2.A28',
+      'sheet' => 2,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '3b. Private facility',
+      'context' => 'INTRAPARTUM AND NEWBORN CARE',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A26',
+      ),
+    ),
+    's2.A30' => 
+    array (
+      'key' => 's2.A30',
+      'sheet' => 2,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '4a. No. of vaginal deliveries',
+      'context' => '4. Delivery by Type',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A31' => 
+    array (
+      'key' => 's2.A31',
+      'sheet' => 2,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '4b. No. of Caesarian Section',
+      'context' => '4. Delivery by Type',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A32' => 
+    array (
+      'key' => 's2.A32',
+      'sheet' => 2,
+      'row' => 32,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '4c. No. of Combined Vaginal-Caesarian deliveries',
+      'context' => '4. Delivery by Type',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A35' => 
+    array (
+      'key' => 's2.A35',
+      'sheet' => 2,
+      'row' => 35,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '1a. Total No. of women who delivered and completed at least 4PNC',
+      'context' => '1. PNC',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'minimum_visits' => 4,
+    ),
+    's2.A36' => 
+    array (
+      'key' => 's2.A36',
+      'sheet' => 2,
+      'row' => 36,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'a1. No. of women who delivered and provided 1st to 4th PNC on schedule (Resident)',
+      'context' => '1. PNC',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A35',
+      ),
+      'scheduled' => true,
+      'minimum_visits' => 4,
+    ),
+    's2.A37' => 
+    array (
+      'key' => 's2.A37',
+      'sheet' => 2,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'a2. No. of women delivered and completed at least 4PNC TRANS-IN from other LGUs',
+      'context' => '1. PNC',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A35',
+      ),
+      'minimum_visits' => 4,
+    ),
+    's2.A38' => 
+    array (
+      'key' => 's2.A38',
+      'sheet' => 2,
+      'row' => 38,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => '1b. Total No. of women due for PNC (Birthers)',
+      'context' => '1. PNC',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.A39' => 
+    array (
+      'key' => 's2.A39',
+      'sheet' => 2,
+      'row' => 39,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'b1. No. of women due for PNC (Resident)',
+      'context' => '1. PNC',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A38',
+      ),
+    ),
+    's2.A40' => 
+    array (
+      'key' => 's2.A40',
+      'sheet' => 2,
+      'row' => 40,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'b2. No. of TRANS-IN from other LGUs for PNC',
+      'context' => '1. PNC',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's2.A38',
+      ),
+    ),
+    's2.A41' => 
+    array (
+      'key' => 's2.A41',
+      'sheet' => 2,
+      'row' => 41,
+      'side' => 'A',
+      'section' => 'Maternal care',
+      'label' => 'b3. No. of TRANS-OUT (with MOV) before completing 4PNC',
+      'context' => '1. PNC',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+        3 => 'O',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'minimum_visits' => 4,
+    ),
+    's2.Q5' => 
+    array (
+      'key' => 's2.Q5',
+      'sheet' => 2,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '4a. Number of pregnant women who completed the dose of Iron with Folic Acid supplementation',
+      'context' => '4. Prenatal Supplementation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q6' => 
+    array (
+      'key' => 's2.Q6',
+      'sheet' => 2,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '4b. No. of pregnant women who completed the dose of Multiple Micronutrient Supplementation',
+      'context' => '4. Prenatal Supplementation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q7' => 
+    array (
+      'key' => 's2.Q7',
+      'sheet' => 2,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '4c. No. of pregnant women who completed the dose of Calcium carbonate',
+      'context' => '4. Prenatal Supplementation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q9' => 
+    array (
+      'key' => 's2.Q9',
+      'sheet' => 2,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '5a. No. of pregnant women screened for Anemia',
+      'context' => '5. Anemia Screening',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q10' => 
+    array (
+      'key' => 's2.Q10',
+      'sheet' => 2,
+      'row' => 10,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '5b. No. of pregnant women diagnosed with Anemia',
+      'context' => '5. Anemia Screening',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q12' => 
+    array (
+      'key' => 's2.Q12',
+      'sheet' => 2,
+      'row' => 12,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '6a. No. of pregnant women screened for Gestational Diabetes Mellitus',
+      'context' => '6. Gestational Diabetes Screening',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q13' => 
+    array (
+      'key' => 's2.Q13',
+      'sheet' => 2,
+      'row' => 13,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '6b. No. of pregnant women tested positive for Gestational Diabetes Mellitus',
+      'context' => '6. Gestational Diabetes Screening',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q15' => 
+    array (
+      'key' => 's2.Q15',
+      'sheet' => 2,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '7a. No. of pregnant women given one dose of deworming tablet',
+      'context' => '7. Deworming',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q17' => 
+    array (
+      'key' => 's2.Q17',
+      'sheet' => 2,
+      'row' => 17,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '8a. No. of pregnant women who had their BP measured during each of their antenatal care visit',
+      'context' => '8. BP measurement',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q18' => 
+    array (
+      'key' => 's2.Q18',
+      'sheet' => 2,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '8b1. No. of pregnant women identified with high BP or danger signs',
+      'context' => '8. BP measurement',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q19' => 
+    array (
+      'key' => 's2.Q19',
+      'sheet' => 2,
+      'row' => 19,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '8b2. No. of pregnant women with high BP or danger signs who were referred to a higher-level facility',
+      'context' => '8. BP measurement',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q22' => 
+    array (
+      'key' => 's2.Q22',
+      'sheet' => 2,
+      'row' => 22,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '5a. No. of Full-Term deliveries',
+      'context' => '5. Delivery by Outcome',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q23' => 
+    array (
+      'key' => 's2.Q23',
+      'sheet' => 2,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '5b. No. of Pre-Term deliveries',
+      'context' => '5. Delivery by Outcome',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q24' => 
+    array (
+      'key' => 's2.Q24',
+      'sheet' => 2,
+      'row' => 24,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '5c. No. of Fetal deaths',
+      'context' => '5. Delivery by Outcome',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'fetal_event',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_key' => true,
+      'subject_sex' => false,
+    ),
+    's2.Q25' => 
+    array (
+      'key' => 's2.Q25',
+      'sheet' => 2,
+      'row' => 25,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '5d. No. of abortions/miscarriage (count only)',
+      'context' => '5. Delivery by Outcome',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q28' => 
+    array (
+      'key' => 's2.Q28',
+      'sheet' => 2,
+      'row' => 28,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '6b. Normal birth weight',
+      'context' => '6. No. of livebirths by birth weight',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'mother_link' => true,
+      'maternal_age_groups' => true,
+    ),
+    's2.Q29' => 
+    array (
+      'key' => 's2.Q29',
+      'sheet' => 2,
+      'row' => 29,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '6c. Low birth weight',
+      'context' => '6. No. of livebirths by birth weight',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'mother_link' => true,
+      'maternal_age_groups' => true,
+    ),
+    's2.Q30' => 
+    array (
+      'key' => 's2.Q30',
+      'sheet' => 2,
+      'row' => 30,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '6d. Unknown birth weight',
+      'context' => '6. No. of livebirths by birth weight',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'mother_link' => true,
+      'maternal_age_groups' => true,
+    ),
+    's2.Q36' => 
+    array (
+      'key' => 's2.Q36',
+      'sheet' => 2,
+      'row' => 36,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '2a. Number of postpartum women who completed the dose of Iron with Folic Acid supplementation',
+      'context' => '2. Postpartum Supplementation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q37' => 
+    array (
+      'key' => 's2.Q37',
+      'sheet' => 2,
+      'row' => 37,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '2b. Number of postpartum women who completed the dose of Vitamin A supplementation',
+      'context' => '2. Postpartum Supplementation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q39' => 
+    array (
+      'key' => 's2.Q39',
+      'sheet' => 2,
+      'row' => 39,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '8a. No. of postpartum women who had their BP measured during each of their postnatal care visit',
+      'context' => '2. BP measurement',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's2.Q40' => 
+    array (
+      'key' => 's2.Q40',
+      'sheet' => 2,
+      'row' => 40,
+      'side' => 'Q',
+      'section' => 'Maternal care',
+      'label' => '8b. No. of postpartum women with high BP or danger signs who were referred to a higher-level facility',
+      'context' => '2. BP measurement',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+        3 => 'AE',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A6' => 
+    array (
+      'key' => 's3.A6',
+      'sheet' => 3,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '1. Children protected at birth (CPAB)',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A7' => 
+    array (
+      'key' => 's3.A7',
+      'sheet' => 3,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '2. BCG (within 24 hours)',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A8' => 
+    array (
+      'key' => 's3.A8',
+      'sheet' => 3,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '3. BCG (24 hours to 11 months and 29 days)',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A9' => 
+    array (
+      'key' => 's3.A9',
+      'sheet' => 3,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '4. Hepa B given within 24 hrs after birth',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A10' => 
+    array (
+      'key' => 's3.A10',
+      'sheet' => 3,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '5. Hepa B given more than 24 hrs up to 14 days',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A11' => 
+    array (
+      'key' => 's3.A11',
+      'sheet' => 3,
+      'row' => 11,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '6. DPT-HiB-HepB 1',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A12' => 
+    array (
+      'key' => 's3.A12',
+      'sheet' => 3,
+      'row' => 12,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '7. DPT-HiB-HepB 2',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A13' => 
+    array (
+      'key' => 's3.A13',
+      'sheet' => 3,
+      'row' => 13,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '8. DPT-HiB-HepB 3',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A14' => 
+    array (
+      'key' => 's3.A14',
+      'sheet' => 3,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '9. OPV 1',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A15' => 
+    array (
+      'key' => 's3.A15',
+      'sheet' => 3,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '10. OPV 2',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A16' => 
+    array (
+      'key' => 's3.A16',
+      'sheet' => 3,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '11. OPV 3',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A17' => 
+    array (
+      'key' => 's3.A17',
+      'sheet' => 3,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '12. IPV 1',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A18' => 
+    array (
+      'key' => 's3.A18',
+      'sheet' => 3,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '13. IPV 2',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A19' => 
+    array (
+      'key' => 's3.A19',
+      'sheet' => 3,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '14. PCV 1',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A20' => 
+    array (
+      'key' => 's3.A20',
+      'sheet' => 3,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '15. PCV 2',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A21' => 
+    array (
+      'key' => 's3.A21',
+      'sheet' => 3,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '16. PCV 3',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A22' => 
+    array (
+      'key' => 's3.A22',
+      'sheet' => 3,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '17. MMR 1',
+      'context' => 'A1. Immunization Services (0-11 months old of current year)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A24' => 
+    array (
+      'key' => 's3.A24',
+      'sheet' => 3,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '1. Grade 1 learners given Td',
+      'context' => 'A3. School and Community-Based Immunization',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A25' => 
+    array (
+      'key' => 's3.A25',
+      'sheet' => 3,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '2. Grade 1 learners given MR',
+      'context' => 'A3. School and Community-Based Immunization',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A26' => 
+    array (
+      'key' => 's3.A26',
+      'sheet' => 3,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '3. Grade 7 learners given Td',
+      'context' => 'A3. School and Community-Based Immunization',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A27' => 
+    array (
+      'key' => 's3.A27',
+      'sheet' => 3,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '4. Grade 7 learners given MR',
+      'context' => 'A3. School and Community-Based Immunization',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A29' => 
+    array (
+      'key' => 's3.A29',
+      'sheet' => 3,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '1. Newborns who were initiated on breastfeeding within 1 hour after birth',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A30' => 
+    array (
+      'key' => 's3.A30',
+      'sheet' => 3,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '2. Infants born with low birth weight (LBW) given complete iron supplements',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A31' => 
+    array (
+      'key' => 's3.A31',
+      'sheet' => 3,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '3a. Infants aged 6-11 months old who received 1 dose of Vitamin A supplementation',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 6,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A32' => 
+    array (
+      'key' => 's3.A32',
+      'sheet' => 3,
+      'row' => 32,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '3b. Children aged 12-59 months old who completed 2 doses of Vitamin A supplementation',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 12,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A33' => 
+    array (
+      'key' => 's3.A33',
+      'sheet' => 3,
+      'row' => 33,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '6. Children 0-59 months old SEEN during the reporting period at health facilities',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A34' => 
+    array (
+      'key' => 's3.A34',
+      'sheet' => 3,
+      'row' => 34,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '6a. Identified MAM',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A35' => 
+    array (
+      'key' => 's3.A35',
+      'sheet' => 3,
+      'row' => 35,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '6b. Identified SAM',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A36' => 
+    array (
+      'key' => 's3.A36',
+      'sheet' => 3,
+      'row' => 36,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '7. MAM enrolled to SFP',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A37' => 
+    array (
+      'key' => 's3.A37',
+      'sheet' => 3,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '7a. Cured',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A38' => 
+    array (
+      'key' => 's3.A38',
+      'sheet' => 3,
+      'row' => 38,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '7b. Non-cured',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.A39' => 
+    array (
+      'key' => 's3.A39',
+      'sheet' => 3,
+      'row' => 39,
+      'side' => 'A',
+      'section' => 'Child care',
+      'label' => '7c. Defaulted',
+      'context' => 'NUTRITION',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q5' => 
+    array (
+      'key' => 's3.Q5',
+      'sheet' => 3,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '1. DPT-HiB-HepB 1',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q6' => 
+    array (
+      'key' => 's3.Q6',
+      'sheet' => 3,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '2. DPT-HiB-HepB 2',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q7' => 
+    array (
+      'key' => 's3.Q7',
+      'sheet' => 3,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '3. DPT-HiB-HepB 3',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q8' => 
+    array (
+      'key' => 's3.Q8',
+      'sheet' => 3,
+      'row' => 8,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '4. OPV 1',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q9' => 
+    array (
+      'key' => 's3.Q9',
+      'sheet' => 3,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '5. OPV 2',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q10' => 
+    array (
+      'key' => 's3.Q10',
+      'sheet' => 3,
+      'row' => 10,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '6. OPV 3',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q11' => 
+    array (
+      'key' => 's3.Q11',
+      'sheet' => 3,
+      'row' => 11,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '7. IPV 1',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q12' => 
+    array (
+      'key' => 's3.Q12',
+      'sheet' => 3,
+      'row' => 12,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '8. IPV 2',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q13' => 
+    array (
+      'key' => 's3.Q13',
+      'sheet' => 3,
+      'row' => 13,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '9. PCV 1',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q14' => 
+    array (
+      'key' => 's3.Q14',
+      'sheet' => 3,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '10. PCV 2',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q15' => 
+    array (
+      'key' => 's3.Q15',
+      'sheet' => 3,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '11. PCV 3',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q16' => 
+    array (
+      'key' => 's3.Q16',
+      'sheet' => 3,
+      'row' => 16,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '12. MMR 1',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q17' => 
+    array (
+      'key' => 's3.Q17',
+      'sheet' => 3,
+      'row' => 17,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '13. MMR 2',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q18' => 
+    array (
+      'key' => 's3.Q18',
+      'sheet' => 3,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '14. FIC',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q19' => 
+    array (
+      'key' => 's3.Q19',
+      'sheet' => 3,
+      'row' => 19,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '15. CIC',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q22' => 
+    array (
+      'key' => 's3.Q22',
+      'sheet' => 3,
+      'row' => 22,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '5. HPV 1 (SB)',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q23' => 
+    array (
+      'key' => 's3.Q23',
+      'sheet' => 3,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '6. HPV 1 (CB)',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q24' => 
+    array (
+      'key' => 's3.Q24',
+      'sheet' => 3,
+      'row' => 24,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '7. HPV 2 (CB)',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q29' => 
+    array (
+      'key' => 's3.Q29',
+      'sheet' => 3,
+      'row' => 29,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '4a. Infants aged 6-11 months old who completed routine MNP supplementation',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 6,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q30' => 
+    array (
+      'key' => 's3.Q30',
+      'sheet' => 3,
+      'row' => 30,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '4b. Children aged 12-23 months old who completed routine MNP supplementation',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 12,
+      'age_max' => 23,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q31' => 
+    array (
+      'key' => 's3.Q31',
+      'sheet' => 3,
+      'row' => 31,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '5a. Infants aged 6-11 months old who completed routine LNS-SQ supplementation',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 6,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q32' => 
+    array (
+      'key' => 's3.Q32',
+      'sheet' => 3,
+      'row' => 32,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '5b. Children aged 12-23 months old who completed routine LNS-SQ supplementation',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 12,
+      'age_max' => 23,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q33' => 
+    array (
+      'key' => 's3.Q33',
+      'sheet' => 3,
+      'row' => 33,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '7d. Died',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q34' => 
+    array (
+      'key' => 's3.Q34',
+      'sheet' => 3,
+      'row' => 34,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '8. SAM without complication admitted to OTC',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q35' => 
+    array (
+      'key' => 's3.Q35',
+      'sheet' => 3,
+      'row' => 35,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '8a. Cured',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q36' => 
+    array (
+      'key' => 's3.Q36',
+      'sheet' => 3,
+      'row' => 36,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '8b. Non-cured',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q37' => 
+    array (
+      'key' => 's3.Q37',
+      'sheet' => 3,
+      'row' => 37,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '8c. Defaulted',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's3.Q38' => 
+    array (
+      'key' => 's3.Q38',
+      'sheet' => 3,
+      'row' => 38,
+      'side' => 'Q',
+      'section' => 'Child care',
+      'label' => '8d. Died',
+      'context' => 'A2. Immunization Services (0-11 months of previous year)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A5' => 
+    array (
+      'key' => 's4.A5',
+      'sheet' => 4,
+      'row' => 5,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '1a. Sick infants aged 6-11 months old seen',
+      'context' => 'MANAGEMENT OF SICK',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 6,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A6' => 
+    array (
+      'key' => 's4.A6',
+      'sheet' => 4,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '1a1. Sick infants aged 6-11 months old who received Vitamin A capsule aside from routine supplementation',
+      'context' => 'MANAGEMENT OF SICK',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 6,
+      'age_max' => 11,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A7' => 
+    array (
+      'key' => 's4.A7',
+      'sheet' => 4,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '2. Sick children aged 12-59 months old seen',
+      'context' => 'MANAGEMENT OF SICK',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 12,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A8' => 
+    array (
+      'key' => 's4.A8',
+      'sheet' => 4,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '2a. Sick children aged 12-59 months old who received Vitamin A capsule aside from routine supplementation',
+      'context' => 'MANAGEMENT OF SICK',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 12,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A9' => 
+    array (
+      'key' => 's4.A9',
+      'sheet' => 4,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '3. Total diarrhea cases 0-59 months old seen',
+      'context' => 'MANAGEMENT OF SICK',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A10' => 
+    array (
+      'key' => 's4.A10',
+      'sheet' => 4,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '3a. 0-59 months old with acute diarrhea who received ORS only',
+      'context' => 'MANAGEMENT OF SICK',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A9',
+      ),
+    ),
+    's4.A11' => 
+    array (
+      'key' => 's4.A11',
+      'sheet' => 4,
+      'row' => 11,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '3b. 0-59 months old with acute diarrhea who received ORS and Zinc drops/syrup',
+      'context' => 'MANAGEMENT OF SICK',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A9',
+      ),
+    ),
+    's4.A14' => 
+    array (
+      'key' => 's4.A14',
+      'sheet' => 4,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '1. Children 1-4 years old who had their 1st visit to an oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A15' => 
+    array (
+      'key' => 's4.A15',
+      'sheet' => 4,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '1a. Children 1-4 years old who had their 1st visit to a facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A14',
+      ),
+    ),
+    's4.A16' => 
+    array (
+      'key' => 's4.A16',
+      'sheet' => 4,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '1b. Children 1-4 years old who had their 1st visit to a non-facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A14',
+      ),
+    ),
+    's4.A17' => 
+    array (
+      'key' => 's4.A17',
+      'sheet' => 4,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '2. Children 5-9 years old who had their 1st visit to an oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 5,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A18' => 
+    array (
+      'key' => 's4.A18',
+      'sheet' => 4,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '2a. Children 5-9 years old who had their 1st visit to a facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 5,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A17',
+      ),
+    ),
+    's4.A19' => 
+    array (
+      'key' => 's4.A19',
+      'sheet' => 4,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '2b. Children 5-9 years old who had their 1st visit to a non-facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 5,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A17',
+      ),
+    ),
+    's4.A20' => 
+    array (
+      'key' => 's4.A20',
+      'sheet' => 4,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '3. Adolescents 10-19 years old who had their 1st visit to an oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A21' => 
+    array (
+      'key' => 's4.A21',
+      'sheet' => 4,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '3a. Adolescents 10-19 years old who had their 1st visit to a facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A20',
+      ),
+    ),
+    's4.A22' => 
+    array (
+      'key' => 's4.A22',
+      'sheet' => 4,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '3b. Adolescents 10-19 years old who had their 1st visit to a non-facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A20',
+      ),
+    ),
+    's4.A23' => 
+    array (
+      'key' => 's4.A23',
+      'sheet' => 4,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '4. Adults 20-59 years old who had their 1st visit to an oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A24' => 
+    array (
+      'key' => 's4.A24',
+      'sheet' => 4,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '4a. Adults 20-59 years old who had their 1st visit to a facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A23',
+      ),
+    ),
+    's4.A25' => 
+    array (
+      'key' => 's4.A25',
+      'sheet' => 4,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '4b. Adults 20-59 years old who had their 1st visit to a non-facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A23',
+      ),
+    ),
+    's4.A26' => 
+    array (
+      'key' => 's4.A26',
+      'sheet' => 4,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '5. Senior Citizens 60 years old and above who had their 1st visit to an oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A27' => 
+    array (
+      'key' => 's4.A27',
+      'sheet' => 4,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '5a. Senior Citizens 60 years old and above who had their 1st visit to a facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A26',
+      ),
+    ),
+    's4.A28' => 
+    array (
+      'key' => 's4.A28',
+      'sheet' => 4,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '5b. Senior Citizens 60 years old and above who had their 1st visit to a non-facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A26',
+      ),
+    ),
+    's4.A29' => 
+    array (
+      'key' => 's4.A29',
+      'sheet' => 4,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '6. Pregnant Women who had their 1st visit to an oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.A30' => 
+    array (
+      'key' => 's4.A30',
+      'sheet' => 4,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '6a. Pregnant Women who had their 1st visit to a facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A29',
+      ),
+    ),
+    's4.A31' => 
+    array (
+      'key' => 's4.A31',
+      'sheet' => 4,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Sick child and oral health',
+      'label' => '6b. Pregnant Women who had their 1st visit to a non-facility-based oral health care professional within a year',
+      'context' => 'FIRST VISIT TO ORAL HEALTH CARE PROFESSIONAL',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.A29',
+      ),
+    ),
+    's4.Q4' => 
+    array (
+      'key' => 's4.Q4',
+      'sheet' => 4,
+      'row' => 4,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '4. Pneumonia cases 0-59 months old seen',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.Q5' => 
+    array (
+      'key' => 's4.Q5',
+      'sheet' => 4,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '4a. 0-59 months old with pneumonia who received antibiotic treatment',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q4',
+      ),
+    ),
+    's4.Q6' => 
+    array (
+      'key' => 's4.Q6',
+      'sheet' => 4,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => 'a. Amoxicillin drops suspension',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q5',
+      ),
+    ),
+    's4.Q7' => 
+    array (
+      'key' => 's4.Q7',
+      'sheet' => 4,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => 'b. Amoxicillin tablet suspension',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q5',
+      ),
+    ),
+    's4.Q8' => 
+    array (
+      'key' => 's4.Q8',
+      'sheet' => 4,
+      'row' => 8,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => 'c. Cotrimoxazole suspension',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q5',
+      ),
+    ),
+    's4.Q9' => 
+    array (
+      'key' => 's4.Q9',
+      'sheet' => 4,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => 'd. Other antibiotics',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 59,
+      'age_unit' => 'months',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q5',
+      ),
+    ),
+    's4.Q14' => 
+    array (
+      'key' => 's4.Q14',
+      'sheet' => 4,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '1. Children 1-4 years old who completed 2 visits to an oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.Q15' => 
+    array (
+      'key' => 's4.Q15',
+      'sheet' => 4,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '1a. Children 1-4 years old who completed 2 visits to a facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q14',
+      ),
+    ),
+    's4.Q16' => 
+    array (
+      'key' => 's4.Q16',
+      'sheet' => 4,
+      'row' => 16,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '1b. Children 1-4 years old who completed 2 visits to a non-facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q14',
+      ),
+    ),
+    's4.Q17' => 
+    array (
+      'key' => 's4.Q17',
+      'sheet' => 4,
+      'row' => 17,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '2. Children 5-9 years old who completed 2 visits to an oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 5,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.Q18' => 
+    array (
+      'key' => 's4.Q18',
+      'sheet' => 4,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '2a. Children 5-9 years old who completed 2 visits to a facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 5,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q17',
+      ),
+    ),
+    's4.Q19' => 
+    array (
+      'key' => 's4.Q19',
+      'sheet' => 4,
+      'row' => 19,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '2b. Children 5-9 years old who completed 2 visits to a non-facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 5,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q17',
+      ),
+    ),
+    's4.Q20' => 
+    array (
+      'key' => 's4.Q20',
+      'sheet' => 4,
+      'row' => 20,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '3. Adolescents 10-19 years old who completed 2 visits to an oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.Q21' => 
+    array (
+      'key' => 's4.Q21',
+      'sheet' => 4,
+      'row' => 21,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '3a. Adolescents 10-19 years old who completed 2 visits to a facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q20',
+      ),
+    ),
+    's4.Q22' => 
+    array (
+      'key' => 's4.Q22',
+      'sheet' => 4,
+      'row' => 22,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '3b. Adolescents 10-19 years old who completed 2 visits to a non-facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q20',
+      ),
+    ),
+    's4.Q23' => 
+    array (
+      'key' => 's4.Q23',
+      'sheet' => 4,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '4. Adults 20-59 years old who completed 2 visits to an oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.Q24' => 
+    array (
+      'key' => 's4.Q24',
+      'sheet' => 4,
+      'row' => 24,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '4a. Adults 20-59 years old who completed 2 visits to a facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q23',
+      ),
+    ),
+    's4.Q25' => 
+    array (
+      'key' => 's4.Q25',
+      'sheet' => 4,
+      'row' => 25,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '4b. Adults 20-59 years old who completed 2 visits to a non-facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q23',
+      ),
+    ),
+    's4.Q26' => 
+    array (
+      'key' => 's4.Q26',
+      'sheet' => 4,
+      'row' => 26,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '5. Senior Citizens 60 years old and above who completed 2 visits to an oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.Q27' => 
+    array (
+      'key' => 's4.Q27',
+      'sheet' => 4,
+      'row' => 27,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '5a. Senior Citizens 60 years old and above who completed 2 visits to a facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q26',
+      ),
+    ),
+    's4.Q28' => 
+    array (
+      'key' => 's4.Q28',
+      'sheet' => 4,
+      'row' => 28,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '5b. Senior Citizens 60 years old and above who completed 2 visits to a non-facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q26',
+      ),
+    ),
+    's4.Q29' => 
+    array (
+      'key' => 's4.Q29',
+      'sheet' => 4,
+      'row' => 29,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '6. Pregnant Women who completed 2 visits to an oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's4.Q30' => 
+    array (
+      'key' => 's4.Q30',
+      'sheet' => 4,
+      'row' => 30,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '6a. Pregnant Women who completed 2 visits to a facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q29',
+      ),
+    ),
+    's4.Q31' => 
+    array (
+      'key' => 's4.Q31',
+      'sheet' => 4,
+      'row' => 31,
+      'side' => 'Q',
+      'section' => 'Sick child and oral health',
+      'label' => '6b. Pregnant Women who completed 2 visits to a non-facility-based oral health care professional within a year',
+      'context' => 'SECTION D. ORAL HEALTH CARE SERVICES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'DENTAL',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's4.Q29',
+      ),
+    ),
+    's5.A5' => 
+    array (
+      'key' => 's5.A5',
+      'sheet' => 5,
+      'row' => 5,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '1. Adults 20-59 years old who were risk assessed using the PhilPEN protocol',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A6' => 
+    array (
+      'key' => 's5.A6',
+      'sheet' => 5,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Current Smokers',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A7' => 
+    array (
+      'key' => 's5.A7',
+      'sheet' => 5,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Tobacco Products',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A8' => 
+    array (
+      'key' => 's5.A8',
+      'sheet' => 5,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Vaporized Nicotine Products',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A9' => 
+    array (
+      'key' => 's5.A9',
+      'sheet' => 5,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Both',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A10' => 
+    array (
+      'key' => 's5.A10',
+      'sheet' => 5,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Provided Brief Tobacco Intervention',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A11' => 
+    array (
+      'key' => 's5.A11',
+      'sheet' => 5,
+      'row' => 11,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Binge Drinker',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A12' => 
+    array (
+      'key' => 's5.A12',
+      'sheet' => 5,
+      'row' => 12,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'd. Insufficient physical activities',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A13' => 
+    array (
+      'key' => 's5.A13',
+      'sheet' => 5,
+      'row' => 13,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'e. Consumed unhealthy diet',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A14' => 
+    array (
+      'key' => 's5.A14',
+      'sheet' => 5,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'f. Overweight',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A15' => 
+    array (
+      'key' => 's5.A15',
+      'sheet' => 5,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'g. Obese',
+      'context' => 'E1. Lifestyle Related',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A17' => 
+    array (
+      'key' => 's5.A17',
+      'sheet' => 5,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old with hypertension (Sum of January to Previous Month)',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'period' => 'year_to_previous_month',
+    ),
+    's5.A18' => 
+    array (
+      'key' => 's5.A18',
+      'sheet' => 5,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old with hypertension in the current month',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A19' => 
+    array (
+      'key' => 's5.A19',
+      'sheet' => 5,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old identified with hypertension using the PhilPEN protocol',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A20' => 
+    array (
+      'key' => 's5.A20',
+      'sheet' => 5,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old provided with antihypertensive medications',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A21' => 
+    array (
+      'key' => 's5.A21',
+      'sheet' => 5,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Provided by facility (100%)',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A22' => 
+    array (
+      'key' => 's5.A22',
+      'sheet' => 5,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Out of pocket',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A23' => 
+    array (
+      'key' => 's5.A23',
+      'sheet' => 5,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Both',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A24' => 
+    array (
+      'key' => 's5.A24',
+      'sheet' => 5,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above with hypertension (Sum of January to Previous Month)',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'period' => 'year_to_previous_month',
+    ),
+    's5.A25' => 
+    array (
+      'key' => 's5.A25',
+      'sheet' => 5,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above with hypertension in the current month',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A26' => 
+    array (
+      'key' => 's5.A26',
+      'sheet' => 5,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above identified with hypertension using the PhilPEN protocol',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A27' => 
+    array (
+      'key' => 's5.A27',
+      'sheet' => 5,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above provided with antihypertensive medications',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A28' => 
+    array (
+      'key' => 's5.A28',
+      'sheet' => 5,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Provided by facility (100%)',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A29' => 
+    array (
+      'key' => 's5.A29',
+      'sheet' => 5,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Out of pocket',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A30' => 
+    array (
+      'key' => 's5.A30',
+      'sheet' => 5,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Both',
+      'context' => 'E2. Cardiovascular Disease Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A32' => 
+    array (
+      'key' => 's5.A32',
+      'sheet' => 5,
+      'row' => 32,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '1. Screened for eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A33' => 
+    array (
+      'key' => 's5.A33',
+      'sheet' => 5,
+      'row' => 33,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '1a. 0-9 years old screened for eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A34' => 
+    array (
+      'key' => 's5.A34',
+      'sheet' => 5,
+      'row' => 34,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '1b. 10-19 years old screened for eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A35' => 
+    array (
+      'key' => 's5.A35',
+      'sheet' => 5,
+      'row' => 35,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '1c. 20-59 years old screened for eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A36' => 
+    array (
+      'key' => 's5.A36',
+      'sheet' => 5,
+      'row' => 36,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '1d. 60 years old and above screened for eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A37' => 
+    array (
+      'key' => 's5.A37',
+      'sheet' => 5,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2. Screened and identified with eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A38' => 
+    array (
+      'key' => 's5.A38',
+      'sheet' => 5,
+      'row' => 38,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2a. 0-9 years old screened and identified with at least one eye ailment',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A39' => 
+    array (
+      'key' => 's5.A39',
+      'sheet' => 5,
+      'row' => 39,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2a1. Changes in vision',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A40' => 
+    array (
+      'key' => 's5.A40',
+      'sheet' => 5,
+      'row' => 40,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2a2. Changes in appearance',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A41' => 
+    array (
+      'key' => 's5.A41',
+      'sheet' => 5,
+      'row' => 41,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2a3. Eye and orbital injury',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A42' => 
+    array (
+      'key' => 's5.A42',
+      'sheet' => 5,
+      'row' => 42,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2a4. Routine eye exams',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A43' => 
+    array (
+      'key' => 's5.A43',
+      'sheet' => 5,
+      'row' => 43,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2b. 10-19 years old screened and identified with at least one eye ailment',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A44' => 
+    array (
+      'key' => 's5.A44',
+      'sheet' => 5,
+      'row' => 44,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2b1. Changes in vision',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A45' => 
+    array (
+      'key' => 's5.A45',
+      'sheet' => 5,
+      'row' => 45,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2b2. Changes in appearance',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A46' => 
+    array (
+      'key' => 's5.A46',
+      'sheet' => 5,
+      'row' => 46,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2b3. Eye and orbital injury',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.A47' => 
+    array (
+      'key' => 's5.A47',
+      'sheet' => 5,
+      'row' => 47,
+      'side' => 'A',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2b4. Routine eye exams',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q4' => 
+    array (
+      'key' => 's5.Q4',
+      'sheet' => 5,
+      'row' => 4,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2. Senior Citizens 60 years old and above who were risk assessed using the PhilPEN protocol',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q5' => 
+    array (
+      'key' => 's5.Q5',
+      'sheet' => 5,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Current Smokers',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q6' => 
+    array (
+      'key' => 's5.Q6',
+      'sheet' => 5,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Tobacco Products',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q7' => 
+    array (
+      'key' => 's5.Q7',
+      'sheet' => 5,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Vaporized Nicotine Products',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q8' => 
+    array (
+      'key' => 's5.Q8',
+      'sheet' => 5,
+      'row' => 8,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Both',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q9' => 
+    array (
+      'key' => 's5.Q9',
+      'sheet' => 5,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Provided Brief Tobacco Intervention',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q10' => 
+    array (
+      'key' => 's5.Q10',
+      'sheet' => 5,
+      'row' => 10,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Binge Drinker',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q11' => 
+    array (
+      'key' => 's5.Q11',
+      'sheet' => 5,
+      'row' => 11,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'd. Insufficient physical activities',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q12' => 
+    array (
+      'key' => 's5.Q12',
+      'sheet' => 5,
+      'row' => 12,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'e. Consumed unhealthy diet',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q13' => 
+    array (
+      'key' => 's5.Q13',
+      'sheet' => 5,
+      'row' => 13,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'f. Overweight',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q14' => 
+    array (
+      'key' => 's5.Q14',
+      'sheet' => 5,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'g. Obese',
+      'context' => 'SECTION E. NON-COMMUNICABLE DISEASES',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q16' => 
+    array (
+      'key' => 's5.Q16',
+      'sheet' => 5,
+      'row' => 16,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old with Type II Diabetes (Sum of January to Previous Month)',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'period' => 'year_to_previous_month',
+    ),
+    's5.Q17' => 
+    array (
+      'key' => 's5.Q17',
+      'sheet' => 5,
+      'row' => 17,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old with Type II Diabetes in the current month',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q18' => 
+    array (
+      'key' => 's5.Q18',
+      'sheet' => 5,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old identified with Type II Diabetes using the PhilPEN protocol',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q19' => 
+    array (
+      'key' => 's5.Q19',
+      'sheet' => 5,
+      'row' => 19,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Adults 20-59 years old provided with antidiabetic medications',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q20' => 
+    array (
+      'key' => 's5.Q20',
+      'sheet' => 5,
+      'row' => 20,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Provided by facility (100%)',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q21' => 
+    array (
+      'key' => 's5.Q21',
+      'sheet' => 5,
+      'row' => 21,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Out of pocket',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q22' => 
+    array (
+      'key' => 's5.Q22',
+      'sheet' => 5,
+      'row' => 22,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Both',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q23' => 
+    array (
+      'key' => 's5.Q23',
+      'sheet' => 5,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above with Type II Diabetes (Sum of January to Previous Month)',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'period' => 'year_to_previous_month',
+    ),
+    's5.Q24' => 
+    array (
+      'key' => 's5.Q24',
+      'sheet' => 5,
+      'row' => 24,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above with Type II Diabetes in the current month',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q25' => 
+    array (
+      'key' => 's5.Q25',
+      'sheet' => 5,
+      'row' => 25,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above identified with Type II Diabetes using the PhilPEN protocol',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q26' => 
+    array (
+      'key' => 's5.Q26',
+      'sheet' => 5,
+      'row' => 26,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'Senior Citizens 60 years old and above provided with antidiabetic medications',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q27' => 
+    array (
+      'key' => 's5.Q27',
+      'sheet' => 5,
+      'row' => 27,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'a. Provided by facility (100%)',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q28' => 
+    array (
+      'key' => 's5.Q28',
+      'sheet' => 5,
+      'row' => 28,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'b. Out of pocket',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q29' => 
+    array (
+      'key' => 's5.Q29',
+      'sheet' => 5,
+      'row' => 29,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => 'c. Both',
+      'context' => 'E3. Diabetes Mellitus Prevention and Control',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q32' => 
+    array (
+      'key' => 's5.Q32',
+      'sheet' => 5,
+      'row' => 32,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2c. 20-59 years old screened and identified with eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q33' => 
+    array (
+      'key' => 's5.Q33',
+      'sheet' => 5,
+      'row' => 33,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2c1. Changes in vision',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q34' => 
+    array (
+      'key' => 's5.Q34',
+      'sheet' => 5,
+      'row' => 34,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2c2. Changes in appearance',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q35' => 
+    array (
+      'key' => 's5.Q35',
+      'sheet' => 5,
+      'row' => 35,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2c3. Eye and orbital injury',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q36' => 
+    array (
+      'key' => 's5.Q36',
+      'sheet' => 5,
+      'row' => 36,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2c4. Routine eye exams',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q37' => 
+    array (
+      'key' => 's5.Q37',
+      'sheet' => 5,
+      'row' => 37,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2d. 60 years old and above screened and identified with eye diseases',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q38' => 
+    array (
+      'key' => 's5.Q38',
+      'sheet' => 5,
+      'row' => 38,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2d1. Changes in vision',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q39' => 
+    array (
+      'key' => 's5.Q39',
+      'sheet' => 5,
+      'row' => 39,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2d2. Changes in appearance',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q40' => 
+    array (
+      'key' => 's5.Q40',
+      'sheet' => 5,
+      'row' => 40,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2d3. Eye and orbital injury',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q41' => 
+    array (
+      'key' => 's5.Q41',
+      'sheet' => 5,
+      'row' => 41,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '2d4. Routine eye exams',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q42' => 
+    array (
+      'key' => 's5.Q42',
+      'sheet' => 5,
+      'row' => 42,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '3. Identified with eye diseases and referred to an eye health professional',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q43' => 
+    array (
+      'key' => 's5.Q43',
+      'sheet' => 5,
+      'row' => 43,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '3a. 0-9 years old',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 9,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q44' => 
+    array (
+      'key' => 's5.Q44',
+      'sheet' => 5,
+      'row' => 44,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '3b. 10-19 years old',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q45' => 
+    array (
+      'key' => 's5.Q45',
+      'sheet' => 5,
+      'row' => 45,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '3c. 20-59 years old',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's5.Q46' => 
+    array (
+      'key' => 's5.Q46',
+      'sheet' => 5,
+      'row' => 46,
+      'side' => 'Q',
+      'section' => 'Noncommunicable diseases',
+      'label' => '3d. Senior Citizens',
+      'context' => 'E4. Blindness Prevention Program',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A5' => 
+    array (
+      'key' => 's6.A5',
+      'sheet' => 6,
+      'row' => 5,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '1. Senior Citizens Seen who had not previously received PPV upon reaching 60 years old',
+      'context' => 'E5. Immunization for Senior Citizens',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A6' => 
+    array (
+      'key' => 's6.A6',
+      'sheet' => 6,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '2. Senior Citizens aged 60 years old and above who received one (1) dose of Pneumococcal Polysaccharide Vaccine',
+      'context' => 'E5. Immunization for Senior Citizens',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A7' => 
+    array (
+      'key' => 's6.A7',
+      'sheet' => 6,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '3. Senior Citizens Seen',
+      'context' => 'E5. Immunization for Senior Citizens',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A8' => 
+    array (
+      'key' => 's6.A8',
+      'sheet' => 6,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '4. Senior Citizens aged 60 years old and above who received one (1) dose of Influenza Vaccine',
+      'context' => 'E5. Immunization for Senior Citizens',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A10' => 
+    array (
+      'key' => 's6.A10',
+      'sheet' => 6,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'a. Senior Citizens screened using the geriatric screening tool',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A11' => 
+    array (
+      'key' => 's6.A11',
+      'sheet' => 6,
+      'row' => 11,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b. Senior Citizens with positive geriatric screening result',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A12' => 
+    array (
+      'key' => 's6.A12',
+      'sheet' => 6,
+      'row' => 12,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b1. Memory',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A13' => 
+    array (
+      'key' => 's6.A13',
+      'sheet' => 6,
+      'row' => 13,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b2. Depression',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A14' => 
+    array (
+      'key' => 's6.A14',
+      'sheet' => 6,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b3. Polypharmacy',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A15' => 
+    array (
+      'key' => 's6.A15',
+      'sheet' => 6,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b4. Urinary Incontinence',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A16' => 
+    array (
+      'key' => 's6.A16',
+      'sheet' => 6,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b5. Functional Capacity',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A17' => 
+    array (
+      'key' => 's6.A17',
+      'sheet' => 6,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b6. Fall History and Screening Test',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A18' => 
+    array (
+      'key' => 's6.A18',
+      'sheet' => 6,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b7. Malnutrition',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A19' => 
+    array (
+      'key' => 's6.A19',
+      'sheet' => 6,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b8. Hearing',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A20' => 
+    array (
+      'key' => 's6.A20',
+      'sheet' => 6,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'b9. Vision',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A21' => 
+    array (
+      'key' => 's6.A21',
+      'sheet' => 6,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => 'c. Referred to Appropriate Specialist or Service Providers',
+      'context' => 'E6. Geriatric Screening',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.A23' => 
+    array (
+      'key' => 's6.A23',
+      'sheet' => 6,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '1. Individuals with mental health concern screened using the Mental Health Gap Action Programme (mhGAP)',
+      'context' => 'E7. Mental Health',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q5' => 
+    array (
+      'key' => 's6.Q5',
+      'sheet' => 6,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '1. Women aged 30-65 years old screened or assessed for cervical cancer',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q6' => 
+    array (
+      'key' => 's6.Q6',
+      'sheet' => 6,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '1a. VIA',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q7' => 
+    array (
+      'key' => 's6.Q7',
+      'sheet' => 6,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '1b. Papsmear',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q8' => 
+    array (
+      'key' => 's6.Q8',
+      'sheet' => 6,
+      'row' => 8,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '1c. HPV DNA',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q9' => 
+    array (
+      'key' => 's6.Q9',
+      'sheet' => 6,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '2. Referred (Only)',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q10' => 
+    array (
+      'key' => 's6.Q10',
+      'sheet' => 6,
+      'row' => 10,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '3. Women aged 30-65 years old found suspicious for cervical cancer and linked to care',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q11' => 
+    array (
+      'key' => 's6.Q11',
+      'sheet' => 6,
+      'row' => 11,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '3a. Treated',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q12' => 
+    array (
+      'key' => 's6.Q12',
+      'sheet' => 6,
+      'row' => 12,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '3b. Referred',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q13' => 
+    array (
+      'key' => 's6.Q13',
+      'sheet' => 6,
+      'row' => 13,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '4. Women aged 30-65 years old found positive for precancerous lesions',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q14' => 
+    array (
+      'key' => 's6.Q14',
+      'sheet' => 6,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '5. Women aged 30-65 years old found positive for precancerous lesions and linked to care',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q15' => 
+    array (
+      'key' => 's6.Q15',
+      'sheet' => 6,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '5a. Treated',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q16' => 
+    array (
+      'key' => 's6.Q16',
+      'sheet' => 6,
+      'row' => 16,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '5b. Referred',
+      'context' => 'E8. Cervical Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 65,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q18' => 
+    array (
+      'key' => 's6.Q18',
+      'sheet' => 6,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '1. Number of 30-69 years old women seen',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q19' => 
+    array (
+      'key' => 's6.Q19',
+      'sheet' => 6,
+      'row' => 19,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '2. Number of high-risk or symptomatic women',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q20' => 
+    array (
+      'key' => 's6.Q20',
+      'sheet' => 6,
+      'row' => 20,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '3. High-risk or symptomatic women aged 30-69 years old provided with Breast Cancer Early Detection Services',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q21' => 
+    array (
+      'key' => 's6.Q21',
+      'sheet' => 6,
+      'row' => 21,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '3a. Clinical Breast Examination',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q22' => 
+    array (
+      'key' => 's6.Q22',
+      'sheet' => 6,
+      'row' => 22,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '3b. Mammogram',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q23' => 
+    array (
+      'key' => 's6.Q23',
+      'sheet' => 6,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '4. High-risk or symptomatic women aged 30-69 years old found with normal/benign or equivocal results',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q24' => 
+    array (
+      'key' => 's6.Q24',
+      'sheet' => 6,
+      'row' => 24,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '4a. Clinical Breast Examination',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q25' => 
+    array (
+      'key' => 's6.Q25',
+      'sheet' => 6,
+      'row' => 25,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '4b. Mammogram',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q26' => 
+    array (
+      'key' => 's6.Q26',
+      'sheet' => 6,
+      'row' => 26,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '5. High-risk or symptomatic women aged 30-69 years old found with remarkable results and linked to care',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q27' => 
+    array (
+      'key' => 's6.Q27',
+      'sheet' => 6,
+      'row' => 27,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '5a. Clinical Breast Examination',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q28' => 
+    array (
+      'key' => 's6.Q28',
+      'sheet' => 6,
+      'row' => 28,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '5b. Mammogram',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q29' => 
+    array (
+      'key' => 's6.Q29',
+      'sheet' => 6,
+      'row' => 29,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '6. Asymptomatic women aged 50-69 years old screened for breast cancer',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 50,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q30' => 
+    array (
+      'key' => 's6.Q30',
+      'sheet' => 6,
+      'row' => 30,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '6a. Clinical Breast Examination',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q31' => 
+    array (
+      'key' => 's6.Q31',
+      'sheet' => 6,
+      'row' => 31,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '6b. Mammogram',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q32' => 
+    array (
+      'key' => 's6.Q32',
+      'sheet' => 6,
+      'row' => 32,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '7. Asymptomatic women aged 50-69 years old screened for breast cancer and found with remarkable or abnormal results',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 50,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q33' => 
+    array (
+      'key' => 's6.Q33',
+      'sheet' => 6,
+      'row' => 33,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '7a. Clinical Breast Examination',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's6.Q34' => 
+    array (
+      'key' => 's6.Q34',
+      'sheet' => 6,
+      'row' => 34,
+      'side' => 'Q',
+      'section' => 'Older adults, mental health and cancer',
+      'label' => '7b. Mammogram',
+      'context' => 'E9. Breast Cancer Prevention and Control Services',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 30,
+      'age_max' => 69,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A6' => 
+    array (
+      'key' => 's7.A6',
+      'sheet' => 7,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1. HH with access to improved water supply - Total',
+      'context' => 'F. Households (HHs)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A7' => 
+    array (
+      'key' => 's7.A7',
+      'sheet' => 7,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1a. HH with Level I',
+      'context' => 'F. Households (HHs)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A6',
+      ),
+    ),
+    's7.A8' => 
+    array (
+      'key' => 's7.A8',
+      'sheet' => 7,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1b. HH with Level II',
+      'context' => 'F. Households (HHs)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A6',
+      ),
+    ),
+    's7.A9' => 
+    array (
+      'key' => 's7.A9',
+      'sheet' => 7,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1c. HH with Level III',
+      'context' => 'F. Households (HHs)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A6',
+      ),
+    ),
+    's7.A10' => 
+    array (
+      'key' => 's7.A10',
+      'sheet' => 7,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '2. HH using safely managed drinking water services',
+      'context' => 'F. Households (HHs)',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A14' => 
+    array (
+      'key' => 's7.A14',
+      'sheet' => 7,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1. No. of individuals examined for lymphatic filariasis',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A15' => 
+    array (
+      'key' => 's7.A15',
+      'sheet' => 7,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1a. Nocturnal Blood Examination (NBE)',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A14',
+      ),
+    ),
+    's7.A16' => 
+    array (
+      'key' => 's7.A16',
+      'sheet' => 7,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1b. Rapid Diagnostic Test (RDT)',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A14',
+      ),
+    ),
+    's7.A17' => 
+    array (
+      'key' => 's7.A17',
+      'sheet' => 7,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1c. Total no. of individuals examined for lymphoedema through NBE and RDT',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A18' => 
+    array (
+      'key' => 's7.A18',
+      'sheet' => 7,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '2. No. of individuals found positive for lymphatic filariasis',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A19' => 
+    array (
+      'key' => 's7.A19',
+      'sheet' => 7,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '2a. Nocturnal Blood Examination (NBE)',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A18',
+      ),
+    ),
+    's7.A20' => 
+    array (
+      'key' => 's7.A20',
+      'sheet' => 7,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '2b. Rapid Diagnostic Test (RDT)',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A18',
+      ),
+    ),
+    's7.A21' => 
+    array (
+      'key' => 's7.A21',
+      'sheet' => 7,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '2c. Total no. of individuals found positive for lymphoedema through NBE and RDT',
+      'context' => '1. Filariasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A23' => 
+    array (
+      'key' => 's7.A23',
+      'sheet' => 7,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '3a. 1-4 years old',
+      'context' => '3. Lymphoedema',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A26',
+      ),
+    ),
+    's7.A24' => 
+    array (
+      'key' => 's7.A24',
+      'sheet' => 7,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '3b. 5-14 years old',
+      'context' => '3. Lymphoedema',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A26',
+      ),
+    ),
+    's7.A25' => 
+    array (
+      'key' => 's7.A25',
+      'sheet' => 7,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '3c. 15 years old and above',
+      'context' => '3. Lymphoedema',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A26',
+      ),
+    ),
+    's7.A26' => 
+    array (
+      'key' => 's7.A26',
+      'sheet' => 7,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '3d. Total no. of individuals aged 2 yrs old and above examined for the 1st time with lymphoedema',
+      'context' => '3. Lymphoedema',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 2,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A28' => 
+    array (
+      'key' => 's7.A28',
+      'sheet' => 7,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '4a. 1-4 years old',
+      'context' => '4. Elephantiasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A31',
+      ),
+    ),
+    's7.A29' => 
+    array (
+      'key' => 's7.A29',
+      'sheet' => 7,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '4b. 5-14 years old',
+      'context' => '4. Elephantiasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A31',
+      ),
+    ),
+    's7.A30' => 
+    array (
+      'key' => 's7.A30',
+      'sheet' => 7,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '4c. 15 years old and above',
+      'context' => '4. Elephantiasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.A31',
+      ),
+    ),
+    's7.A31' => 
+    array (
+      'key' => 's7.A31',
+      'sheet' => 7,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '4d. Total no. of individuals aged 2 yrs old and above examined for the 1st time with Elephantiasis',
+      'context' => '4. Elephantiasis',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 2,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A34' => 
+    array (
+      'key' => 's7.A34',
+      'sheet' => 7,
+      'row' => 34,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1a. No. of Category I Rabies exposure',
+      'context' => '1. Category I Rabies-exposure',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A36' => 
+    array (
+      'key' => 's7.A36',
+      'sheet' => 7,
+      'row' => 36,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '2a. No. of Category II Rabies exposure eligible for Anti-Rabies Vaccine (ARV)',
+      'context' => '2. Category II Rabies-exposure',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A37' => 
+    array (
+      'key' => 's7.A37',
+      'sheet' => 7,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '2b. No. of Category II Rabies exposure who received complete dose of Anti-Rabies Vaccine (ARV)',
+      'context' => '2. Category II Rabies-exposure',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.A39' => 
+    array (
+      'key' => 's7.A39',
+      'sheet' => 7,
+      'row' => 39,
+      'side' => 'A',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '3a. No. of Category III Rabies exposure',
+      'context' => '3. Category III Rabies-exposure',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q5' => 
+    array (
+      'key' => 's7.Q5',
+      'sheet' => 7,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1. HH with basic sanitation facility - Total',
+      'context' => 'G1. Sanitation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q6' => 
+    array (
+      'key' => 's7.Q6',
+      'sheet' => 7,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1a. HH with pour/flush toilet connected to septic tank',
+      'context' => 'G1. Sanitation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q5',
+      ),
+    ),
+    's7.Q7' => 
+    array (
+      'key' => 's7.Q7',
+      'sheet' => 7,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1b. HH with pour/flush toilet connected to community sewer/sewerage system or any other',
+      'context' => 'G1. Sanitation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q5',
+      ),
+    ),
+    's7.Q8' => 
+    array (
+      'key' => 's7.Q8',
+      'sheet' => 7,
+      'row' => 8,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1c. HH with Ventilated Improved Pit (VIP) Latrine',
+      'context' => 'G1. Sanitation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q5',
+      ),
+    ),
+    's7.Q9' => 
+    array (
+      'key' => 's7.Q9',
+      'sheet' => 7,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '1d. HH using safely managed sanitation service',
+      'context' => 'G1. Sanitation',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'household',
+      'roles' => 
+      array (
+        0 => 'SANITARY_INSPECTOR',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q13' => 
+    array (
+      'key' => 's7.Q13',
+      'sheet' => 7,
+      'row' => 13,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '5a. 2-4 years old',
+      'context' => '5. Hydrocoele',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 2,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q16',
+      ),
+    ),
+    's7.Q14' => 
+    array (
+      'key' => 's7.Q14',
+      'sheet' => 7,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '5b. 5-14 years old',
+      'context' => '5. Hydrocoele',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q16',
+      ),
+    ),
+    's7.Q15' => 
+    array (
+      'key' => 's7.Q15',
+      'sheet' => 7,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '5c. 15 years old and above',
+      'context' => '5. Hydrocoele',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q16',
+      ),
+    ),
+    's7.Q16' => 
+    array (
+      'key' => 's7.Q16',
+      'sheet' => 7,
+      'row' => 16,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '5d. Total no. of individuals aged 2 yrs old and above examined for the 1st time with Hydrocoele',
+      'context' => '5. Hydrocoele',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 2,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q18' => 
+    array (
+      'key' => 's7.Q18',
+      'sheet' => 7,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6a. 2-4 years old',
+      'context' => '6. Number of individuals who received MDA Administration',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 2,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q21',
+      ),
+    ),
+    's7.Q19' => 
+    array (
+      'key' => 's7.Q19',
+      'sheet' => 7,
+      'row' => 19,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6b. 5-14 years old',
+      'context' => '6. Number of individuals who received MDA Administration',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q21',
+      ),
+    ),
+    's7.Q20' => 
+    array (
+      'key' => 's7.Q20',
+      'sheet' => 7,
+      'row' => 20,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6c. 15 years old and above',
+      'context' => '6. Number of individuals who received MDA Administration',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's7.Q21',
+      ),
+    ),
+    's7.Q21' => 
+    array (
+      'key' => 's7.Q21',
+      'sheet' => 7,
+      'row' => 21,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6d. Total no. of individuals aged 2 yrs old and above who received MDA',
+      'context' => '6. Number of individuals who received MDA Administration',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 2,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q33' => 
+    array (
+      'key' => 's7.Q33',
+      'sheet' => 7,
+      'row' => 33,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6a. No. of Category III Rabies exposure who received complete dose of ARV and RIG',
+      'context' => '6. Category III Rabies-exposure who received complete dose of Anti-Rabies Vaccine (ARV) and Single Dose of Rabies Immunoglobulin (RIG)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q34' => 
+    array (
+      'key' => 's7.Q34',
+      'sheet' => 7,
+      'row' => 34,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6b. No. of Category III Rabies exposure who received complete dose of anti-rabies vaccine (Booster)',
+      'context' => '6. Category III Rabies-exposure who received complete dose of Anti-Rabies Vaccine (ARV) and Single Dose of Rabies Immunoglobulin (RIG)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q35' => 
+    array (
+      'key' => 's7.Q35',
+      'sheet' => 7,
+      'row' => 35,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6c. No. of Category III rabies exposure WITHOUT history of complete anti-rabies vaccine',
+      'context' => '6. Category III Rabies-exposure who received complete dose of Anti-Rabies Vaccine (ARV) and Single Dose of Rabies Immunoglobulin (RIG)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q36' => 
+    array (
+      'key' => 's7.Q36',
+      'sheet' => 7,
+      'row' => 36,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '6d. No. of Category III rabies exposure WITH history of complete anti-rabies vaccine',
+      'context' => '6. Category III Rabies-exposure who received complete dose of Anti-Rabies Vaccine (ARV) and Single Dose of Rabies Immunoglobulin (RIG)',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q38' => 
+    array (
+      'key' => 's7.Q38',
+      'sheet' => 7,
+      'row' => 38,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '7a. Dog',
+      'context' => '7. Dog-mediated and non-dog-mediated Rabies exposures',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q39' => 
+    array (
+      'key' => 's7.Q39',
+      'sheet' => 7,
+      'row' => 39,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '7b. Cat',
+      'context' => '7. Dog-mediated and non-dog-mediated Rabies exposures',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's7.Q40' => 
+    array (
+      'key' => 's7.Q40',
+      'sheet' => 7,
+      'row' => 40,
+      'side' => 'Q',
+      'section' => 'Sanitation, filariasis and rabies',
+      'label' => '7c. Others',
+      'context' => '7. Dog-mediated and non-dog-mediated Rabies exposures',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A6' => 
+    array (
+      'key' => 's8.A6',
+      'sheet' => 8,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '1. Schistosomiasis cases seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A7' => 
+    array (
+      'key' => 's8.A7',
+      'sheet' => 8,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '1. Schistosomiasis cases seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A8' => 
+    array (
+      'key' => 's8.A8',
+      'sheet' => 8,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '1. Schistosomiasis cases seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A9' => 
+    array (
+      'key' => 's8.A9',
+      'sheet' => 8,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '1. Schistosomiasis cases seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A10' => 
+    array (
+      'key' => 's8.A10',
+      'sheet' => 8,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '1. Schistosomiasis cases seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A12' => 
+    array (
+      'key' => 's8.A12',
+      'sheet' => 8,
+      'row' => 12,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '2. Suspected Schistosomiasis Cases Seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A13' => 
+    array (
+      'key' => 's8.A13',
+      'sheet' => 8,
+      'row' => 13,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '2. Suspected Schistosomiasis Cases Seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A14' => 
+    array (
+      'key' => 's8.A14',
+      'sheet' => 8,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '2. Suspected Schistosomiasis Cases Seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A15' => 
+    array (
+      'key' => 's8.A15',
+      'sheet' => 8,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '2. Suspected Schistosomiasis Cases Seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A16' => 
+    array (
+      'key' => 's8.A16',
+      'sheet' => 8,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '2. Suspected Schistosomiasis Cases Seen',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A18' => 
+    array (
+      'key' => 's8.A18',
+      'sheet' => 8,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '3. Confirmed Schistosomiasis Cases Treated by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A19' => 
+    array (
+      'key' => 's8.A19',
+      'sheet' => 8,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '3. Confirmed Schistosomiasis Cases Treated by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A20' => 
+    array (
+      'key' => 's8.A20',
+      'sheet' => 8,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '3. Confirmed Schistosomiasis Cases Treated by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A21' => 
+    array (
+      'key' => 's8.A21',
+      'sheet' => 8,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '3. Confirmed Schistosomiasis Cases Treated by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A22' => 
+    array (
+      'key' => 's8.A22',
+      'sheet' => 8,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '3. Confirmed Schistosomiasis Cases Treated by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A24' => 
+    array (
+      'key' => 's8.A24',
+      'sheet' => 8,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4a. Praziquantel',
+      'context' => '4. Confirmed Schistosomiasis Cases Treated by treatment name',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A25' => 
+    array (
+      'key' => 's8.A25',
+      'sheet' => 8,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4b. Tuberculostatic',
+      'context' => '4. Confirmed Schistosomiasis Cases Treated by treatment name',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A27' => 
+    array (
+      'key' => 's8.A27',
+      'sheet' => 8,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '5. Confirmed Schistosomiasis Cases Cured',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A28' => 
+    array (
+      'key' => 's8.A28',
+      'sheet' => 8,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '5. Confirmed Schistosomiasis Cases Cured',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A29' => 
+    array (
+      'key' => 's8.A29',
+      'sheet' => 8,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '5. Confirmed Schistosomiasis Cases Cured',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A30' => 
+    array (
+      'key' => 's8.A30',
+      'sheet' => 8,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '5. Confirmed Schistosomiasis Cases Cured',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A31' => 
+    array (
+      'key' => 's8.A31',
+      'sheet' => 8,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '5. Confirmed Schistosomiasis Cases Cured',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A33' => 
+    array (
+      'key' => 's8.A33',
+      'sheet' => 8,
+      'row' => 33,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '6. Confirmed COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A34' => 
+    array (
+      'key' => 's8.A34',
+      'sheet' => 8,
+      'row' => 34,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '6. Confirmed COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A35' => 
+    array (
+      'key' => 's8.A35',
+      'sheet' => 8,
+      'row' => 35,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '6. Confirmed COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A36' => 
+    array (
+      'key' => 's8.A36',
+      'sheet' => 8,
+      'row' => 36,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '6. Confirmed COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A37' => 
+    array (
+      'key' => 's8.A37',
+      'sheet' => 8,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '6. Confirmed COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A39' => 
+    array (
+      'key' => 's8.A39',
+      'sheet' => 8,
+      'row' => 39,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '7. Confirmed NON-COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A40' => 
+    array (
+      'key' => 's8.A40',
+      'sheet' => 8,
+      'row' => 40,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '7. Confirmed NON-COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A41' => 
+    array (
+      'key' => 's8.A41',
+      'sheet' => 8,
+      'row' => 41,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '7. Confirmed NON-COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A42' => 
+    array (
+      'key' => 's8.A42',
+      'sheet' => 8,
+      'row' => 42,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '7. Confirmed NON-COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A43' => 
+    array (
+      'key' => 's8.A43',
+      'sheet' => 8,
+      'row' => 43,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '7. Confirmed NON-COMPLICATED Schistosomiasis Cases by age group',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A46' => 
+    array (
+      'key' => 's8.A46',
+      'sheet' => 8,
+      'row' => 46,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '1. Suspected for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A47' => 
+    array (
+      'key' => 's8.A47',
+      'sheet' => 8,
+      'row' => 47,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '1. Suspected for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A48' => 
+    array (
+      'key' => 's8.A48',
+      'sheet' => 8,
+      'row' => 48,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '1. Suspected for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A49' => 
+    array (
+      'key' => 's8.A49',
+      'sheet' => 8,
+      'row' => 49,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '1. Suspected for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.A50' => 
+    array (
+      'key' => 's8.A50',
+      'sheet' => 8,
+      'row' => 50,
+      'side' => 'A',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '1. Suspected for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q5' => 
+    array (
+      'key' => 's8.Q5',
+      'sheet' => 8,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '8. Confirmed COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q6' => 
+    array (
+      'key' => 's8.Q6',
+      'sheet' => 8,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '8. Confirmed COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q7' => 
+    array (
+      'key' => 's8.Q7',
+      'sheet' => 8,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '8. Confirmed COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q8' => 
+    array (
+      'key' => 's8.Q8',
+      'sheet' => 8,
+      'row' => 8,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '8. Confirmed COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q9' => 
+    array (
+      'key' => 's8.Q9',
+      'sheet' => 8,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '8. Confirmed COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q11' => 
+    array (
+      'key' => 's8.Q11',
+      'sheet' => 8,
+      'row' => 11,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '9. Confirmed NON-COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q12' => 
+    array (
+      'key' => 's8.Q12',
+      'sheet' => 8,
+      'row' => 12,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '9. Confirmed NON-COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q13' => 
+    array (
+      'key' => 's8.Q13',
+      'sheet' => 8,
+      'row' => 13,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '9. Confirmed NON-COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q14' => 
+    array (
+      'key' => 's8.Q14',
+      'sheet' => 8,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '9. Confirmed NON-COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q15' => 
+    array (
+      'key' => 's8.Q15',
+      'sheet' => 8,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '9. Confirmed NON-COMPLICATED Schistosomiasis Cases TREATED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q17' => 
+    array (
+      'key' => 's8.Q17',
+      'sheet' => 8,
+      'row' => 17,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '10a. Praziquantel',
+      'context' => '10. Confirmed Schistosomiasis Cases Treated by treatment',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q18' => 
+    array (
+      'key' => 's8.Q18',
+      'sheet' => 8,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '10b. Tuberculostatic',
+      'context' => '10. Confirmed Schistosomiasis Cases Treated by treatment',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q20' => 
+    array (
+      'key' => 's8.Q20',
+      'sheet' => 8,
+      'row' => 20,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '11. Confirmed COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q21' => 
+    array (
+      'key' => 's8.Q21',
+      'sheet' => 8,
+      'row' => 21,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '11. Confirmed COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q22' => 
+    array (
+      'key' => 's8.Q22',
+      'sheet' => 8,
+      'row' => 22,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '11. Confirmed COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q23' => 
+    array (
+      'key' => 's8.Q23',
+      'sheet' => 8,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '11. Confirmed COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q24' => 
+    array (
+      'key' => 's8.Q24',
+      'sheet' => 8,
+      'row' => 24,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '11. Confirmed COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q26' => 
+    array (
+      'key' => 's8.Q26',
+      'sheet' => 8,
+      'row' => 26,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '12. Confirmed NON-COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q27' => 
+    array (
+      'key' => 's8.Q27',
+      'sheet' => 8,
+      'row' => 27,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '12. Confirmed NON-COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q28' => 
+    array (
+      'key' => 's8.Q28',
+      'sheet' => 8,
+      'row' => 28,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '12. Confirmed NON-COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q29' => 
+    array (
+      'key' => 's8.Q29',
+      'sheet' => 8,
+      'row' => 29,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '12. Confirmed NON-COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q30' => 
+    array (
+      'key' => 's8.Q30',
+      'sheet' => 8,
+      'row' => 30,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '12. Confirmed NON-COMPLICATED Schistosomiasis Cases CURED',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q32' => 
+    array (
+      'key' => 's8.Q32',
+      'sheet' => 8,
+      'row' => 32,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '13a. 1-4 years old',
+      'context' => '13. Confirmed Schistosomiasis Cases Referred to Hospital Facility',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q33' => 
+    array (
+      'key' => 's8.Q33',
+      'sheet' => 8,
+      'row' => 33,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '13b. 5-14 years old',
+      'context' => '13. Confirmed Schistosomiasis Cases Referred to Hospital Facility',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q34' => 
+    array (
+      'key' => 's8.Q34',
+      'sheet' => 8,
+      'row' => 34,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '13c. 15-19 years old',
+      'context' => '13. Confirmed Schistosomiasis Cases Referred to Hospital Facility',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q35' => 
+    array (
+      'key' => 's8.Q35',
+      'sheet' => 8,
+      'row' => 35,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '13d. 20-59 years old',
+      'context' => '13. Confirmed Schistosomiasis Cases Referred to Hospital Facility',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q36' => 
+    array (
+      'key' => 's8.Q36',
+      'sheet' => 8,
+      'row' => 36,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '13e. 60 years old and above',
+      'context' => '13. Confirmed Schistosomiasis Cases Referred to Hospital Facility',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q38' => 
+    array (
+      'key' => 's8.Q38',
+      'sheet' => 8,
+      'row' => 38,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '14. No. of individuals diagnosed with ova of Schistosoma during MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q39' => 
+    array (
+      'key' => 's8.Q39',
+      'sheet' => 8,
+      'row' => 39,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '14. No. of individuals diagnosed with ova of Schistosoma during MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q40' => 
+    array (
+      'key' => 's8.Q40',
+      'sheet' => 8,
+      'row' => 40,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '14. No. of individuals diagnosed with ova of Schistosoma during MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q41' => 
+    array (
+      'key' => 's8.Q41',
+      'sheet' => 8,
+      'row' => 41,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '14. No. of individuals diagnosed with ova of Schistosoma during MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q42' => 
+    array (
+      'key' => 's8.Q42',
+      'sheet' => 8,
+      'row' => 42,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '14. No. of individuals diagnosed with ova of Schistosoma during MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q44' => 
+    array (
+      'key' => 's8.Q44',
+      'sheet' => 8,
+      'row' => 44,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '1. 1-4 years old',
+      'context' => '4. Confirmed STH Cases Treated',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q45' => 
+    array (
+      'key' => 's8.Q45',
+      'sheet' => 8,
+      'row' => 45,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '2. 5-14 years old',
+      'context' => '4. Confirmed STH Cases Treated',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q46' => 
+    array (
+      'key' => 's8.Q46',
+      'sheet' => 8,
+      'row' => 46,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '3. 15-19 years old',
+      'context' => '4. Confirmed STH Cases Treated',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q47' => 
+    array (
+      'key' => 's8.Q47',
+      'sheet' => 8,
+      'row' => 47,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '4. 20-59 years old',
+      'context' => '4. Confirmed STH Cases Treated',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's8.Q48' => 
+    array (
+      'key' => 's8.Q48',
+      'sheet' => 8,
+      'row' => 48,
+      'side' => 'Q',
+      'section' => 'Schistosomiasis and STH',
+      'label' => '5. 60 years old and above',
+      'context' => '4. Confirmed STH Cases Treated',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A5' => 
+    array (
+      'key' => 's9.A5',
+      'sheet' => 9,
+      'row' => 5,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '1. 1-4 years old',
+      'context' => '2. Suspected STH cases treated for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A6' => 
+    array (
+      'key' => 's9.A6',
+      'sheet' => 9,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '2. 5-14 years old',
+      'context' => '2. Suspected STH cases treated for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A7' => 
+    array (
+      'key' => 's9.A7',
+      'sheet' => 9,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '3. 15-19 years old',
+      'context' => '2. Suspected STH cases treated for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A8' => 
+    array (
+      'key' => 's9.A8',
+      'sheet' => 9,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '4. 20-59 years old',
+      'context' => '2. Suspected STH cases treated for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A9' => 
+    array (
+      'key' => 's9.A9',
+      'sheet' => 9,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '5. 60 years old and above',
+      'context' => '2. Suspected STH cases treated for STH',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A11' => 
+    array (
+      'key' => 's9.A11',
+      'sheet' => 9,
+      'row' => 11,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '1. 1-4 years old',
+      'context' => '3. Confirmed STH Cases',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A12' => 
+    array (
+      'key' => 's9.A12',
+      'sheet' => 9,
+      'row' => 12,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '2. 5-14 years old',
+      'context' => '3. Confirmed STH Cases',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A13' => 
+    array (
+      'key' => 's9.A13',
+      'sheet' => 9,
+      'row' => 13,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '3. 15-19 years old',
+      'context' => '3. Confirmed STH Cases',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A14' => 
+    array (
+      'key' => 's9.A14',
+      'sheet' => 9,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '4. 20-59 years old',
+      'context' => '3. Confirmed STH Cases',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A15' => 
+    array (
+      'key' => 's9.A15',
+      'sheet' => 9,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '5. 60 years old and above',
+      'context' => '3. Confirmed STH Cases',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A18' => 
+    array (
+      'key' => 's9.A18',
+      'sheet' => 9,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '2. 1-4 years old',
+      'context' => '1. Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A19' => 
+    array (
+      'key' => 's9.A19',
+      'sheet' => 9,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '3. 5-14 years old',
+      'context' => '1. Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A20' => 
+    array (
+      'key' => 's9.A20',
+      'sheet' => 9,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '4. 15-19 years old',
+      'context' => '1. Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A21' => 
+    array (
+      'key' => 's9.A21',
+      'sheet' => 9,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '5. 20-59 years old',
+      'context' => '1. Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A22' => 
+    array (
+      'key' => 's9.A22',
+      'sheet' => 9,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '6. 60 years old and above',
+      'context' => '1. Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A24' => 
+    array (
+      'key' => 's9.A24',
+      'sheet' => 9,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '8. 1-4 years old',
+      'context' => '7. Non-Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A25' => 
+    array (
+      'key' => 's9.A25',
+      'sheet' => 9,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '9. 5-14 years old',
+      'context' => '7. Non-Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A26' => 
+    array (
+      'key' => 's9.A26',
+      'sheet' => 9,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '10. 15-19 years old',
+      'context' => '7. Non-Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A27' => 
+    array (
+      'key' => 's9.A27',
+      'sheet' => 9,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '11. 20-59 years old',
+      'context' => '7. Non-Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 20,
+      'age_max' => 59,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A28' => 
+    array (
+      'key' => 's9.A28',
+      'sheet' => 9,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '12. 60 years old and above',
+      'context' => '7. Non-Resident',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 60,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A30' => 
+    array (
+      'key' => 's9.A30',
+      'sheet' => 9,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '1. No. of registered cases on treatment',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A31' => 
+    array (
+      'key' => 's9.A31',
+      'sheet' => 9,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '1a. 1-14 years old',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A32' => 
+    array (
+      'key' => 's9.A32',
+      'sheet' => 9,
+      'row' => 32,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '1b. 15-19 years old',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A33' => 
+    array (
+      'key' => 's9.A33',
+      'sheet' => 9,
+      'row' => 33,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '1c. 19 years old and above',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A34' => 
+    array (
+      'key' => 's9.A34',
+      'sheet' => 9,
+      'row' => 34,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '2. No. of newly detected cases',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A35' => 
+    array (
+      'key' => 's9.A35',
+      'sheet' => 9,
+      'row' => 35,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '2a. 1-14 years old',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A36' => 
+    array (
+      'key' => 's9.A36',
+      'sheet' => 9,
+      'row' => 36,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '2b. 15-19 years old',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A37' => 
+    array (
+      'key' => 's9.A37',
+      'sheet' => 9,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '2c. 19 years old and above',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A38' => 
+    array (
+      'key' => 's9.A38',
+      'sheet' => 9,
+      'row' => 38,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '3. Confirmed Multi Bacillary Cases',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A39' => 
+    array (
+      'key' => 's9.A39',
+      'sheet' => 9,
+      'row' => 39,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '3a. 1-14 years old',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.A40' => 
+    array (
+      'key' => 's9.A40',
+      'sheet' => 9,
+      'row' => 40,
+      'side' => 'A',
+      'section' => 'STH and leprosy',
+      'label' => '3b. 15-19 years old',
+      'context' => 'E. Leprosy',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q11' => 
+    array (
+      'key' => 's9.Q11',
+      'sheet' => 9,
+      'row' => 11,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '5a. School-based deworming services',
+      'context' => '5. 1-4 years old who were dewormed during January MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 1,
+    ),
+    's9.Q12' => 
+    array (
+      'key' => 's9.Q12',
+      'sheet' => 9,
+      'row' => 12,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '5b. Community Based services',
+      'context' => '5. 1-4 years old who were dewormed during January MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 1,
+    ),
+    's9.Q14' => 
+    array (
+      'key' => 's9.Q14',
+      'sheet' => 9,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '6a. School-based deworming services',
+      'context' => '6. 5-14 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 7,
+    ),
+    's9.Q15' => 
+    array (
+      'key' => 's9.Q15',
+      'sheet' => 9,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '6b. Community Based services',
+      'context' => '6. 5-14 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 7,
+    ),
+    's9.Q17' => 
+    array (
+      'key' => 's9.Q17',
+      'sheet' => 9,
+      'row' => 17,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '7a. School-based deworming services',
+      'context' => '7. 1-4 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 7,
+    ),
+    's9.Q18' => 
+    array (
+      'key' => 's9.Q18',
+      'sheet' => 9,
+      'row' => 18,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '7b. Community Based services',
+      'context' => '7. 1-4 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 1,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 7,
+    ),
+    's9.Q20' => 
+    array (
+      'key' => 's9.Q20',
+      'sheet' => 9,
+      'row' => 20,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '8a. School-based deworming services',
+      'context' => '8. 5-14 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 7,
+    ),
+    's9.Q21' => 
+    array (
+      'key' => 's9.Q21',
+      'sheet' => 9,
+      'row' => 21,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '8b. Community Based services',
+      'context' => '8. 5-14 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 5,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 7,
+    ),
+    's9.Q23' => 
+    array (
+      'key' => 's9.Q23',
+      'sheet' => 9,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '9a. No. of adolescents (15-19 years old) who were dewormed during January MDA',
+      'context' => '9. 15-19 years old who were dewormed during January MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 1,
+    ),
+    's9.Q25' => 
+    array (
+      'key' => 's9.Q25',
+      'sheet' => 9,
+      'row' => 25,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '10a. No. of adolescents (15-19 years old) who were dewormed during July MDA',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_month' => 7,
+    ),
+    's9.Q30' => 
+    array (
+      'key' => 's9.Q30',
+      'sheet' => 9,
+      'row' => 30,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '4. Completed Fixed Duration Multi-Drug Therapy (MDT)',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q31' => 
+    array (
+      'key' => 's9.Q31',
+      'sheet' => 9,
+      'row' => 31,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '4a. 0-14 years old',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q32' => 
+    array (
+      'key' => 's9.Q32',
+      'sheet' => 9,
+      'row' => 32,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '4b. 15-19 years old',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q33' => 
+    array (
+      'key' => 's9.Q33',
+      'sheet' => 9,
+      'row' => 33,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '4c. 19 years old and above',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q34' => 
+    array (
+      'key' => 's9.Q34',
+      'sheet' => 9,
+      'row' => 34,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '5. No. of confirmed Leprosy cases cured',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q35' => 
+    array (
+      'key' => 's9.Q35',
+      'sheet' => 9,
+      'row' => 35,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '5a. 0-14 years old',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q36' => 
+    array (
+      'key' => 's9.Q36',
+      'sheet' => 9,
+      'row' => 36,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '5b. 15-19 years old',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q37' => 
+    array (
+      'key' => 's9.Q37',
+      'sheet' => 9,
+      'row' => 37,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '5c. 19 years old and above',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q38' => 
+    array (
+      'key' => 's9.Q38',
+      'sheet' => 9,
+      'row' => 38,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '6. Newly Detected Cases with Grade 2 Disabilities',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q39' => 
+    array (
+      'key' => 's9.Q39',
+      'sheet' => 9,
+      'row' => 39,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '6a. 0-14 years old',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q40' => 
+    array (
+      'key' => 's9.Q40',
+      'sheet' => 9,
+      'row' => 40,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '6b. 15-19 years old',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's9.Q41' => 
+    array (
+      'key' => 's9.Q41',
+      'sheet' => 9,
+      'row' => 41,
+      'side' => 'Q',
+      'section' => 'STH and leprosy',
+      'label' => '6c. 19 years old and above',
+      'context' => '10. 15-19 years old who were dewormed during July MDA',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A5' => 
+    array (
+      'key' => 's10.A5',
+      'sheet' => 10,
+      'row' => 5,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1. Pregnant women screened for syphilis - Total',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A6' => 
+    array (
+      'key' => 's10.A6',
+      'sheet' => 10,
+      'row' => 6,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1a. 10-14 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A5',
+      ),
+    ),
+    's10.A7' => 
+    array (
+      'key' => 's10.A7',
+      'sheet' => 10,
+      'row' => 7,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1b. 15-19 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A5',
+      ),
+    ),
+    's10.A8' => 
+    array (
+      'key' => 's10.A8',
+      'sheet' => 10,
+      'row' => 8,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1c. 20-49 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 20,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A5',
+      ),
+    ),
+    's10.A9' => 
+    array (
+      'key' => 's10.A9',
+      'sheet' => 10,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2. Pregnant women screened reactive for syphilis - Total',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A10' => 
+    array (
+      'key' => 's10.A10',
+      'sheet' => 10,
+      'row' => 10,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2a. 10-14 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A9',
+      ),
+    ),
+    's10.A11' => 
+    array (
+      'key' => 's10.A11',
+      'sheet' => 10,
+      'row' => 11,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2b. 15-19 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A9',
+      ),
+    ),
+    's10.A12' => 
+    array (
+      'key' => 's10.A12',
+      'sheet' => 10,
+      'row' => 12,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2c. 20-49 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 20,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A9',
+      ),
+    ),
+    's10.A13' => 
+    array (
+      'key' => 's10.A13',
+      'sheet' => 10,
+      'row' => 13,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '3. Pregnant women treated for syphilis - Total',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A14' => 
+    array (
+      'key' => 's10.A14',
+      'sheet' => 10,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '3a. 10-14 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A13',
+      ),
+    ),
+    's10.A15' => 
+    array (
+      'key' => 's10.A15',
+      'sheet' => 10,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '3b. 15-19 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A13',
+      ),
+    ),
+    's10.A16' => 
+    array (
+      'key' => 's10.A16',
+      'sheet' => 10,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '3c. 20-49 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 20,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A13',
+      ),
+    ),
+    's10.A17' => 
+    array (
+      'key' => 's10.A17',
+      'sheet' => 10,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '4. Pregnant women screened for HIV - Total',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A18' => 
+    array (
+      'key' => 's10.A18',
+      'sheet' => 10,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '4a. 10-14 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A17',
+      ),
+    ),
+    's10.A19' => 
+    array (
+      'key' => 's10.A19',
+      'sheet' => 10,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '4b. 15-19 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A17',
+      ),
+    ),
+    's10.A20' => 
+    array (
+      'key' => 's10.A20',
+      'sheet' => 10,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '4c. 20-49 years old',
+      'context' => 'F. HIV AIDS',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 20,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.A17',
+      ),
+    ),
+    's10.A23' => 
+    array (
+      'key' => 's10.A23',
+      'sheet' => 10,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1. Maternal Mortality - Total',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's11.A37',
+      ),
+    ),
+    's10.A24' => 
+    array (
+      'key' => 's10.A24',
+      'sheet' => 10,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => 'a. Direct',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.A23',
+      ),
+    ),
+    's10.A25' => 
+    array (
+      'key' => 's10.A25',
+      'sheet' => 10,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => 'a1. Resident',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.A24',
+      ),
+    ),
+    's10.A26' => 
+    array (
+      'key' => 's10.A26',
+      'sheet' => 10,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => 'a2. Non-Resident',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.A24',
+      ),
+    ),
+    's10.A27' => 
+    array (
+      'key' => 's10.A27',
+      'sheet' => 10,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => 'b. Indirect',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.A23',
+      ),
+    ),
+    's10.A28' => 
+    array (
+      'key' => 's10.A28',
+      'sheet' => 10,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => 'b1. Resident',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.A27',
+      ),
+    ),
+    's10.A29' => 
+    array (
+      'key' => 's10.A29',
+      'sheet' => 10,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => 'b2. Non-Resident',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.A27',
+      ),
+    ),
+    's10.A30' => 
+    array (
+      'key' => 's10.A30',
+      'sheet' => 10,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2. Total Deaths',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A31' => 
+    array (
+      'key' => 's10.A31',
+      'sheet' => 10,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '3. Underfive Deaths',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 4,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A32' => 
+    array (
+      'key' => 's10.A32',
+      'sheet' => 10,
+      'row' => 32,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '4. Underone Deaths',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.A33' => 
+    array (
+      'key' => 's10.A33',
+      'sheet' => 10,
+      'row' => 33,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '5. Infant Deaths',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's11.A38',
+      ),
+    ),
+    's10.A34' => 
+    array (
+      'key' => 's10.A34',
+      'sheet' => 10,
+      'row' => 34,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '6. Neonatal Deaths',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'max_days' => 27,
+    ),
+    's10.A35' => 
+    array (
+      'key' => 's10.A35',
+      'sheet' => 10,
+      'row' => 35,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '7. Perinatal Deaths - Total',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'derived_only' => true,
+    ),
+    's10.A36' => 
+    array (
+      'key' => 's10.A36',
+      'sheet' => 10,
+      'row' => 36,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '7a. Fetal Deaths',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'fetal_event',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'event_key' => true,
+      'subject_sex' => true,
+    ),
+    's10.A37' => 
+    array (
+      'key' => 's10.A37',
+      'sheet' => 10,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '7b. Early Neonatal Deaths',
+      'context' => 'Part I. Mortality',
+      'columns' => 
+      array (
+        0 => 'L',
+        1 => 'M',
+        2 => 'N',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'PHYSICIAN',
+        1 => 'NURSE',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.A35',
+      ),
+      'max_days' => 6,
+    ),
+    's10.Q4' => 
+    array (
+      'key' => 's10.Q4',
+      'sheet' => 10,
+      'row' => 4,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '5. Pregnant women screened negative for HIV - Total',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.Q5' => 
+    array (
+      'key' => 's10.Q5',
+      'sheet' => 10,
+      'row' => 5,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '5a. 10-14 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q4',
+      ),
+    ),
+    's10.Q6' => 
+    array (
+      'key' => 's10.Q6',
+      'sheet' => 10,
+      'row' => 6,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '5b. 15-19 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q4',
+      ),
+    ),
+    's10.Q7' => 
+    array (
+      'key' => 's10.Q7',
+      'sheet' => 10,
+      'row' => 7,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '5c. 20-49 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 20,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q4',
+      ),
+    ),
+    's10.Q8' => 
+    array (
+      'key' => 's10.Q8',
+      'sheet' => 10,
+      'row' => 8,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '6. Pregnant women screened for Hepatitis B - Total',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.Q9' => 
+    array (
+      'key' => 's10.Q9',
+      'sheet' => 10,
+      'row' => 9,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '6a. 10-14 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q8',
+      ),
+    ),
+    's10.Q10' => 
+    array (
+      'key' => 's10.Q10',
+      'sheet' => 10,
+      'row' => 10,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '6b. 15-19 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q8',
+      ),
+    ),
+    's10.Q11' => 
+    array (
+      'key' => 's10.Q11',
+      'sheet' => 10,
+      'row' => 11,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '6c. 20-49 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 20,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q8',
+      ),
+    ),
+    's10.Q12' => 
+    array (
+      'key' => 's10.Q12',
+      'sheet' => 10,
+      'row' => 12,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '7. Pregnant women screened reactive for Hepatitis B - Total',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.Q13' => 
+    array (
+      'key' => 's10.Q13',
+      'sheet' => 10,
+      'row' => 13,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '7a. 10-14 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 10,
+      'age_max' => 14,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q12',
+      ),
+    ),
+    's10.Q14' => 
+    array (
+      'key' => 's10.Q14',
+      'sheet' => 10,
+      'row' => 14,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '7b. 15-19 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 15,
+      'age_max' => 19,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q12',
+      ),
+    ),
+    's10.Q15' => 
+    array (
+      'key' => 's10.Q15',
+      'sheet' => 10,
+      'row' => 15,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '7c. 20-49 years old',
+      'context' => '',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MEDTECH',
+      ),
+      'age_min' => 20,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => true,
+      'parents' => 
+      array (
+        0 => 's10.Q12',
+      ),
+    ),
+    's10.Q23' => 
+    array (
+      'key' => 's10.Q23',
+      'sheet' => 10,
+      'row' => 23,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1. Live births (Total)',
+      'context' => 'Part II. Natality',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's10.Q24' => 
+    array (
+      'key' => 's10.Q24',
+      'sheet' => 10,
+      'row' => 24,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1a. Resident',
+      'context' => 'Part II. Natality',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.Q23',
+      ),
+    ),
+    's10.Q25' => 
+    array (
+      'key' => 's10.Q25',
+      'sheet' => 10,
+      'row' => 25,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '1b. Non-Resident',
+      'context' => 'Part II. Natality',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's10.Q23',
+      ),
+    ),
+    's10.Q27' => 
+    array (
+      'key' => 's10.Q27',
+      'sheet' => 10,
+      'row' => 27,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2a. <10 years old',
+      'context' => '2. Adolescent Birth',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'maternal_age' => true,
+      'mother_link' => true,
+    ),
+    's10.Q28' => 
+    array (
+      'key' => 's10.Q28',
+      'sheet' => 10,
+      'row' => 28,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2b. 10-14 years old',
+      'context' => '2. Adolescent Birth',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'maternal_age' => true,
+      'mother_link' => true,
+    ),
+    's10.Q29' => 
+    array (
+      'key' => 's10.Q29',
+      'sheet' => 10,
+      'row' => 29,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '2c. 15-19 years old',
+      'context' => '2. Adolescent Birth',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's11.A29',
+      ),
+      'maternal_age' => true,
+      'mother_link' => true,
+    ),
+    's10.Q31' => 
+    array (
+      'key' => 's10.Q31',
+      'sheet' => 10,
+      'row' => 31,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '3a. 10-14 years old',
+      'context' => '3. Repeat Adolescent Birth',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'maternal_age' => true,
+      'mother_link' => true,
+    ),
+    's10.Q32' => 
+    array (
+      'key' => 's10.Q32',
+      'sheet' => 10,
+      'row' => 32,
+      'side' => 'Q',
+      'section' => 'Maternal infection screening and vital statistics',
+      'label' => '3b. 15-19 years old',
+      'context' => '3. Repeat Adolescent Birth',
+      'columns' => 
+      array (
+        0 => 'AB',
+        1 => 'AC',
+        2 => 'AD',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'NURSE',
+        2 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'maternal_age' => true,
+      'mother_link' => true,
+    ),
+    's11.A27' => 
+    array (
+      'key' => 's11.A27',
+      'sheet' => 11,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '1. No. of WRA (15-49 y/o) using modern FP methods - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 15,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's11.A28' => 
+    array (
+      'key' => 's11.A28',
+      'sheet' => 11,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '2. No. of pregnant women with at least 4 prenatal check-ups - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => true,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'minimum_visits' => 4,
+    ),
+    's11.A29' => 
+    array (
+      'key' => 's11.A29',
+      'sheet' => 11,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '3. No. of livebirths among 15-19 y/o women - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'maternal_age' => true,
+      'mother_link' => true,
+    ),
+    's11.A30' => 
+    array (
+      'key' => 's11.A30',
+      'sheet' => 11,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '4. No. of livebirths with low birth weight - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'birth',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's11.A31' => 
+    array (
+      'key' => 's11.A31',
+      'sheet' => 11,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '5. No. of deliveries attended by skilled health professionals - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's11.A32' => 
+    array (
+      'key' => 's11.A32',
+      'sheet' => 11,
+      'row' => 32,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '6. No. of postpartum women together with their newborn who completed at least 2 postpartum check-ups - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'minimum_visits' => 2,
+    ),
+    's11.A33' => 
+    array (
+      'key' => 's11.A33',
+      'sheet' => 11,
+      'row' => 33,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '7. No. of health-facility based deliveries - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's11.A34' => 
+    array (
+      'key' => 's11.A34',
+      'sheet' => 11,
+      'row' => 34,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '8. No. of fully immunized children - Total',
+      'context' => 'Section B: Program F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's11.A37' => 
+    array (
+      'key' => 's11.A37',
+      'sheet' => 11,
+      'row' => 37,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '1. Maternal Deaths - Total',
+      'context' => 'Section C: Mortality F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 130,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's11.A38' => 
+    array (
+      'key' => 's11.A38',
+      'sheet' => 11,
+      'row' => 38,
+      'side' => 'A',
+      'section' => 'M2 F1 Plus',
+      'label' => '2. Infant Deaths - Total',
+      'context' => 'Section C: Mortality F1 PLUS Indicators',
+      'columns' => 
+      array (
+        0 => 'AG',
+        1 => 'AK',
+        2 => 'AO',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'NURSE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 0,
+      'age_max' => 0,
+      'age_unit' => 'years',
+      'female' => false,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+    's1.A14.opening' => 
+    array (
+      'key' => 's1.A14.opening',
+      'sheet' => 1,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '1. BTL - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A14.closing' => 
+    array (
+      'key' => 's1.A14.closing',
+      'sheet' => 1,
+      'row' => 14,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '1. BTL - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A15.opening' => 
+    array (
+      'key' => 's1.A15.opening',
+      'sheet' => 1,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '2. NSV - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A15.closing' => 
+    array (
+      'key' => 's1.A15.closing',
+      'sheet' => 1,
+      'row' => 15,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '2. NSV - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A16.opening' => 
+    array (
+      'key' => 's1.A16.opening',
+      'sheet' => 1,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '3. Condom - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A16.closing' => 
+    array (
+      'key' => 's1.A16.closing',
+      'sheet' => 1,
+      'row' => 16,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '3. Condom - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A17.opening' => 
+    array (
+      'key' => 's1.A17.opening',
+      'sheet' => 1,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '4. Pill - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A17.closing' => 
+    array (
+      'key' => 's1.A17.closing',
+      'sheet' => 1,
+      'row' => 17,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '4. Pill - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A18.opening' => 
+    array (
+      'key' => 's1.A18.opening',
+      'sheet' => 1,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'a. Pills-POP - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A17.opening',
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A18.closing' => 
+    array (
+      'key' => 's1.A18.closing',
+      'sheet' => 1,
+      'row' => 18,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'a. Pills-POP - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A17.closing',
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A19.opening' => 
+    array (
+      'key' => 's1.A19.opening',
+      'sheet' => 1,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'b. Pills-COC - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A17.opening',
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A19.closing' => 
+    array (
+      'key' => 's1.A19.closing',
+      'sheet' => 1,
+      'row' => 19,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'b. Pills-COC - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A17.closing',
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A20.opening' => 
+    array (
+      'key' => 's1.A20.opening',
+      'sheet' => 1,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '5. Injectables (DMPA) - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A20.closing' => 
+    array (
+      'key' => 's1.A20.closing',
+      'sheet' => 1,
+      'row' => 20,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '5. Injectables (DMPA) - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A21.opening' => 
+    array (
+      'key' => 's1.A21.opening',
+      'sheet' => 1,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '6. Implant - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A21.closing' => 
+    array (
+      'key' => 's1.A21.closing',
+      'sheet' => 1,
+      'row' => 21,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '6. Implant - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A22.opening' => 
+    array (
+      'key' => 's1.A22.opening',
+      'sheet' => 1,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'a. Implants-Interval - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A21.opening',
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A22.closing' => 
+    array (
+      'key' => 's1.A22.closing',
+      'sheet' => 1,
+      'row' => 22,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'a. Implants-Interval - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A21.closing',
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A23.opening' => 
+    array (
+      'key' => 's1.A23.opening',
+      'sheet' => 1,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'b. Implants-PP - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A21.opening',
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A23.closing' => 
+    array (
+      'key' => 's1.A23.closing',
+      'sheet' => 1,
+      'row' => 23,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'b. Implants-PP - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A21.closing',
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A24.opening' => 
+    array (
+      'key' => 's1.A24.opening',
+      'sheet' => 1,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '7. IUD - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A24.closing' => 
+    array (
+      'key' => 's1.A24.closing',
+      'sheet' => 1,
+      'row' => 24,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '7. IUD - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A25.opening' => 
+    array (
+      'key' => 's1.A25.opening',
+      'sheet' => 1,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'a. IUD-Interval - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A24.opening',
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A25.closing' => 
+    array (
+      'key' => 's1.A25.closing',
+      'sheet' => 1,
+      'row' => 25,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'a. IUD-Interval - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A24.closing',
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A26.opening' => 
+    array (
+      'key' => 's1.A26.opening',
+      'sheet' => 1,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'b. IUD-PP - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A24.opening',
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A26.closing' => 
+    array (
+      'key' => 's1.A26.closing',
+      'sheet' => 1,
+      'row' => 26,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => 'b. IUD-PP - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+        0 => 's1.A24.closing',
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A27.opening' => 
+    array (
+      'key' => 's1.A27.opening',
+      'sheet' => 1,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '8. NFP-LAM - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A27.closing' => 
+    array (
+      'key' => 's1.A27.closing',
+      'sheet' => 1,
+      'row' => 27,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '8. NFP-LAM - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A28.opening' => 
+    array (
+      'key' => 's1.A28.opening',
+      'sheet' => 1,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '9. NFP-BBT - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A28.closing' => 
+    array (
+      'key' => 's1.A28.closing',
+      'sheet' => 1,
+      'row' => 28,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '9. NFP-BBT - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A29.opening' => 
+    array (
+      'key' => 's1.A29.opening',
+      'sheet' => 1,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '10. NFP-CMM - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A29.closing' => 
+    array (
+      'key' => 's1.A29.closing',
+      'sheet' => 1,
+      'row' => 29,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '10. NFP-CMM - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A30.opening' => 
+    array (
+      'key' => 's1.A30.opening',
+      'sheet' => 1,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '11. NFP-STM - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A30.closing' => 
+    array (
+      'key' => 's1.A30.closing',
+      'sheet' => 1,
+      'row' => 30,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '11. NFP-STM - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A31.opening' => 
+    array (
+      'key' => 's1.A31.opening',
+      'sheet' => 1,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '12. NFP-SDM - opening current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'G',
+        1 => 'H',
+        2 => 'I',
+        3 => 'J',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'opening',
+    ),
+    's1.A31.closing' => 
+    array (
+      'key' => 's1.A31.closing',
+      'sheet' => 1,
+      'row' => 31,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '12. NFP-SDM - closing current-user register',
+      'context' => 'Verified register observation; no balance inferred from counseling',
+      'columns' => 
+      array (
+        0 => 'W',
+        1 => 'X',
+        2 => 'Y',
+        3 => 'Z',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+      'observation' => 'closing',
+    ),
+    's1.A9' => 
+    array (
+      'key' => 's1.A9',
+      'sheet' => 1,
+      'row' => 9,
+      'side' => 'A',
+      'section' => 'Family planning',
+      'label' => '1. No. of women of reproductive age (WRA) 15-49 years old who have demand for Family Planning (FP) and currently using, or whose partner is currently using, any modern FP methods',
+      'context' => 'Demand satisfied; explicit demand and current modern-method use documented',
+      'columns' => 
+      array (
+        0 => 'J',
+        1 => 'N',
+        2 => 'R',
+        3 => 'V',
+      ),
+      'unit' => 'resident',
+      'roles' => 
+      array (
+        0 => 'MIDWIFE',
+        1 => 'PHYSICIAN',
+      ),
+      'age_min' => 10,
+      'age_max' => 49,
+      'age_unit' => 'years',
+      'female' => true,
+      'pregnancy' => false,
+      'restricted' => false,
+      'parents' => 
+      array (
+      ),
+    ),
+  ),
+);

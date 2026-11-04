@@ -1,0 +1,27 @@
+{
+  "name": "ResiHUnity RHU Resident Portal",
+  "short_name": "ResiHUnity",
+  "id": "resihunity-resident-portal",
+  "description": "Nasugbu Rural Health Unit I digital resident health portal.",
+  "start_url": "LandingPage.php",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "orientation": "portrait-primary",
+  "categories": ["health", "medical", "government"],
+  "icons": [
+    {
+      "src": "assets/images/resihunity-icon-192-v2.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/resihunity-icon-512-v2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

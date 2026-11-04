@@ -1,0 +1,143 @@
+
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      .worker-login-shell {
+        position: relative;
+        overflow-x: hidden;
+        background: #f5f7ef;
+      }
+
+      .worker-login-shell::before {
+        content: "";
+        position: fixed;
+        inset: -1.5rem;
+        z-index: -2;
+        background: url("../assets/admin-municipal-background.png") center / cover no-repeat;
+        filter: blur(13px) saturate(.9);
+        transform: scale(1.04);
+      }
+
+      .worker-login-shell::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background:
+          linear-gradient(115deg, rgba(251, 250, 245, .92), rgba(255, 255, 255, .72) 44%, rgba(232, 241, 220, .86)),
+          radial-gradient(circle at 12% 18%, rgba(169, 200, 119, .35), transparent 24rem),
+          radial-gradient(circle at 88% 80%, rgba(40, 91, 45, .20), transparent 24rem);
+      }
+
+      .worker-brand-panel {
+        background:
+          linear-gradient(145deg, rgba(8, 40, 18, .92), rgba(40, 91, 45, .82)),
+          url("../assets/admin-municipal-background.png") center / cover no-repeat;
+      }
+
+      .worker-brand-panel::before {
+        content: "";
+        position: absolute;
+        width: 25rem;
+        height: 25rem;
+        right: -8rem;
+        top: -7rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, .92);
+      }
+
+      .worker-brand-panel::after {
+        content: "";
+        position: absolute;
+        width: 22rem;
+        height: 22rem;
+        left: -8rem;
+        bottom: -8rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, .12);
+        border: 1px solid rgba(255, 255, 255, .22);
+      }
+
+      .worker-form-panel {
+        background: rgba(250, 249, 243, .93);
+      }
+
+      .worker-form-panel::before {
+        content: "";
+        position: absolute;
+        width: 18rem;
+        height: 18rem;
+        right: -9rem;
+        top: -11rem;
+        border-radius: 999px;
+        background: linear-gradient(150deg, #285b2d, #7aa24b);
+        opacity: .95;
+      }
+
+      .worker-login-card {
+        background: rgba(255, 255, 255, .9);
+        border: 1px solid rgba(229, 234, 223, .95);
+        backdrop-filter: blur(14px);
+      }
+
+      @media (max-width: 767px) {
+        .worker-login-card {
+          border-radius: 1.25rem;
+          max-width: 24rem;
+        }
+
+        .worker-brand-panel {
+          min-height: 17.5rem;
+          padding: 1.35rem 1.45rem 1.25rem;
+        }
+
+        .worker-brand-panel::before {
+          width: 12rem;
+          height: 12rem;
+          right: -4.25rem;
+          top: -4.75rem;
+        }
+
+        .worker-brand-panel::after {
+          width: 15rem;
+          height: 15rem;
+          left: auto;
+          right: 4rem;
+          bottom: -8.5rem;
+        }
+
+        .worker-form-panel {
+          min-height: auto;
+          padding: 2.4rem 1.25rem 1.8rem;
+        }
+
+        .worker-form-panel::before {
+          width: 9rem;
+          height: 9rem;
+          right: -4.5rem;
+          top: -5.25rem;
+        }
+      }
+
+.admin-form-panel { color: #0d3518; }
+.admin-form-panel .text-white { color: #0d3518; }
+.admin-form-panel [class*="text-slate-"] { color: #66645f; }
+.admin-form-panel [class*="text-purple-"] { color: #166534; }
+.admin-form-panel [class*="bg-purple-"] { background: #f0fdf4; }
+.admin-form-panel [class*="border-purple-"] { border-color: #bbf7d0; }
+.admin-form-panel [class*="bg-slate-"] { background: #fff; }
+.admin-form-panel [class*="border-slate-"] { border-color: #e7e5e4; }
+.admin-form-panel input { background: #fff; color: #1c1917; border-color: #e7e5e4; }
+.admin-form-panel input:focus { border-color: #166534; box-shadow: 0 0 0 3px #dcfce7; }
+.admin-form-panel button[type="submit"], .admin-form-panel a[href="RHUAdminRegister.php"] { background: #052e16; color: #fff; }
+.admin-form-panel [class*="text-rose-"] { color: #be123c; }
+.admin-form-panel [class*="text-amber-"] { color: #166534; }
+.admin-form-panel [class*="bg-amber-"] { background: #fff; border-color: #bbf7d0; }
+.admin-form-panel h1 { font-size: 2.25rem; font-weight: 800; }
+.admin-form-panel a[href="BHWLogin.php"], .admin-form-panel a[href="BHWLogin.php"] + span { display: none; }
+.admin-form-panel { overflow-wrap: anywhere; }
+.admin-form-panel a[href="ResidentLogin.php"], .admin-form-panel .text-slate-700 { display: none; }
+.admin-form-panel .bg-purple-600 { background: #166534; color: #fff; }
+.admin-form-panel input::placeholder { color: #a8a29e; }
+.admin-form-panel a:hover { color: #14532d; }

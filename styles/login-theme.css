@@ -1,0 +1,248 @@
+/*
+ * Shared login theme aligned with the landing page.
+ * Loaded after Tailwind so it can gently override legacy blue/purple/dark variants.
+ */
+
+:root {
+  --login-ink: #172015;
+  --login-muted: #5f6b58;
+  --login-line: #e5eadf;
+  --login-paper: #faf9f3;
+  --login-soft: #f4f7ee;
+  --login-green: #285b2d;
+  --login-green-dark: #0d3518;
+  --login-green-deep: #082812;
+  --login-amber: #f59e0b;
+}
+
+body {
+  background:
+    radial-gradient(circle at 16% 8%, rgba(169, 200, 119, 0.22), transparent 28rem),
+    radial-gradient(circle at 88% 86%, rgba(40, 91, 45, 0.14), transparent 24rem),
+    linear-gradient(180deg, #fbfaf5 0%, #f6f7ef 100%) !important;
+  color: var(--login-ink) !important;
+}
+
+body > .fixed {
+  display: none !important;
+}
+
+header a,
+footer,
+p,
+label,
+.text-slate-300,
+.text-slate-400,
+.text-slate-500,
+.text-gray-400 {
+  color: var(--login-muted) !important;
+}
+
+h1,
+h2,
+.text-white {
+  color: var(--login-ink) !important;
+}
+
+header img {
+  border-radius: 50% !important;
+  background: #fff !important;
+  box-shadow: 0 10px 22px rgba(35, 56, 29, 0.08) !important;
+}
+
+header a:first-child span,
+.text-emerald-400,
+.text-blue-400,
+.text-purple-400,
+.text-green-400,
+.text-indigo-400,
+.text-teal-400 {
+  color: var(--login-green) !important;
+}
+
+header a:last-child,
+a[href="LandingPage.php"]:not(:first-child) {
+  background: rgba(255, 255, 255, 0.78) !important;
+  border: 1px solid var(--login-line) !important;
+  color: var(--login-green-dark) !important;
+  border-radius: 10px !important;
+}
+
+.rounded-3xl.border,
+.rounded-2xl.border,
+.bg-white\/5 {
+  background: rgba(255, 255, 255, 0.82) !important;
+  border-color: var(--login-line) !important;
+  box-shadow: 0 22px 54px rgba(35, 56, 29, 0.1) !important;
+}
+
+.bg-slate-900\/90,
+.bg-slate-900,
+.bg-slate-800,
+.bg-white\/10,
+.hover\:bg-white\/10:hover,
+.hover\:bg-slate-800:hover {
+  background-color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.border-slate-800,
+.border-slate-700,
+.border-white\/10 {
+  border-color: var(--login-line) !important;
+}
+
+.inline-flex.rounded-full,
+.bg-emerald-500\/10,
+.bg-blue-500\/10,
+.bg-purple-500\/10,
+.bg-yellow-500\/15,
+.bg-emerald-900\/30 {
+  background: #eef5e5 !important;
+  border-color: #dbe8cf !important;
+  color: var(--login-green) !important;
+}
+
+.bg-amber-500\/10,
+.bg-yellow-500\/10 {
+  background: #fff7df !important;
+  border-color: #f2d891 !important;
+  color: #7a4a05 !important;
+}
+
+.bg-rose-500\/10 {
+  background: #fff1f2 !important;
+  border-color: #fecdd3 !important;
+  color: #be123c !important;
+}
+
+input,
+select,
+textarea {
+  background: #ffffff !important;
+  border-color: #dce4d4 !important;
+  color: var(--login-ink) !important;
+  border-radius: 10px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8b957f !important;
+}
+
+option {
+  background: #ffffff !important;
+  color: var(--login-ink) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--login-green) !important;
+  box-shadow: 0 0 0 3px rgba(40, 91, 45, 0.16) !important;
+}
+
+button[type="submit"],
+a[href="RHUAdminRegister.php"],
+.bg-gradient-to-r,
+.bg-gradient-to-br {
+  background-image: none !important;
+}
+
+button[type="submit"],
+a[href="RHUAdminRegister.php"] {
+  background-color: var(--login-green-dark) !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 16px 32px rgba(13, 53, 24, 0.2) !important;
+}
+
+button[type="submit"]:hover,
+a[href="RHUAdminRegister.php"]:hover {
+  background-color: var(--login-green-deep) !important;
+}
+
+a[href="ResidentLogin.php"].text-xs,
+a[href="ResidentLogin.php"].w-full,
+a[href="BHWLogin.php"].w-full,
+a[href="RHULogin.php"].w-full {
+  background: rgba(255, 255, 255, 0.82) !important;
+  border: 1px solid var(--login-line) !important;
+  color: var(--login-green-dark) !important;
+  border-radius: 10px !important;
+}
+
+.max-w-xl .rounded-3xl,
+.max-w-lg.rounded-3xl {
+  background: rgba(255, 255, 255, 0.84) !important;
+  border-color: var(--login-line) !important;
+  box-shadow: 0 22px 54px rgba(35, 56, 29, 0.1) !important;
+}
+
+.max-w-xl textarea,
+.max-w-xl input,
+.max-w-xl select,
+.max-w-lg input {
+  background: #ffffff !important;
+  border-color: #dce4d4 !important;
+  color: var(--login-ink) !important;
+}
+
+.max-w-xl label,
+.max-w-lg label {
+  color: var(--login-muted) !important;
+}
+
+.max-w-xl .border-t,
+.max-w-lg .border-t {
+  border-color: var(--login-line) !important;
+}
+
+a,
+button#togglePwd,
+.hover\:text-emerald-300:hover,
+.hover\:text-blue-300:hover,
+.hover\:text-purple-300:hover {
+  color: var(--login-green) !important;
+}
+
+.text-slate-700 {
+  color: #b8c2ae !important;
+}
+
+.w-16.h-16,
+.w-8.h-8,
+.h-5.w-5,
+.h-6.w-6 {
+  color: var(--login-green) !important;
+}
+
+.w-16.h-16 {
+  background: #eef5e5 !important;
+  border: 1px solid #dbe8cf !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--login-green);
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 18px 16px !important;
+  }
+
+  header .text-xl,
+  .text-3xl {
+    font-size: 1.15rem !important;
+  }
+
+  main {
+    padding-inline: 14px !important;
+  }
+
+  .rounded-3xl.border {
+    border-radius: 16px !important;
+    padding: 20px !important;
+  }
+}

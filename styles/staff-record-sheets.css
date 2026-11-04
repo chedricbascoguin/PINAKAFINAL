@@ -1,0 +1,52 @@
+
+
+.history-entry{margin:14px 0}.history-entry article{padding:0;border-top:0}.dental-exam-sheet{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);border:1px solid #e4c8b8;border-radius:14px;background:#fffcf7;overflow:hidden}.dental-sheet-chart{padding:18px 14px;border-right:3px double #c47b5e}.dental-sheet-chart svg{display:block;width:100%;max-width:350px;margin:auto}.dental-sheet-label,.record-quadrant{color:#a65e42;fill:#a65e42;font:700 10px system-ui,sans-serif;letter-spacing:.5px;text-transform:uppercase}.dental-sheet-label{text-align:center;margin:0 0 8px}.record-tooth-number{fill:#704c3c;font:700 12px system-ui,sans-serif}.dental-sheet-details{padding:20px;min-width:0}.dental-sheet-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.dental-sheet-heading h3{margin:0;color:#a65e42;font-size:16px;letter-spacing:1px;text-transform:uppercase}.sheet-status{border-radius:20px;padding:5px 10px;background:#e9f8f1;color:#086349;font-size:11px;font-weight:700}.sheet-visit{display:block}.sheet-visit>div{display:flex;gap:16px;border-bottom:1px solid #e4c8b8;padding:8px 0}.sheet-visit dt{width:60px;color:#a65e42;font-size:11px}.sheet-visit dd{font-size:13px}.dental-sheet-section{margin-top:16px}.dental-sheet-section h4{margin:0 0 6px;color:#a65e42;font-size:11px;text-transform:uppercase}.dental-sheet-section p{margin:0;font-size:13px;line-height:1.7;white-space:pre-line;overflow-wrap:anywhere}.sheet-observations{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.sheet-observations>div{flex:1;padding:10px;border:1px solid #ead8cc;border-radius:8px;min-width:85px}.sheet-observations dt{font-size:10px;color:#93624d}.sheet-observations dd{font-size:12px;font-weight:700;margin-top:5px}.dental-sheet-footer{margin:14px 0 0;color:#a65e42;font-size:9px;text-transform:uppercase}.sheet-color-key{display:flex;flex-wrap:wrap;gap:8px;font-size:9px;color:#704c3c}.sheet-color-key span:before{content:'';display:inline-block;width:7px;height:7px;margin-right:3px;border-radius:50%;background:var(--key)}
+.service-record-sheet,.dental-prescription-sheet{border:1px solid #e4c8b8;border-radius:12px;background:#fffcf7;overflow:hidden}.history-entry .service-record-sheet{padding:18px 20px}.sheet-record-subtitle,.dental-rx-record-info{font-size:12px;margin:0 0 12px;color:#64748b}.service-record-fields{display:block}.service-record-fields>div{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #eeded3}.service-record-fields dt{font-size:11px;color:#93624d;text-transform:uppercase}.service-record-fields dd{font-size:13px;line-height:1.6;white-space:pre-line;overflow-wrap:anywhere}.dental-prescription-sheet{max-width:640px;margin-inline:auto}.dental-prescription-sheet .dental-sheet-details{padding:16px}.dental-rx-medicine{display:flex;align-items:center;gap:10px}.dental-rx-symbol{font:italic 26px Georgia,serif;color:#a65e42}.dental-rx-name{font-size:15px!important;font-weight:700}.dental-rx-directions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin-top:12px}.dental-rx-directions dt{font-size:10px;color:#a65e42;text-transform:uppercase}.dental-rx-directions dd{font-size:12px;margin-top:3px}.dental-prescription-embedded{border:0;border-top:1px solid #e4c8b8;border-radius:0;margin-top:16px;padding-top:12px!important;box-shadow:none}.dental-prescription-embedded .dental-sheet-details{padding:0}.dental-prescription-embedded .dental-sheet-heading h3{font-size:12px}.dental-sheet-patient{display:block}.dental-sheet-patient>div{display:flex;gap:12px;padding:5px 0}.dental-sheet-patient dt{font-size:10px;width:65px}.dental-sheet-patient dd{font-size:12px}.back-button{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border:1px solid #c4d8d1;border-radius:9px;background:white;color:#0f766e;text-decoration:none;font-size:13px;font-weight:700;margin-bottom:12px}.page-heading{display:flex;align-items:start;justify-content:space-between;gap:16px}.page-heading h1{font-size:25px}.patient p{font-size:13px}body>main{max-width:1100px}header,section,.patient{padding:18px}section.history-section{background:transparent;border:0;padding:0}.history-section>h2{font-size:17px;margin:16px 0 8px}.staff-record-search{margin-bottom:12px}@media(max-width:700px){.dental-exam-sheet{grid-template-columns:1fr}.dental-sheet-chart{border-right:0;border-bottom:3px double #c47b5e}.dental-sheet-details{padding:16px}.service-record-fields>div{grid-template-columns:1fr;gap:4px}.page-heading{flex-direction:column}}@media print{header,.back-button,.staff-record-search{display:none}.history-entry{break-inside:avoid}main{padding:0}.dental-exam-sheet,.service-record-sheet,.dental-prescription-sheet{box-shadow:none}}
+/* One compact sheet: chart and exam above, prescriptions across the bottom. */
+.history-entry .dental-exam-sheet{max-width:920px;margin-inline:auto;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:0;border:1px solid #e4c8b8;background:#fffcf7;overflow:hidden;align-items:start}
+.history-entry .dental-exam-sheet>.dental-sheet-chart{padding:16px;border-right:1px solid #e4c8b8}
+.history-entry .dental-exam-sheet>.dental-sheet-details{padding:16px}
+.history-entry .dental-sheet-chart svg{max-width:260px;height:auto}
+.history-entry .sheet-color-key{justify-content:center;gap:6px;margin-top:8px}
+.sheet-prescriptions{grid-column:1/-1;padding:0 16px 14px}
+.history-entry .sheet-prescriptions .dental-prescription-embedded{max-width:none;border:0;border-top:1px solid #e4c8b8;border-radius:0;margin:0;padding-top:12px!important;background:transparent}
+.sheet-prescriptions .dental-prescription-embedded+.dental-prescription-embedded{margin-top:12px}
+.sheet-prescriptions .dental-sheet-details{display:grid;grid-template-columns:minmax(180px,1fr) minmax(0,1.5fr);column-gap:24px;padding:0}
+.sheet-prescriptions .dental-sheet-heading,.sheet-prescriptions .dental-rx-record-info,.sheet-prescriptions .dental-sheet-footer{grid-column:1/-1}
+.sheet-prescriptions .dental-sheet-heading{margin-bottom:4px}
+.sheet-prescriptions .dental-rx-record-info{font-size:11px;margin-bottom:4px}
+.sheet-prescriptions .dental-sheet-section{margin-top:8px}
+.sheet-prescriptions .dental-sheet-section p{line-height:1.45}
+.history-entry .sheet-prescriptions .dental-rx-directions{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 12px;margin-top:8px}
+.sheet-prescriptions .dental-sheet-footer{margin-top:10px}
+@media(max-width:700px){.history-entry .dental-exam-sheet{grid-template-columns:1fr}.history-entry .dental-exam-sheet>.dental-sheet-chart{border-right:0;border-bottom:1px solid #e4c8b8}.sheet-prescriptions .dental-sheet-details{display:block}.history-entry .sheet-prescriptions .dental-rx-directions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Patient history page */
+.records-page{background:#f3f7f7;color:#193b36}
+.records-page>main{max-width:1060px;padding:24px 22px}
+.records-page .records-header{padding:22px 24px;margin-bottom:14px;border-radius:16px;box-shadow:0 3px 14px #163b3305}
+.records-header-top{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.records-eyebrow{display:block;color:#0f766e;font-size:10px;font-weight:750;letter-spacing:1.3px;margin-bottom:5px}
+.records-header h1{font-size:25px;letter-spacing:-.6px;margin:0}
+.records-header p{font-size:13px;margin:6px 0 0;color:#70847e}
+.records-header .back-button{margin:0;white-space:nowrap;font-size:12px;background:#f7fbfa}
+.records-page .patient-search{display:block;border-top:1px solid #edf2f0;margin-top:18px;padding-top:14px}
+.patient-search label{display:block;font-size:11px;font-weight:700;color:#526d65;margin-bottom:6px}
+.patient-search>div{display:flex;gap:8px;max-width:620px}
+.records-page .patient-search input{min-width:0;background:#f8fbfa;font-size:13px;padding:10px 12px}
+.records-page .patient-search button{font-size:13px;padding:10px 20px;font-weight:650}
+.records-page .patient{display:flex;align-items:center;gap:14px;padding:16px 20px;margin-bottom:14px;border-left:4px solid #0f766e;border-radius:12px}
+.patient-avatar{display:grid;place-items:center;width:46px;height:46px;flex-shrink:0;border-radius:13px;background:#e6f5ef;color:#0f766e;font-size:16px;font-weight:750}
+.patient-identity{min-width:0;flex:1}.patient-identity h2{font-size:18px;margin:0;overflow-wrap:anywhere;letter-spacing:-.3px}
+.patient-identity .records-eyebrow{font-size:9px;margin-bottom:3px}
+.records-page .patient-identity p{display:flex;flex-wrap:wrap;gap:14px;margin:5px 0 0;font-size:12px;color:#70847e}
+.patient-id{padding:6px 10px;border:1px solid #cce6dc;border-radius:7px;color:#0f766e;background:#f1faf6;font-size:12px;font-weight:700;white-space:nowrap}
+.records-page .history-section>h2{font-size:15px;margin:16px 0 10px}
+.records-page .staff-record-search{padding:12px 14px;margin:0 0 12px;background:white;border-radius:10px}
+.records-page .staff-record-search label{font-size:12px;margin-bottom:6px}
+.records-page .staff-record-search input{padding:8px 10px;font-size:12px;max-width:420px}
+.records-page .staff-record-search button{padding:8px 12px;font-size:12px}
+.records-page .staff-record-search small{display:none}
+.records-page input:focus-visible{outline:2px solid #0f766e;outline-offset:2px}
+@media(max-width:600px){.records-page>main{padding:16px 12px}.records-page .records-header{padding:18px}.records-header-top{flex-direction:column-reverse;align-items:start;gap:14px}.records-header h1{font-size:23px}.records-page .patient{flex-wrap:wrap;padding:14px}.patient-identity h2{font-size:16px}.patient-id{margin-left:60px}}
+@media print{.records-page .patient-avatar{display:none}.records-page .patient{border:0;padding:0}}

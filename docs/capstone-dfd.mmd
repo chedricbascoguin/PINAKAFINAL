@@ -1,0 +1,46 @@
+flowchart LR
+    A["RHU ADMINISTRATOR"]
+    P1("Process 1 - Manage User Registration and Resident Profile")
+    P6("Process 6 - Generate Reports and Monitoring Outputs")
+    R["PATIENT / RESIDENT"]
+    D4[("D4 User Accounts")]
+    D1[("D1 Resident Record")]
+    D3[("D3 Consultation / Service Transaction Log")]
+    P3("Process 3 - Predict Health Service Demand / Patient Follow-up Needed")
+    P4("Process 4 - Process Service Request and Send Notification")
+    D2[("D2 Health Service Requests")]
+    P2("Process 2 - Receive Health Service Requests and Validate / Approve")
+    W["RHU PERSONNEL / HEALTH WORKER"]
+    P5("Process 5 - Compute Location-Based Route / Service Schedule")
+    P7("Process 7 - Record Service Outcomes and RHU Services Coordination")
+    A -->|Resident Updates| P1
+    P1 -->|Update Confirmation| A
+    R -->|Registration and Profile Updates| P1
+    P1 -->|Account Credentials and User Role| D4
+    P1 -->|Resident Profile Record| D1
+    A -->|Report Request Parameters| P6
+    P6 -->|System Reports| A
+    D1 -->|Resident Summary| P6
+    D3 -->|Transaction Log| P6
+    P3 -->|Predicted Demand / Follow-up Summary| P6
+    D1 -->|Resident Health Attributes| P3
+    D3 -->|Consultation / Service History| P3
+    R -->|Health Service Request / Concern| P4
+    D1 -->|Resident Contact Details| P4
+    P4 -->|Submitted Request| D2
+    D2 -->|Request Decision / Service Status| P4
+    P4 -->|Health Service Notification| R
+    D2 -->|Pending Request Record| P2
+    W -->|Approval Decision / Remarks| P2
+    P2 -->|Approval / Rejection Status| D2
+    P4 -->|Service Coordination Details| W
+    R -->|Location Input| P5
+    D2 -->|Approved Requests / Schedule Inputs| P5
+    P5 -->|Route / Schedule Result| W
+    P5 -->|Scheduled Request Details| D2
+    P2 -->|Approved Request Details| P7
+    W -->|Service Status / Consultation Details| P7
+    P7 -->|Service Coordination| W
+    P7 -->|Consultation / Service Records| D3
+    P7 -->|Service Completion Status| D2
+    P2 -->|Request Assessment Details| W

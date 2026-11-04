@@ -1,0 +1,16 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+const context = { module: { exports: {} } };
+vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../staff-record-search.js'), 'utf8'), context);
+const { matches, normalize } = context.module.exports;
+assert(matches('Maria Dela Cruz | Dental | Scheduled | 2026-10-15', 'maria scheduled'));
+assert(matches('Jos\u00e9 Ni\u00f1o', 'JOSE nino'));
+assert(matches('Blood pressure 120/80', '120/80'));
+assert(matches('Patient #34', '  '));
+assert(matches('Dental 2026-10-15', '2026-10-15'));
+assert(!matches('Maria Dela Cruz | Completed', 'maria scheduled'));
+assert(!matches('Patient #34', '#35'));
+assert.equal(normalize('  Follow-up   CHECK-UP '), 'follow-up check-up');
+console.log('Search matching passed: multiple words, accents, case, whitespace, dates and literal punctuation.');

@@ -1,0 +1,34 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const source = fs.readFileSync(path.join(__dirname, '../assets/js/family-planning-client-type.js'), 'utf8');
+function setup(entries = [], available = true) {
+  const field = value => ({value, hidden:true, events:{}, addEventListener(name, cb) { this.events[name] = cb; }});
+  const fields = {resident_id:field('40'), contraceptive_method:field('Pills-POP'), last_supply_date:field('2026-11-04'), acceptor_type:field('')};
+  const message = {textContent:''}, reset = field('');
+  const form = {elements:{namedItem:name => fields[name]}, querySelector:selector => selector === '[data-fp-type-message]' ? message : reset};
+  const data = {available, entries, methods:['Pills-POP','Condom']};
+  vm.runInNewContext(source, {document:{querySelector:()=>form, getElementById:()=>({textContent:JSON.stringify(data)})}});
+  return {fields, message, reset, change(name, value) { fields[name].value = value; fields[name].events.change(); }};
+}
+const entry = extra => ({resident_id:40,date:'2026-10-01',method:'Pills-POP',dropout:false,id:1,source:'consultations',...extra});
+assert.equal(setup().fields.acceptor_type.value, 'New Acceptor');
+assert.equal(setup([entry({})]).fields.acceptor_type.value, 'Continuing User');
+assert.equal(setup([entry({method:'Condom'})]).fields.acceptor_type.value, 'Changing Method');
+assert.equal(setup([entry({dropout:true})]).fields.acceptor_type.value, 'Restarting User');
+assert.equal(setup([entry({method:'Pills (unknown)'})]).fields.acceptor_type.value, '', 'Unknown previous subtype cannot imply a new acceptor or method switch');
+assert.equal(setup([entry({date:'2026-12-01'})]).fields.acceptor_type.value, 'New Acceptor', 'Future visits cannot classify an earlier service');
+assert.equal(setup([entry({resident_id:99})]).fields.acceptor_type.value, 'New Acceptor', 'Another resident cannot affect the result');
+assert.equal(setup([],false).fields.acceptor_type.value, '', 'Failed history lookup cannot imply a new acceptor');
+const ui = setup([entry({})]);
+ui.change('acceptor_type','Changing Clinic');
+ui.change('contraceptive_method','Condom');
+assert.equal(ui.fields.acceptor_type.value,'Changing Clinic','Staff override survives method changes');
+ui.reset.events.click();
+assert.equal(ui.fields.acceptor_type.value,'Changing Method');
+ui.change('last_supply_date','2026-09-01');
+assert.equal(ui.fields.acceptor_type.value,'New Acceptor');
+ui.change('resident_id','');
+assert.equal(ui.fields.acceptor_type.value,'','Clearing resident clears previous suggestion');
+console.log('Client type checks passed: history, method changes, dropout, dates, resident isolation, incomplete history, and manual overrides.');

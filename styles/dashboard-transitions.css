@@ -1,0 +1,59 @@
+/* Shared by staff, administrator and resident dashboards. Keep real page
+   navigation so page scripts, forms, permissions and browser history still run. */
+@view-transition {
+  navigation: auto;
+}
+
+main {
+  view-transition-name: dashboard-content;
+}
+
+::view-transition-group(dashboard-content) {
+  animation-duration: 220ms;
+  animation-timing-function: cubic-bezier(.2, .8, .2, 1);
+}
+
+/* Keep the surrounding navigation steady while the content changes. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(dashboard-content) {
+  animation: dashboard-content-out 100ms ease-out both;
+}
+
+::view-transition-new(dashboard-content) {
+  animation: dashboard-content-in 220ms cubic-bezier(.2, .8, .2, 1) both;
+}
+
+/* Also covers resident tabs which reveal an existing panel without a reload.
+   Avoid opacity:0 or animation delays: content is usable immediately. */
+[data-tab-panel]:not(.hidden):not([hidden]) {
+  animation: dashboard-content-in 220ms cubic-bezier(.2, .8, .2, 1) both !important;
+}
+
+@keyframes dashboard-content-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dashboard-content-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+
+  [data-tab-panel]:not(.hidden):not([hidden]) {
+    animation: none !important;
+  }
+}
+
+@media print {
+  [data-tab-panel]:not(.hidden):not([hidden]) {
+    animation: none !important;
+  }
+}

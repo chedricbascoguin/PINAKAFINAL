@@ -1,0 +1,1558 @@
+:root {
+  --admin-brand-50: #ecfdf5;
+  --admin-brand-100: #d1fae5;
+  --admin-brand-200: #a7f3d0;
+  --admin-brand-500: #10b981;
+  --admin-brand-600: #059669;
+  --admin-brand-700: #047857;
+  --admin-brand-800: #065f46;
+  --admin-brand-900: #064e3b;
+  --admin-ink: #0f172a;
+  --admin-muted: #64748b;
+  --admin-line: #e2e8f0;
+  --admin-canvas: #f6f9f8;
+}
+
+body.rhu-admin-ui {
+  min-width: 320px;
+  background:
+    linear-gradient(135deg, rgba(241, 250, 247, .93), rgba(236, 253, 245, .86) 48%, rgba(240, 249, 255, .91)),
+    url("../../../assets/admin-municipal-background.png") center / cover fixed no-repeat,
+    var(--admin-canvas);
+  color: var(--admin-ink);
+}
+
+body.rhu-admin-ui::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 255, 255, .72), transparent 32rem),
+    linear-gradient(to bottom, rgba(255, 255, 255, .08), rgba(6, 78, 59, .05));
+}
+
+.rhu-admin-ui>.min-h-screen {
+  position: relative;
+  z-index: 1;
+}
+
+.rhu-admin-ui .admin-shell-header {
+  background: linear-gradient(105deg, var(--admin-brand-900), var(--admin-brand-800) 55%, #155e75) !important;
+  border-bottom: 1px solid rgba(167, 243, 208, .22);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, .14);
+}
+
+.rhu-admin-ui .admin-brand-logo {
+  width: 42px;
+  height: 42px;
+  padding: 2px;
+  border: 2px solid rgba(255, 255, 255, .72);
+  border-radius: 12px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 7px 18px rgba(15, 23, 42, .2);
+}
+
+.rhu-admin-ui .admin-shell-header [class*="bg-purple-"],
+.rhu-admin-ui .admin-shell-header [class*="text-purple-"] {
+  border-color: rgba(255, 255, 255, .2) !important;
+  background-color: rgba(255, 255, 255, .13) !important;
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer {
+  border-color: var(--admin-line);
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:first-child {
+  background: linear-gradient(135deg, var(--admin-brand-50), #fff);
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:first-child>div>span {
+  background: var(--admin-brand-700) !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav {
+  padding: 1rem;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav::-webkit-scrollbar-thumb {
+  background-color: var(--admin-brand-200);
+  border-radius: 999px;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav section {
+  margin-bottom: 1.35rem;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav h2 {
+  color: var(--admin-brand-700);
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a {
+  min-height: 3rem;
+  border: 1px solid transparent;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a:hover {
+  border-color: var(--admin-brand-100);
+  background: var(--admin-brand-50) !important;
+  color: var(--admin-brand-800) !important;
+  transform: translateX(3px);
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a[aria-current="page"] {
+  border-color: var(--admin-brand-200);
+  background: var(--admin-brand-50) !important;
+  color: var(--admin-brand-900) !important;
+  box-shadow: inset 3px 0 0 var(--admin-brand-600);
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a[aria-current="page"]>span:first-child {
+  background: var(--admin-brand-700) !important;
+}
+
+.rhu-admin-ui .admin-main {
+  width: min(100%, 1600px);
+  max-width: none !important;
+  margin-inline: auto;
+  padding: 1.25rem clamp(1rem, 2.2vw, 2rem) 2.5rem;
+}
+
+.rhu-admin-ui .admin-main>section,
+.rhu-admin-ui .admin-main>div {
+  position: relative;
+}
+
+.rhu-admin-ui .admin-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--admin-line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.rhu-admin-ui .admin-main .bg-white {
+  background-color: rgba(255, 255, 255, .93) !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, .07);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 767px) {
+  body.rhu-admin-ui {
+    background-position: 58% center;
+    background-attachment: scroll;
+  }
+}
+
+.rhu-admin-ui .admin-page-heading-icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  place-items: center;
+  border-radius: .85rem;
+  background: var(--admin-brand-50);
+  color: var(--admin-brand-700);
+  box-shadow: inset 0 0 0 1px var(--admin-brand-100);
+}
+
+.rhu-admin-ui .admin-page-heading h2 {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 850;
+  letter-spacing: -.02em;
+}
+
+.rhu-admin-ui .admin-page-heading p {
+  margin-top: .2rem;
+  color: var(--admin-muted);
+  font-size: .78rem;
+}
+
+.rhu-admin-ui .admin-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  flex: 0 0 auto;
+  padding: .5rem .7rem;
+  border: 1px solid var(--admin-brand-200);
+  border-radius: 999px;
+  background: var(--admin-brand-50);
+  color: var(--admin-brand-800);
+  font-size: .68rem;
+  font-weight: 800;
+}
+
+.rhu-admin-ui .admin-live-badge::before {
+  content: "";
+  width: .45rem;
+  height: .45rem;
+  border-radius: 999px;
+  background: var(--admin-brand-500);
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, .12);
+}
+
+.rhu-admin-ui .admin-main :is(.rounded-xl, .rounded-2xl).bg-white {
+  border-color: var(--admin-line);
+  box-shadow: 0 5px 18px rgba(15, 23, 42, .04);
+}
+
+.rhu-admin-ui .admin-main :is(.rounded-xl, .rounded-2xl).bg-white:hover {
+  transform: translateY(-1px);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, .07);
+}
+
+.rhu-admin-ui .admin-main table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.rhu-admin-ui .admin-main table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f8fafc;
+}
+
+.rhu-admin-ui .admin-main table th {
+  padding-block: .75rem;
+  color: #475569;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.rhu-admin-ui .admin-main table td {
+  padding-block: .8rem;
+  vertical-align: middle;
+}
+
+.rhu-admin-ui .admin-main table tbody tr {
+  transition: background-color 150ms ease;
+}
+
+.rhu-admin-ui .admin-main table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.rhu-admin-ui .admin-main .overflow-x-auto {
+  border-radius: .8rem;
+}
+
+.rhu-admin-ui .admin-main .overflow-x-auto::-webkit-scrollbar {
+  height: .4rem;
+  width: .4rem;
+}
+
+.rhu-admin-ui .admin-main .overflow-x-auto::-webkit-scrollbar-thumb {
+  background: var(--admin-brand-200);
+  border-radius: 999px;
+}
+
+.rhu-admin-ui .admin-main table+*,
+.rhu-admin-ui .admin-main [class*="border-b"][class*="bg-gray-50"] {
+  border-color: var(--admin-line);
+}
+
+.rhu-admin-ui .admin-main :is(input, select, textarea) {
+  min-height: 2.7rem;
+  border-color: #cbd5e1;
+  background: #fff;
+}
+
+.rhu-admin-ui .admin-main textarea {
+  min-height: 5rem;
+}
+
+.rhu-admin-ui .admin-main label {
+  color: #334155;
+  font-weight: 700;
+}
+
+.rhu-admin-ui :is(button, a):focus-visible {
+  outline: 3px solid rgba(16, 185, 129, .32);
+  outline-offset: 3px;
+}
+
+.rhu-admin-ui details {
+  border-color: var(--admin-line) !important;
+  background: #fff;
+}
+
+.rhu-admin-ui details summary {
+  min-height: 3rem;
+}
+
+.rhu-admin-ui .scroll-top-button {
+  background: var(--admin-brand-700) !important;
+  color: #fff !important;
+}
+
+@media (max-width: 767px) {
+  .rhu-admin-ui .admin-shell-header>div {
+    padding-block: .65rem;
+  }
+
+  .rhu-admin-ui .admin-brand-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .rhu-admin-ui .admin-main {
+    padding-top: .9rem;
+  }
+
+  .rhu-admin-ui .admin-page-heading {
+    align-items: flex-start;
+    padding: .9rem;
+  }
+
+  .rhu-admin-ui .admin-live-badge {
+    padding: .4rem;
+    font-size: 0;
+  }
+
+  .rhu-admin-ui .admin-main :is(.rounded-xl, .rounded-2xl).bg-white {
+    padding: .9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .rhu-admin-ui .admin-shell-header h1 {
+    font-size: .95rem;
+  }
+
+  .rhu-admin-ui .admin-shell-header p {
+    max-width: 12rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .rhu-admin-ui .admin-page-heading-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-basis: 2.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .rhu-admin-ui *,
+  .rhu-admin-ui *::before,
+  .rhu-admin-ui *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/*
+ * Unified admin + RHU clinical dashboard skin aligned with the landing page.
+ */
+
+body.rhu-admin-ui {
+  --dash-pink: #0d3518;
+  --dash-purple: #285b2d;
+  --dash-cyan: #a9c877;
+  --dash-amber: #d7efb4;
+  --dash-orange: #8f3f18;
+  --dash-ink: #172015;
+  --dash-muted: #5f6b58;
+  --dash-line: #e5eadf;
+  --dash-canvas: #faf9f3;
+  --dash-soft: #f4f7ee;
+  --dash-deep: #082812;
+  background: var(--dash-canvas) !important;
+}
+
+body.rhu-admin-ui::before {
+  background:
+    radial-gradient(circle at 88% 10%, rgba(169, 200, 119, .18), transparent 22rem),
+    radial-gradient(circle at 8% 78%, rgba(40, 91, 45, .10), transparent 22rem) !important;
+}
+
+.rhu-admin-ui>.min-h-screen {
+  min-height: 100vh;
+}
+
+.rhu-admin-ui .admin-shell-header {
+  top: 0;
+  background: rgba(255, 255, 255, .96) !important;
+  border-bottom: 1px solid var(--dash-line) !important;
+  color: var(--dash-ink) !important;
+  box-shadow: 0 8px 22px rgba(13, 53, 24, .06) !important;
+}
+
+.rhu-admin-ui .admin-shell-header,
+.rhu-admin-ui .admin-main {
+  transition: margin-left .25s ease, width .25s ease;
+}
+
+.rhu-admin-ui .admin-shell-header h1,
+.rhu-admin-ui .admin-shell-header p,
+.rhu-admin-ui .admin-shell-header span,
+.rhu-admin-ui .admin-shell-header a,
+.rhu-admin-ui .admin-shell-header button {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-shell-header [class*="bg-white/10"],
+.rhu-admin-ui .admin-shell-header a,
+.rhu-admin-ui .admin-shell-header button {
+  background: #fff !important;
+  border-color: var(--dash-line) !important;
+}
+
+.rhu-admin-ui .admin-shell-header .staff-logout-trigger {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-brand-logo {
+  border-radius: 50%;
+  border: 0;
+  box-shadow: none;
+}
+
+.rhu-admin-ui .admin-feature-drawer {
+  background: #fff !important;
+  border-right: 1px solid var(--dash-line) !important;
+  box-shadow: 12px 0 34px rgba(13, 53, 24, .06) !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:first-child {
+  min-height: 74px;
+  background: linear-gradient(135deg, var(--dash-deep), var(--dash-purple)) !important;
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:first-child p,
+.rhu-admin-ui .admin-feature-drawer>div:first-child button {
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:first-child>div>span {
+  background: rgba(255, 255, 255, .18) !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav {
+  padding: 1rem .85rem;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav h2 {
+  color: #89957f;
+  letter-spacing: 0 !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a {
+  min-height: 2.45rem;
+  border-radius: .55rem;
+  color: var(--dash-muted) !important;
+  font-size: .78rem;
+  box-shadow: none !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a:hover,
+.rhu-admin-ui .admin-feature-drawer nav a[aria-current="page"] {
+  background: #eef5e5 !important;
+  border-color: transparent !important;
+  color: var(--dash-pink) !important;
+  transform: none;
+  box-shadow: inset 3px 0 0 var(--dash-pink) !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a>span:first-child,
+.rhu-admin-ui .admin-feature-drawer nav a[aria-current="page"]>span:first-child {
+  width: 1.75rem;
+  height: 1.75rem;
+  background: transparent !important;
+  color: currentColor !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:last-child {
+  background: #fff !important;
+}
+
+.rhu-admin-ui .admin-main {
+  width: min(100%, 1420px);
+  padding: 1.15rem clamp(.9rem, 1.7vw, 1.5rem) 2rem;
+}
+
+.rhu-admin-ui .admin-page-heading {
+  border-color: var(--dash-line);
+  border-radius: .65rem;
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(13, 53, 24, .055);
+}
+
+.rhu-admin-ui .admin-page-heading-icon {
+  background: linear-gradient(135deg, #eef5e5, #f4f7ee);
+  color: var(--dash-pink);
+  box-shadow: inset 0 0 0 1px #dfe8d5;
+}
+
+.rhu-admin-ui .admin-page-heading h2,
+.rhu-admin-ui .admin-main h2,
+.rhu-admin-ui .admin-main h3 {
+  color: var(--dash-ink) !important;
+  letter-spacing: 0 !important;
+}
+
+.rhu-admin-ui .admin-page-heading p,
+.rhu-admin-ui .admin-main p,
+.rhu-admin-ui .admin-main .text-gray-500,
+.rhu-admin-ui .admin-main .text-gray-400 {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-live-badge {
+  border-color: #dfe8d5;
+  background: #f2f6e9;
+  color: var(--dash-pink);
+}
+
+.rhu-admin-ui .admin-live-badge::before {
+  background: var(--dash-cyan);
+  box-shadow: 0 0 0 4px rgba(169, 200, 119, .18);
+}
+
+.rhu-admin-ui .admin-main .bg-white,
+.rhu-admin-ui .admin-main :is(.rounded-xl, .rounded-2xl).bg-white {
+  border: 1px solid var(--dash-line) !important;
+  border-radius: .65rem !important;
+  background: #fff !important;
+  box-shadow: 0 10px 24px rgba(13, 53, 24, .055) !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(1),
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(2),
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(3),
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(4) {
+  color: #fff !important;
+  overflow: hidden;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(1) {
+  background: linear-gradient(135deg, #0d3518, #285b2d) !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(2) {
+  background: linear-gradient(135deg, #285b2d, #4f7a39) !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(3) {
+  background: linear-gradient(135deg, #082812, #35663a) !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white:nth-child(4) {
+  background: linear-gradient(135deg, #285b2d, #8f3f18) !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white :is(p, span, svg) {
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white>div:first-child {
+  background: rgba(255, 255, 255, .17) !important;
+}
+
+.unified-chart-card {
+  position: relative;
+  min-height: 230px;
+  overflow: hidden;
+  border-radius: .65rem;
+  background: linear-gradient(180deg, #fff, #f6f7ef);
+}
+
+.unified-chart-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#eef0f6 1px, transparent 1px),
+    linear-gradient(90deg, #eef0f6 1px, transparent 1px);
+  background-size: 100% 20%, 16.66% 100%;
+}
+
+.unified-chart-area {
+  position: absolute;
+  inset: 22% 4% 8%;
+  border-radius: 45% 45% 0 0;
+  filter: drop-shadow(0 12px 18px rgba(13, 53, 24, .16));
+}
+
+.unified-chart-area-one {
+  background:
+    linear-gradient(180deg, rgba(40, 91, 45, .42), rgba(40, 91, 45, .02)),
+    conic-gradient(from 230deg at 50% 70%, transparent 0 18%, #285b2d 19% 25%, transparent 26% 42%, #a9c877 43% 49%, transparent 50% 63%, #0d3518 64% 72%, transparent 73%);
+  clip-path: polygon(0 78%, 10% 47%, 20% 37%, 31% 58%, 43% 34%, 55% 51%, 67% 43%, 78% 18%, 88% 38%, 100% 82%, 100% 100%, 0 100%);
+}
+
+.unified-chart-area-two {
+  top: 30%;
+  background: linear-gradient(180deg, rgba(169, 200, 119, .30), rgba(169, 200, 119, .02));
+  clip-path: polygon(0 72%, 10% 52%, 20% 62%, 32% 44%, 45% 66%, 58% 53%, 69% 59%, 80% 31%, 91% 27%, 100% 72%, 100% 100%, 0 100%);
+}
+
+.unified-chart-dot {
+  position: absolute;
+  width: .7rem;
+  height: .7rem;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+.unified-chart-dot-one {
+  left: 58%;
+  top: 36%;
+  background: var(--dash-amber);
+}
+
+.unified-chart-dot-two {
+  left: 54%;
+  top: 58%;
+  background: var(--dash-purple);
+}
+
+.unified-donut {
+  width: min(180px, 48vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(var(--dash-pink) 0 42%, var(--dash-purple) 42% 72%, var(--dash-amber) 72% 88%, #eef5e5 88% 100%);
+  position: relative;
+}
+
+.unified-donut::after {
+  content: "";
+  position: absolute;
+  inset: 23%;
+  border-radius: inherit;
+  background: #fff;
+}
+
+.staff-folder-panel {
+  overflow: hidden;
+}
+
+.staff-folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 1rem .85rem;
+}
+
+.staff-folder-card {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: .28rem;
+  min-height: 104px;
+  padding: .35rem .25rem .55rem;
+  border: 1px solid transparent;
+  border-radius: .65rem;
+  color: var(--dash-muted) !important;
+  text-align: center;
+  box-shadow: none !important;
+}
+
+.staff-folder-card:hover,
+.staff-folder-card.is-active {
+  background: #eef5e5 !important;
+  border-color: #dfe8d5 !important;
+  color: var(--dash-pink) !important;
+  transform: translateY(-2px);
+}
+
+.staff-folder-icon {
+  position: relative;
+  width: 68px;
+  height: 46px;
+  margin-bottom: .15rem;
+  border-radius: 7px 7px 5px 5px;
+  background: linear-gradient(180deg, #d7d9db 0%, #aeb2b4 72%, #989da0 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .72),
+    inset 0 -2px 0 rgba(80, 85, 90, .16),
+    0 6px 12px rgba(39, 45, 52, .16);
+}
+
+.staff-folder-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -7px;
+  width: 31px;
+  height: 11px;
+  border-radius: 6px 6px 0 0;
+  background: linear-gradient(180deg, #bfc3c5, #a2a7aa);
+}
+
+.staff-folder-card.is-active .staff-folder-icon,
+.staff-folder-card:hover .staff-folder-icon {
+  background: linear-gradient(180deg, #d7efb4 0%, #8fb56f 72%, #285b2d 100%);
+}
+
+.staff-folder-card.is-active .staff-folder-icon::before,
+.staff-folder-card:hover .staff-folder-icon::before {
+  background: linear-gradient(180deg, #e5f4ca, #9fc27b);
+}
+
+.staff-folder-name {
+  max-width: 94px;
+  color: inherit !important;
+  font-size: .68rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.staff-folder-count {
+  color: #8b957f !important;
+  font-size: .58rem;
+  font-weight: 700;
+}
+
+.rhu-admin-ui .admin-main details.mb-4 {
+  display: inline-block;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible;
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary {
+  width: fit-content;
+  min-height: 44px;
+  padding: 0 .95rem;
+  border: 1px solid rgba(13, 53, 24, .22);
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--dash-deep), var(--dash-purple));
+  color: #fff !important;
+  list-style: none;
+  justify-content: center;
+  gap: .55rem;
+  box-shadow: 0 12px 24px rgba(13, 53, 24, .18);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary::-webkit-details-marker {
+  display: none;
+}
+
+.rhu-admin-ui .admin-main details.mb-4[open]>summary {
+  border-color: rgba(40, 91, 45, .28);
+  background: linear-gradient(135deg, var(--dash-purple), var(--dash-deep));
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary::before {
+  content: "";
+  order: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: .48rem;
+  height: .48rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform .18s ease;
+}
+
+.rhu-admin-ui .admin-main details.mb-4[open]>summary::before {
+  content: "";
+  transform: rotate(45deg);
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary:hover::before {
+  color: inherit;
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary:hover {
+  filter: brightness(1.03);
+  box-shadow: 0 16px 30px rgba(13, 53, 24, .24);
+  transform: translateY(-1px);
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary>span {
+  font-size: .9rem;
+  font-weight: 900;
+  min-width: 0;
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary>span:first-child {
+  display: none;
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary>span:first-child::before {
+  content: "";
+  width: .45rem;
+  height: .45rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform .18s ease;
+}
+
+.rhu-admin-ui .admin-main details.mb-4[open]>summary>span:first-child::before {
+  transform: rotate(45deg);
+}
+
+.rhu-admin-ui .admin-main details.mb-4>summary>span:last-child {
+  order: 1;
+  flex: 0 1 auto;
+}
+
+.rhu-admin-ui .admin-main details.mb-4>div {
+  width: min(100%, 100vw - 2rem);
+  margin-top: .9rem;
+  padding: 1rem;
+  border: 1px solid var(--dash-line);
+  border-radius: .85rem;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(13, 53, 24, .055);
+}
+
+.rhu-admin-ui .admin-main details.mb-4 form {
+  border-radius: .75rem;
+}
+
+.rhu-admin-ui .admin-main details.mb-4 form.grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: .75rem !important;
+  padding: 1rem;
+  border: 1px solid #dfe8d5;
+  background: #fbfaf5;
+}
+
+.rhu-admin-ui .admin-main details.mb-4 form.flex {
+  display: grid !important;
+  grid-template-columns: minmax(220px, 1fr) auto;
+  align-items: stretch;
+  gap: .75rem !important;
+  padding: 1rem;
+  border: 1px solid #f3d6c4;
+  background: #fff8f1;
+}
+
+.rhu-admin-ui .admin-main details.mb-4 input,
+.rhu-admin-ui .admin-main details.mb-4 select,
+.create-staff-panel input,
+.create-staff-panel select {
+  min-height: 44px;
+  border: 1px solid #dce4d4 !important;
+  border-radius: .55rem !important;
+  background: #fff !important;
+  color: var(--dash-ink) !important;
+  padding: .65rem .75rem !important;
+  font-size: .82rem;
+}
+
+.rhu-admin-ui .admin-main details.mb-4 input:focus,
+.rhu-admin-ui .admin-main details.mb-4 select:focus,
+.create-staff-panel input:focus,
+.create-staff-panel select:focus {
+  border-color: var(--dash-pink) !important;
+  box-shadow: 0 0 0 3px rgba(40, 91, 45, .14) !important;
+}
+
+.rhu-admin-ui .admin-main details.mb-4 button,
+.create-staff-panel button[type="submit"] {
+  min-height: 44px;
+  border-radius: .55rem !important;
+  background: var(--dash-pink) !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+  box-shadow: 0 10px 18px rgba(13, 53, 24, .18) !important;
+}
+
+.rhu-admin-ui .admin-main details.mb-4 form.flex button {
+  background: var(--dash-pink) !important;
+  box-shadow: 0 10px 18px rgba(13, 53, 24, .18) !important;
+}
+
+.create-staff-panel {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.create-staff-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--dash-line);
+  background: linear-gradient(90deg, #f4f7ee, #fff);
+}
+
+.create-staff-heading>span {
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  border-radius: .75rem;
+  background: #eef5e5;
+  color: var(--dash-pink);
+}
+
+.create-staff-form {
+  padding: 1rem !important;
+}
+
+.create-staff-form label {
+  display: grid !important;
+  gap: .4rem;
+  color: var(--dash-muted) !important;
+  font-size: .72rem;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+}
+
+.create-staff-form .sm\:col-span-2 {
+  padding-top: .4rem !important;
+  border-top: 1px solid var(--dash-line);
+}
+
+.create-staff-form a {
+  border-radius: .55rem !important;
+  background: #f4f7ee !important;
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui table thead {
+  background: #f8fafc;
+}
+
+.rhu-admin-ui table th {
+  color: #475569;
+}
+
+.rhu-admin-ui .admin-main table tbody tr:hover {
+  background: #f1f5f9;
+}
+  button.bg-purple-800,
+  button.bg-blue-600,
+  button.bg-blue-700,
+  button.bg-indigo-600,
+  button.bg-indigo-700,
+  button.bg-emerald-600,
+  button.bg-emerald-700,
+  button.bg-green-600,
+  button.bg-red-600,
+  button.bg-red-700,
+  button.bg-pink-500,
+  a.bg-purple-500,
+  a.bg-purple-600,
+  a.bg-purple-700,
+  a.bg-blue-600,
+  a.bg-indigo-600,
+  a.bg-emerald-700) {
+  background-color: var(--dash-pink) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 18px rgba(13, 53, 24, .16) !important;
+}
+
+.rhu-admin-ui :is(button.hover\:bg-purple-800:hover,
+  button.hover\:bg-blue-700:hover,
+  button.hover\:bg-blue-800:hover,
+  button.hover\:bg-indigo-800:hover,
+  button.hover\:bg-emerald-700:hover,
+  button.hover\:bg-emerald-800:hover,
+  button.hover\:bg-green-700:hover,
+  button.hover\:bg-red-700:hover,
+  button.hover\:bg-red-800:hover,
+  a.hover\:bg-purple-800:hover) {
+  background-color: var(--dash-purple) !important;
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-main,
+.rhu-admin-ui .admin-main :is(td, label, input, select, textarea, li, dd),
+.rhu-admin-ui .admin-page-heading,
+.rhu-admin-ui .admin-feature-drawer {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-main :is(h1, h2, h3, h4, h5, h6, strong, b, th),
+.rhu-admin-ui .admin-shell-header :is(h1, h2, h3, strong, b),
+.rhu-admin-ui .admin-feature-drawer :is(strong, b) {
+  color: var(--dash-deep) !important;
+}
+
+.rhu-admin-ui .admin-main :is(p, small, figcaption),
+.rhu-admin-ui .admin-main :is(.text-xs, .text-sm).text-gray-400,
+.rhu-admin-ui .admin-main :is(.text-xs, .text-sm).text-gray-500,
+.rhu-admin-ui .admin-main :is(.text-xs, .text-sm).text-slate-400,
+.rhu-admin-ui .admin-main :is(.text-xs, .text-sm).text-slate-500,
+.rhu-admin-ui .admin-shell-header p,
+.rhu-admin-ui .admin-feature-drawer nav h2,
+.rhu-admin-ui .admin-feature-drawer>div:last-child {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-main :is(a:not([class*="bg-"]), .font-mono) {
+  color: var(--dash-pink) !important;
+}
+
+.rhu-admin-ui .admin-main :is(.bg-white, .bg-gray-50, .bg-slate-50, .bg-slate-100, .bg-gray-100, .rounded-xl, .rounded-2xl) :is(p, span, td, label, div, a):not(button *):not(.text-white):not([class*="bg-"]) {
+  color: inherit;
+}
+
+.rhu-admin-ui .admin-main :is(.bg-white, .bg-gray-50, .bg-slate-50, .bg-slate-100, .bg-gray-100, .rounded-xl, .rounded-2xl) {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-main :is(.text-gray-300,
+  .text-gray-400,
+  .text-gray-500,
+  .text-slate-300,
+  .text-slate-400,
+  .text-slate-500,
+  .text-purple-200,
+  .text-purple-300) {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-main :is(.text-gray-600,
+  .text-gray-700,
+  .text-gray-800,
+  .text-gray-900,
+  .text-slate-600,
+  .text-slate-700,
+  .text-slate-800,
+  .text-slate-900) {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui,
+.rhu-admin-ui * {
+  text-shadow: none !important;
+}
+
+.rhu-admin-ui .admin-main *,
+.rhu-admin-ui .admin-shell-header *,
+.rhu-admin-ui .admin-feature-drawer nav * {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-main :is(h1, h2, h3, h4, h5, h6, strong, b, th, .font-bold, .font-black, .font-semibold) {
+  color: var(--dash-deep) !important;
+}
+
+.rhu-admin-ui .admin-main :is(p, small, figcaption, .text-xs, .text-sm, .text-gray-400, .text-gray-500, .text-slate-400, .text-slate-500),
+.rhu-admin-ui .admin-shell-header p,
+.rhu-admin-ui .admin-feature-drawer nav h2 {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-main :is(a, .font-mono):not(button):not([class*="bg-"]) {
+  color: var(--dash-pink) !important;
+}
+
+.rhu-admin-ui :is(button,
+  a.bg-purple-500,
+  a.bg-purple-600,
+  a.bg-purple-700,
+  a.bg-blue-600,
+  a.bg-blue-700,
+  a.bg-indigo-600,
+  a.bg-indigo-700,
+  a.bg-emerald-600,
+  a.bg-emerald-700,
+  a.bg-green-600,
+  a.bg-red-600,
+  a.bg-red-700,
+  a.bg-pink-500,
+  .admin-main details.mb-4 > summary),
+.rhu-admin-ui :is(button,
+  a.bg-purple-500,
+  a.bg-purple-600,
+  a.bg-purple-700,
+  a.bg-blue-600,
+  a.bg-blue-700,
+  a.bg-indigo-600,
+  a.bg-indigo-700,
+  a.bg-emerald-600,
+  a.bg-emerald-700,
+  a.bg-green-600,
+  a.bg-red-600,
+  a.bg-red-700,
+  a.bg-pink-500,
+  .admin-main details.mb-4 > summary) * {
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white,
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white * {
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:first-child,
+.rhu-admin-ui .admin-feature-drawer>div:first-child * {
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-main :is(.bg-purple-50,
+  .bg-purple-100,
+  .bg-blue-50,
+  .bg-blue-100,
+  .bg-indigo-100,
+  .bg-emerald-50,
+  .bg-emerald-100,
+  .bg-green-50,
+  .bg-green-100,
+  .bg-pink-50,
+  .bg-pink-100,
+  .bg-red-50,
+  .bg-red-100,
+  .bg-amber-50,
+  .bg-amber-100,
+  .bg-gray-50,
+  .bg-gray-100,
+  .bg-slate-50,
+  .bg-slate-100,
+  .bg-white),
+.rhu-admin-ui .admin-main :is(.bg-purple-50,
+  .bg-purple-100,
+  .bg-blue-50,
+  .bg-blue-100,
+  .bg-indigo-100,
+  .bg-emerald-50,
+  .bg-emerald-100,
+  .bg-green-50,
+  .bg-green-100,
+  .bg-pink-50,
+  .bg-pink-100,
+  .bg-red-50,
+  .bg-red-100,
+  .bg-amber-50,
+  .bg-amber-100,
+  .bg-gray-50,
+  .bg-gray-100,
+  .bg-slate-50,
+  .bg-slate-100,
+  .bg-white) *:not(button):not(button *) {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui :is(button.text-red-600, button.text-red-700, button.text-red-800, a.text-red-600, a.text-red-700, a.text-red-800):not([class*="bg-"]) {
+  color: var(--dash-pink) !important;
+}
+
+.rhu-admin-ui .admin-main :is(input::placeholder, textarea::placeholder) {
+  color: #65745d !important;
+  opacity: 1 !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white,
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white *,
+.rhu-admin-ui table thead,
+.rhu-admin-ui table thead *,
+.rhu-admin-ui .admin-feature-drawer>div:first-child,
+.rhu-admin-ui .admin-feature-drawer>div:first-child *,
+.rhu-admin-ui :is(button, button *, a[class*="bg-"], a[class*="bg-"] *) {
+  color: #fff !important;
+}
+
+.rhu-admin-ui :is(.bg-white,
+  .bg-gray-50,
+  .bg-gray-100,
+  .bg-slate-50,
+  .bg-slate-100,
+  .bg-purple-50,
+  .bg-purple-100,
+  .bg-blue-50,
+  .bg-blue-100,
+  .bg-indigo-100,
+  .bg-emerald-50,
+  .bg-emerald-100,
+  .bg-green-50,
+  .bg-green-100,
+  .bg-pink-50,
+  .bg-pink-100,
+  .bg-red-50,
+  .bg-red-100,
+  .bg-amber-50,
+  .bg-amber-100,
+  .rounded-xl,
+  .rounded-2xl,
+  .admin-page-heading,
+  .create-staff-panel),
+.rhu-admin-ui :is(.bg-white,
+  .bg-gray-50,
+  .bg-gray-100,
+  .bg-slate-50,
+  .bg-slate-100,
+  .bg-purple-50,
+  .bg-purple-100,
+  .bg-blue-50,
+  .bg-blue-100,
+  .bg-indigo-100,
+  .bg-emerald-50,
+  .bg-emerald-100,
+  .bg-green-50,
+  .bg-green-100,
+  .bg-pink-50,
+  .bg-pink-100,
+  .bg-red-50,
+  .bg-red-100,
+  .bg-amber-50,
+  .bg-amber-100,
+  .rounded-xl,
+  .rounded-2xl,
+  .admin-page-heading,
+  .create-staff-panel) *:not(button):not(button *):not(a[class*="bg-"]):not(a[class*="bg-"] *) {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui :is(.bg-white,
+  .bg-gray-50,
+  .bg-gray-100,
+  .bg-slate-50,
+  .bg-slate-100,
+  .bg-purple-50,
+  .bg-purple-100,
+  .bg-blue-50,
+  .bg-blue-100,
+  .bg-indigo-100,
+  .bg-emerald-50,
+  .bg-emerald-100,
+  .bg-green-50,
+  .bg-green-100,
+  .bg-pink-50,
+  .bg-pink-100,
+  .bg-red-50,
+  .bg-red-100,
+  .bg-amber-50,
+  .bg-amber-100,
+  .rounded-xl,
+  .rounded-2xl,
+  .admin-page-heading,
+  .create-staff-panel) :is(p, small, figcaption, .text-xs, .text-sm, .text-gray-300, .text-gray-400, .text-gray-500, .text-slate-300, .text-slate-400, .text-slate-500):not(button):not(button *) {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui :is(.bg-black,
+  .bg-gray-800,
+  .bg-gray-900,
+  .bg-slate-800,
+  .bg-slate-900,
+  .bg-slate-950,
+  .bg-green-800,
+  .bg-green-900,
+  .bg-emerald-800,
+  .bg-emerald-900,
+  .bg-teal-800,
+  .bg-teal-900,
+  .bg-cyan-900,
+  .from-emerald-800,
+  .from-green-900,
+  .from-slate-900,
+  .via-teal-800,
+  .to-cyan-900,
+  .to-green-900,
+  .to-slate-950,
+  table thead),
+.rhu-admin-ui :is(.bg-black,
+  .bg-gray-800,
+  .bg-gray-900,
+  .bg-slate-800,
+  .bg-slate-900,
+  .bg-slate-950,
+  .bg-green-800,
+  .bg-green-900,
+  .bg-emerald-800,
+  .bg-emerald-900,
+  .bg-teal-800,
+  .bg-teal-900,
+  .bg-cyan-900,
+  .from-emerald-800,
+  .from-green-900,
+  .from-slate-900,
+  .via-teal-800,
+  .to-cyan-900,
+  .to-green-900,
+  .to-slate-950,
+  table thead) * {
+  color: #fff !important;
+}
+
+.rhu-admin-ui :is(.bg-black,
+  .bg-gray-800,
+  .bg-gray-900,
+  .bg-slate-800,
+  .bg-slate-900,
+  .bg-slate-950,
+  .bg-green-800,
+  .bg-green-900,
+  .bg-emerald-800,
+  .bg-emerald-900,
+  .bg-teal-800,
+  .bg-teal-900,
+  .bg-cyan-900,
+  .from-emerald-800,
+  .from-green-900,
+  .from-slate-900,
+  .via-teal-800,
+  .to-cyan-900,
+  .to-green-900,
+  .to-slate-950,
+  table thead) :is(p, small, span, .text-xs, .text-sm, .text-gray-400, .text-gray-500, .text-slate-400, .text-slate-500, .text-purple-200, .text-purple-300) {
+  color: #e9f2df !important;
+}
+
+.rhu-admin-ui .admin-shell-header,
+.rhu-admin-ui .admin-shell-header * {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-shell-header p,
+.rhu-admin-ui .admin-shell-header :is(.text-xs, .text-sm, .text-gray-400, .text-gray-500, .text-slate-400, .text-slate-500, .text-purple-200, .text-purple-300) {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white,
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white *,
+.rhu-admin-ui .admin-main [style*="background: linear-gradient"],
+.rhu-admin-ui .admin-main [style*="background: linear-gradient"] *,
+.rhu-admin-ui .admin-main [class*="bg-gradient-to-"],
+.rhu-admin-ui .admin-main [class*="bg-gradient-to-"] * {
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white :is(p, small, span, .text-xs, .text-sm),
+.rhu-admin-ui .admin-main [style*="background: linear-gradient"] :is(p, small, span, .text-xs, .text-sm),
+.rhu-admin-ui .admin-main [class*="bg-gradient-to-"] :is(p, small, span, .text-xs, .text-sm) {
+  color: #e9f2df !important;
+}
+
+@media (min-width: 1024px) {
+  body.rhu-admin-ui {
+    overflow: hidden;
+  }
+
+  .rhu-admin-ui>.min-h-screen {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .rhu-admin-ui .admin-feature-drawer {
+    transform: none !important;
+    visibility: visible !important;
+    max-width: none;
+    width: 220px;
+  }
+
+  .rhu-admin-ui .feature-drawer-backdrop,
+  .rhu-admin-ui [data-drawer-open],
+  .rhu-admin-ui [data-drawer-close] {
+    display: none !important;
+  }
+
+  .rhu-admin-ui .admin-shell-header {
+    margin-left: 220px;
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 45;
+  }
+
+  .rhu-admin-ui .admin-main {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    max-width: none !important;
+    height: calc(100vh - 72px);
+    margin-top: 72px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .rhu-admin-ui .admin-main::-webkit-scrollbar,
+  .rhu-admin-ui .admin-feature-drawer nav::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .rhu-admin-ui .admin-main::-webkit-scrollbar-thumb,
+  .rhu-admin-ui .admin-feature-drawer nav::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: #dfe8d5;
+  }
+
+  .rhu-admin-ui .admin-feature-drawer {
+    z-index: 50;
+  }
+
+  .rhu-admin-ui .admin-feature-drawer nav {
+    max-height: calc(100vh - 150px);
+  }
+}
+
+@media (max-width: 767px) {
+  body.rhu-admin-ui {
+    overflow-x: hidden;
+  }
+
+  .rhu-admin-ui .admin-shell-header {
+    position: sticky !important;
+  }
+
+  .rhu-admin-ui .admin-feature-drawer {
+    width: min(88vw, 340px);
+  }
+
+  .rhu-admin-ui .admin-feature-drawer nav {
+    max-height: calc(100vh - 150px);
+  }
+
+  .rhu-admin-ui .admin-main {
+    overflow: visible;
+  }
+
+  .unified-chart-card {
+    min-height: 180px;
+  }
+
+  .rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rhu-admin-ui .admin-main details.mb-4 form.grid,
+  .create-staff-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .rhu-admin-ui .admin-main details.mb-4 form.flex {
+    grid-template-columns: 1fr;
+  }
+
+  .create-staff-heading {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body.rhu-admin-ui {
+    overflow-x: hidden;
+  }
+
+  .rhu-admin-ui .admin-shell-header {
+    position: sticky !important;
+  }
+
+  .rhu-admin-ui .admin-feature-drawer {
+    width: min(82vw, 360px);
+  }
+
+  .rhu-admin-ui .admin-main {
+    overflow: visible;
+  }
+
+  .rhu-admin-ui .admin-main details.mb-4 form.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Final contrast guard: keep every admin label readable after Tailwind utility clashes. */
+.rhu-admin-ui .admin-main {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-main :is(h1, h2, h3, h4, h5, h6, p, span, div, td, label, li, small, strong, b, input, select, textarea):not(button):not(button *):not(a[class*="bg-"]):not(a[class*="bg-"] *) {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-main :is(.text-xs, .text-sm, .text-gray-400, .text-gray-500, .text-slate-400, .text-slate-500):not(button):not(button *):not(a[class*="bg-"]):not(a[class*="bg-"] *) {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-shell-header,
+.rhu-admin-ui .admin-shell-header * {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-shell-header p,
+.rhu-admin-ui .admin-shell-header .text-xs {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:first-child,
+.rhu-admin-ui .admin-feature-drawer>div:first-child *,
+.rhu-admin-ui table thead,
+.rhu-admin-ui table thead *,
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white,
+.rhu-admin-ui .admin-main .grid.grid-cols-2.sm\:grid-cols-4>.bg-white *,
+.rhu-admin-ui .admin-main details.mb-4>summary,
+.rhu-admin-ui .admin-main details.mb-4>summary *,
+.rhu-admin-ui :is(button, button *, a.bg-purple-500, a.bg-purple-500 *, a.bg-purple-600, a.bg-purple-600 *, a.bg-purple-700, a.bg-purple-700 *, a.bg-blue-600, a.bg-blue-600 *, a.bg-blue-700, a.bg-blue-700 *, a.bg-indigo-600, a.bg-indigo-600 *, a.bg-indigo-700, a.bg-indigo-700 *, a.bg-emerald-600, a.bg-emerald-600 *, a.bg-emerald-700, a.bg-emerald-700 *, a.bg-green-600, a.bg-green-600 *, a.bg-red-600, a.bg-red-600 *, a.bg-red-700, a.bg-red-700 *, a.bg-pink-500, a.bg-pink-500 *) {
+  color: #fff !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a,
+.rhu-admin-ui .admin-feature-drawer nav a *,
+.rhu-admin-ui .admin-feature-drawer nav a[aria-current="page"],
+.rhu-admin-ui .admin-feature-drawer nav a[aria-current="page"] * {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer nav a[aria-current="page"],
+.rhu-admin-ui .admin-feature-drawer nav a:hover {
+  background: #eef5e5 !important;
+  border-color: #dfe8d5 !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:last-child,
+.rhu-admin-ui .admin-feature-drawer>div:last-child * {
+  color: var(--dash-muted) !important;
+}
+
+.rhu-admin-ui .admin-feature-drawer>div:last-child :is(strong, b, a) {
+  color: var(--dash-ink) !important;
+}
+
+.rhu-admin-ui .admin-main table thead,
+.rhu-admin-ui .admin-main table thead tr,
+.rhu-admin-ui .admin-main table thead th,
+.rhu-admin-ui .admin-main table thead td,
+.rhu-admin-ui .admin-main :is(.bg-green-900, .bg-emerald-900, .bg-slate-900, .bg-slate-950, .bg-\[\#082812\], .bg-\[\#0d3518\]) {
+  background-color: var(--dash-deep) !important;
+  color: #f8fff1 !important;
+}
+
+.rhu-admin-ui .admin-main table thead *,
+.rhu-admin-ui .admin-main :is(.bg-green-900, .bg-emerald-900, .bg-slate-900, .bg-slate-950, .bg-\[\#082812\], .bg-\[\#0d3518\]) * {
+  color: #f8fff1 !important;
+  fill: #f8fff1 !important;
+  stroke: #f8fff1 !important;
+}
+
+.rhu-admin-ui .admin-main table thead,
+.rhu-admin-ui .admin-main table thead tr,
+.rhu-admin-ui .admin-main table thead th,
+.rhu-admin-ui .admin-main table thead th *,
+.rhu-admin-ui table thead,
+.rhu-admin-ui table thead tr,
+.rhu-admin-ui table thead th,
+.rhu-admin-ui table thead th * {
+  background-color: var(--dash-deep) !important;
+  color: #f8fff0 !important;
+  opacity: 1 !important;
+}
+
+.rhu-admin-ui .admin-main table thead th {
+  font-weight: 900 !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .18) !important;
+}

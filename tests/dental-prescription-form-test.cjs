@@ -1,0 +1,22 @@
+﻿const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+function field(name,value='') { return {name,value,required:false,disabled:false,willValidate:true,error:'',setCustomValidity(message){this.error=message;},get validity(){return {valid:!this.error && (!this.required || !!this.value.trim())};}}; }
+const names=['resident_id','medicine_name','dosage','frequency','duration','quantity','prescription_date','instructions','inventory_id','dispense_location','dispensed_at','walkin_first_name','walkin_last_name','walkin_birthdate','walkin_sex','walkin_contact','walkin_barangay','walkin_middle_name'];
+const elements=names.map(name=>field(name)); elements.forEach(element=>elements[element.name]=element);
+const walkins=elements.filter(element=>element.name.startsWith('walkin_'));
+const submit={style:{},disabled:false},help={textContent:''}; let mode='existing';
+const form={elements,handlers:{},querySelector:selector=>selector.includes('patient_mode')?{value:mode}:submit,querySelectorAll:()=>walkins,addEventListener(name,callback){this.handlers[name]=callback;},reportValidity(){}};
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../dental-prescription-validation.js'),'utf8'),{document:{querySelector:()=>({closest:()=>form}),getElementById:()=>help}});
+assert.equal(submit.disabled,true);
+for (const name of ['resident_id','medicine_name','dosage','frequency','duration','instructions']) elements[name].value='Filled';
+elements.quantity.value='21 caps'; elements.prescription_date.value='2026-10-15'; form.handlers.input();
+assert.equal(submit.disabled,false); assert(walkins.every(element=>element.disabled));
+elements.dosage.value=' '; form.handlers.input(); assert.equal(submit.disabled,true);
+elements.dosage.value='Filled'; elements.inventory_id.value='3'; form.handlers.change(); assert.equal(submit.disabled,true);
+elements.dispense_location.value='Clinic';elements.dispensed_at.value='2026-10-15T12:00';form.handlers.input();assert.equal(submit.disabled,false);
+mode='walkin';form.handlers.change();assert.equal(submit.disabled,true);assert.equal(elements.resident_id.disabled,true);
+for(const name of ['walkin_first_name','walkin_last_name','walkin_birthdate','walkin_sex','walkin_contact','walkin_barangay']) elements[name].value='Filled';
+form.handlers.input();assert.equal(submit.disabled,false);assert.equal(elements.walkin_middle_name.required,false);
+console.log('Prescription form checks passed: incomplete submission disabled, hidden fields ignored, walk-in and dispensing requirements enforced.');
