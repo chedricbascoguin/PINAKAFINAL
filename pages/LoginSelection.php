@@ -13,7 +13,7 @@ exit;
     <link rel="shortcut icon" href="assets/images/favicon.ico?v=20260915" type="image/x-icon">
     <title>Staff & Admin Access - ResiHUnity RHU</title>
     <link rel="stylesheet" href="assets/tailwind-php.css?v=1">
-    <link rel="stylesheet" href="../../styles/login-theme.css">
+    <link rel="stylesheet" href="styles/login-theme.css">
 </head>
 <body class="bg-linear-to-br from-slate-900 via-slate-800 to-gray-900 min-h-screen font-sans flex items-center justify-center antialiased">
     <div class="max-w-4xl w-full px-4 py-8">

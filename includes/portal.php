@@ -1,5 +1,6 @@
 <?php
 require_once dirname(__DIR__) . '/db.php';
+require_once __DIR__ . '/appointment-expiry.php';
 // BEGIN shared appointment notification compatibility
 // Immediate notice when staff saves a schedule; daily reminders remain independent.
 if (!function_exists('rhuNotifyResidentSchedule')) {

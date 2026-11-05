@@ -590,8 +590,8 @@ unset($_SESSION['landing_flash']);
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../styles/mobile-optimization.css">
-  <link rel="stylesheet" href="../../styles/landing-responsive.css">
+  <link rel="stylesheet" href="styles/mobile-optimization.css">
+  <link rel="stylesheet" href="styles/landing-responsive.css">
   
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="assets/tailwind-php.css?v=1">

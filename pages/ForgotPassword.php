@@ -192,16 +192,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $step === 'update_password') {
         $error = 'Passwords do not match. Please enter matching passwords.';
     } else {
         try {
+            if (!isset($pdo) || !($pdo instanceof PDO)) {
+                throw new RuntimeException('Database connection unavailable.');
+            }
+            $db = $pdo;
             $passHash = password_hash($newPassword, PASSWORD_DEFAULT);
             $userEmail = $resetAccount['email'];
             $targetPortal = $resetAccount['portal'];
 
             // Update in corresponding database table
             if ($targetPortal === 'resident') {
-                $up = $pdo->prepare("UPDATE residents SET password_hash = :h WHERE id = :id AND LOWER(email) = LOWER(:e)");
+                $up = $db->prepare("UPDATE residents SET password_hash = :h WHERE id = :id AND LOWER(email) = LOWER(:e)");
                 $up->execute(['h' => $passHash, 'id' => $resetAccount['record_id'], 'e' => $userEmail]);
             } else {
-                $up = $pdo->prepare("UPDATE health_workers SET password_hash = :h, updated_at = NOW() WHERE id = :id AND LOWER(email) = LOWER(:e)");
+                $up = $db->prepare("UPDATE health_workers SET password_hash = :h, updated_at = NOW() WHERE id = :id AND LOWER(email) = LOWER(:e)");
                 $up->execute(['h' => $passHash, 'id' => $resetAccount['record_id'], 'e' => $userEmail]);
             }
             if ($up->rowCount() !== 1) {
@@ -209,7 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $step === 'update_password') {
             }
 
             // Invalidate/delete reset token
-            $del = $pdo->prepare("DELETE FROM audit_logs
+            $del = $db->prepare("DELETE FROM audit_logs
                 WHERE id = :id AND action = 'Password Reset Requested' AND module_name = 'Authentication'");
             $del->execute(['id' => (int)($resetAccount['audit_id'] ?? 0)]);
 
@@ -233,7 +237,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $step === 'update_password') {
     <title>Reset Password | ResiHUnity RHU</title>
     <link rel="stylesheet" href="assets/tailwind-php.css?v=1">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/login-theme.css">
+    <link rel="stylesheet" href="styles/login-theme.css">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>

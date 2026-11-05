@@ -1325,7 +1325,7 @@ if (!empty($pdo)) {
                 ORDER BY c.id DESC
             ");
         }
-        $prenatalOPDList = $opdStmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
+        $prenatalOPDList = rhuWithoutExpiredAppointments($opdStmt->fetchAll(PDO::FETCH_ASSOC) ?: []);
 
         $statusExpr = "LOWER(COALESCE(p.pregnancy_status, 'active'))";
         $highRiskExpr = $pregnancyTable === 'pregnancies'
@@ -1632,7 +1632,8 @@ $defaultMaternalEdc = (new DateTimeImmutable($defaultMaternalLmp))->modify('+280
             z-index: 80 !important;
             padding: 5.25rem 1rem 1rem !important;
             background: rgba(15, 23, 42, 0.22);
-            backdrop-filter: blur(0.5px);
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
         }
 
         .midwife-form-modal .midwife-modal-panel,
@@ -2793,6 +2794,9 @@ button.bg-teal-700 {
     $qrFpBooking = null;
     if ($modal === 'new_fp' && (int)($_GET['qr_appointment'] ?? 0) > 0) {
         try {
+            if (!($pdo instanceof PDO)) {
+                throw new RuntimeException('Database connection is unavailable.');
+            }
             $qrFpBooking = residentQrLoadAppointment($pdo, 'MIDWIFE', (int)$_GET['qr_appointment'], (int)($_GET['resident_id'] ?? 0));
             if (!preg_match('/family planning/i', residentQrCategory($qrFpBooking))) throw new RuntimeException('This is not a family planning appointment.');
         } catch (Throwable $error) {
@@ -3288,6 +3292,11 @@ button.bg-teal-700 {
 
     <script>
         (function () {
+            // Escape the main content's isolated stacking context so the
+            // backdrop also covers the navigation and sticky header.
+            document.querySelectorAll('.midwife-form-modal').forEach((modal) => {
+                document.body.appendChild(modal);
+            });
             const sidebar = document.querySelector('[data-feature-drawer]');
             const backdrop = document.querySelector('[data-drawer-backdrop]');
             const openBtn = document.querySelector('[data-drawer-open]');
@@ -3328,7 +3337,7 @@ button.bg-teal-700 {
 
 <script src="assets/js/staff-record-scroll.js?v=4" defer></script>
 <script src="assets/js/staff-resident-record-groups.js?v=2" defer></script>
-<?= rhuIntakeSavedData($pdo) ?>
+<?= $pdo instanceof PDO ? rhuIntakeSavedData($pdo) : '' ?>
 </body>
 
 </html>

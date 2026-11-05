@@ -47,6 +47,9 @@ if (($_GET['api'] ?? '') === 'latest_odontogram') {
     header('Content-Type: application/json; charset=utf-8');
     header('Cache-Control: no-store');
     try {
+        if (!($pdo instanceof PDO)) {
+            throw new RuntimeException('Database connection unavailable.');
+        }
         $residentId = (int)($_GET['resident_id'] ?? 0);
         $examDate = (string)($_GET['exam_date'] ?? date('Y-m-d'));
         if ($residentId <= 0 || !preg_match('/^\d{4}-\d{2}-\d{2}$/', $examDate)) throw new InvalidArgumentException('Select a patient and valid examination date.');
@@ -1318,6 +1321,7 @@ if (!empty($pdo)) {
         $qrAppointmentId = max(0, (int)($_GET['qr_appointment'] ?? 0));
         $appointmentStatement->execute(array_merge($dentalSearch !== '' ? ['search' => $dentalSearch] : [], ['qr_priority'=>$qrAppointmentId]));
         foreach ($appointmentStatement->fetchAll(PDO::FETCH_ASSOC) as $appointment) {
+            if (rhuAppointmentExpired($appointment)) continue;
             $dentalAppointments[] = [
                 'id' => (int) ($appointment['id'] ?? 0),
                 'resident_id' => (int) ($appointment['resident_id'] ?? 0),
@@ -2803,7 +2807,12 @@ $navGroups = [
     <?php
     $qrDentalBooking = null;
     if ($modal === 'new_exam' && (int)($_GET['qr_appointment'] ?? 0) > 0) {
-        try { $qrDentalBooking = residentQrLoadAppointment($pdo, 'DENTAL', (int)$_GET['qr_appointment'], (int)($_GET['resident_id'] ?? 0)); }
+        try {
+            if (!($pdo instanceof PDO)) {
+                throw new RuntimeException('Database connection unavailable.');
+            }
+            $qrDentalBooking = residentQrLoadAppointment($pdo, 'DENTAL', (int)$_GET['qr_appointment'], (int)($_GET['resident_id'] ?? 0));
+        }
         catch (Throwable $error) { $modal = ''; echo '<p role="alert">' . e($error->getMessage()) . '</p>'; }
     }
     ?>
@@ -3987,7 +3996,9 @@ $navGroups = [
 
 <script src="assets/js/staff-record-scroll.js?v=4" defer></script>
 <script src="assets/js/staff-resident-record-groups.js?v=2" defer></script>
+<?php if ($pdo instanceof PDO): ?>
 <?= rhuIntakeSavedData($pdo) ?>
+<?php endif; ?>
 </body>
 
 </html>

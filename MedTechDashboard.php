@@ -185,7 +185,7 @@ $tabs = [
     'rapid' => ['Rapid Diagnostic Tests', '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>'],
     'confidential' => ['Confidential Testing', '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><path d="M12 15v2"/></svg>'],
     'blood' => ['Blood Compatibility', '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/><path d="M8.5 14h7"/><path d="M12 10.5v7"/></svg>'],
-    'supplies' => ['Test Kit Supplies', '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>'],
+    'supplies' => ['Kit Usage History', '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>'],
 ];
 
 $tab = $_GET['tab'] ?? 'overview';
@@ -230,12 +230,8 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST' && !empty($pdo)) {
     if (!portalVerifyCsrf()) { http_response_code(419); exit('Form expired. Refresh the page and retry.'); }
     $action = $_POST['action'] ?? '';
     if ($action === 'adjust_lab_supply') {
-        try {
-            workflowAdjustStock($pdo, $_POST, $medtechStaffId);
-            $_SESSION['medtech_flash_success'] = 'Supply usage recorded in inventory history.';
-        } catch (Throwable $e) { $_SESSION['medtech_flash_error'] = $e->getMessage(); }
-        header('Location: ' . tabUrl('supplies'));
-        exit;
+        http_response_code(403);
+        exit('Record materials used through the resident laboratory test form.');
     }
 
     // Action: Answer / Update Resident Laboratory Consultation
@@ -422,7 +418,7 @@ if (!empty($pdo)) {
             ORDER BY c.consultation_date DESC, c.consultation_time DESC, c.id DESC
         ");
         $mtStmt->execute(['sid_hw' => $medtechStaffId, 'sid_phy' => $medtechStaffId]);
-        $medtechConsultations = $mtStmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
+        $medtechConsultations = rhuWithoutExpiredAppointments($mtStmt->fetchAll(PDO::FETCH_ASSOC) ?: []);
     } catch (Exception $e) {
     }
 
@@ -448,6 +444,7 @@ if (!empty($pdo)) {
               )
             ORDER BY c.consultation_date DESC, c.consultation_time DESC
         ")->fetchAll(PDO::FETCH_ASSOC) ?: [];
+        $consultationOptions = rhuWithoutExpiredAppointments($consultationOptions);
         $residentOptions = $pdo->query(rhuResidentListSql() . " WHERE " . rhuLivingResidentWhereSql('r') . " ORDER BY r.first_name, r.last_name")->fetchAll(PDO::FETCH_ASSOC) ?: [];
         $staffOptions = $pdo->query("SELECT id, CONCAT(first_name, ' ', last_name) name, position_title AS staff_type FROM health_workers ORDER BY name")->fetchAll(PDO::FETCH_ASSOC) ?: [];
         $residentBloodColumn = function_exists('rhuColumnExists') && rhuColumnExists($pdo, 'residents', 'blood_type') ? 'r.blood_type' : "''";
@@ -570,6 +567,23 @@ if (!empty($pdo)) {
         }
         $inventoryUsageOptions = $pdo->query("SELECT id, item_name, item_type, category, quantity, unit FROM medicine_inventory ORDER BY item_type, item_name")->fetchAll(PDO::FETCH_ASSOC) ?: [];
     } catch (Exception $e) {
+    }
+}
+
+// Usage is recorded atomically with the resident laboratory test.
+$kitUsageHistory = [];
+$kitUsageHistoryUnavailable = false;
+if ($tab === 'supplies' && $pdo instanceof PDO) {
+    try {
+        inventoryEnsureHistory($pdo);
+        $kitUsageHistory = $pdo->query("SELECT m.*, CONCAT_WS(' ', r.first_name, r.last_name) AS resident_name
+            FROM inventory_movements m
+            LEFT JOIN residents r ON r.id = m.resident_id
+            WHERE m.movement_type = 'Used' AND m.service = 'Laboratory' AND m.resident_id IS NOT NULL
+            ORDER BY m.used_at DESC, m.id DESC")->fetchAll(PDO::FETCH_ASSOC) ?: [];
+    } catch (Throwable $error) {
+        $kitUsageHistoryUnavailable = true;
+        error_log('MedTech kit usage history: ' . $error->getMessage());
     }
 }
 
@@ -923,7 +937,7 @@ if (($_GET['blood_map_json'] ?? '') === '1') {
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <?php endif; ?>
     <link rel="stylesheet" href="styles/dashboard-enhancements.css">
-    <link rel="stylesheet" href="styles/medtech-dashboard-ui.css?v=20260918">
+    <link rel="stylesheet" href="styles/medtech-dashboard-ui.css?v=<?= (int) filemtime(__DIR__ . '/styles/medtech-dashboard-ui.css') ?>">
 <script src="assets/js/staff-session-lock.js?v=<?= (int) filemtime(__DIR__ . "/staff-session-lock.js") ?>"></script>
 <link rel="stylesheet" href="styles/dashboard-transitions.css?v=<?= (int) filemtime(__DIR__ . "/dashboard-transitions.css") ?>">
 </head>
@@ -1045,7 +1059,7 @@ if (is_file(__DIR__ . '/includes/error_bootstrap.php')) {
                                 'rapid' => 'Record findings and review patient diagnostic results in one place.',
                                 'confidential' => 'Restricted HIV and sensitive testing records with private release controls.',
                                 'blood' => 'Check blood type compatibility and capture field location for urgent coordination.',
-                                'supplies' => 'Keep track of available test kits, stock thresholds, and expiry dates.',
+                                'supplies' => 'Review kits and materials used for residents, including quantities, staff, and dates.',
                             ];
                             echo esc($pageDescriptions[$tab]);
                         ?></p>
@@ -1091,7 +1105,7 @@ if (is_file(__DIR__ . '/includes/error_bootstrap.php')) {
                         </div>
                         <div class="medtech-quick-actions">
                             <a class="medtech-action-primary" href="<?= esc(tabUrl('rapid', ['modal' => 'test'])) ?>"><span aria-hidden="true">+</span> Record RDT result</a>
-                            <a class="medtech-action-secondary" href="<?= esc(tabUrl('supplies')) ?>">Manage supplies <span aria-hidden="true">&rarr;</span></a>
+                            <a class="medtech-action-secondary" href="<?= esc(tabUrl('supplies')) ?>">View kit usage <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </section>
 
@@ -1121,7 +1135,7 @@ if (is_file(__DIR__ . '/includes/error_bootstrap.php')) {
                             </div>
                             <a href="<?= tabUrl('supplies') ?>"
                                 class="shrink-0 rounded-xl bg-white px-4 py-2 text-xs font-extrabold text-rose-700 shadow-md hover:bg-rose-50 transition">
-                                Manage Inventory →
+                                View Kit Usage →
                             </a>
                         </section>
                     <?php endif; ?>
@@ -1850,73 +1864,35 @@ if (is_file(__DIR__ . '/includes/error_bootstrap.php')) {
                     <div
                         class="flex flex-wrap items-center justify-between gap-3 dashboard-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
                         <div>
-                            <h2 class="text-base sm:text-lg font-bold text-slate-800">Diagnostic Test Kit &amp; Supply
-                                Inventory</h2>
-                            <p class="text-xs text-slate-500 font-medium">Track RDT test strip availability, reorder
-                                thresholds, and expiration dates.</p>
-                        </div>
-                        <a href="InventoryManagement.php" class="rounded-xl border border-slate-300 px-3 py-2 text-xs font-bold text-teal-800">View inventory / record usage</a>
-                    </div>
-
-
-                    <!-- MODAL: ADD SUPPLY ITEM -->
-
-
-                    <div class="grid grid-cols-3 gap-4">
-                        <div class="rounded-2xl border border-rose-100 bg-rose-50 p-4 text-center">
-                            <b class="text-2xl font-black text-rose-600"><?= $critical ?></b>
-                            <p class="text-xs font-bold text-rose-800">Critical Outages</p>
-                        </div>
-                        <div class="rounded-2xl border border-amber-100 bg-amber-50 p-4 text-center">
-                            <b class="text-2xl font-black text-amber-600"><?= $low ?></b>
-                            <p class="text-xs font-bold text-amber-800">Low Stock Items</p>
-                        </div>
-                        <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-center">
-                            <b class="text-2xl font-black text-emerald-600"><?= count($supplies) - $critical - $low ?></b>
-                            <p class="text-xs font-bold text-emerald-800">Adequate Supplies</p>
+                            <h2 class="text-base sm:text-lg font-bold text-slate-800">Kit &amp; Material Usage History</h2>
+                            <p class="text-xs text-slate-500 font-medium">Kits and materials used for residents, recorded automatically when laboratory tests are saved. Latest usage appears first.</p>
                         </div>
                     </div>
 
                     <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
-                        <table class="w-full min-w-[620px] text-xs">
+                        <table class="w-full min-w-[900px] text-xs">
                             <thead class="bg-slate-50 text-left uppercase text-slate-500 border-b border-slate-200">
                                 <tr>
-                                    <th class="p-3.5 font-extrabold">Item Description</th>
-                                    <th class="p-3.5 font-extrabold">Category</th>
-                                    <th class="p-3.5 font-extrabold">In Stock</th>
-                                    <th class="p-3.5 font-extrabold">Reorder Threshold</th>
-                                    <th class="p-3.5 font-extrabold">Expiration Date</th>
-                                    <th class="p-3.5 font-extrabold">Stock Status / Usage</th>
+                                    <th class="p-3.5 font-extrabold">Used On</th>
+                                    <th class="p-3.5 font-extrabold">Kit / Material</th>
+                                    <th class="p-3.5 font-extrabold">Quantity Used</th>
+                                    <th class="p-3.5 font-extrabold">Resident</th>
+                                    <th class="p-3.5 font-extrabold">Recorded By</th>
+                                    <th class="p-3.5 font-extrabold">Location</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-100">
-                                <?php if (empty($supplies)): ?>
-                                    <tr><td colspan="6" class="medtech-empty-state">No laboratory supplies recorded yet. Contact the administrator to add stock.</td></tr>
+                                <?php if (!$kitUsageHistory): ?>
+                                    <tr><td colspan="6" class="medtech-empty-state"><?= $kitUsageHistoryUnavailable ? 'Usage history is temporarily unavailable. Please reload the page.' : 'No kit usage recorded for residents yet. Saving a laboratory test with materials used will add records here automatically.' ?></td></tr>
                                 <?php endif; ?>
-                                <?php foreach ($supplies as $s): ?>
+                                <?php foreach ($kitUsageHistory as $usage): ?>
                                     <tr class="hover:bg-slate-50/80 transition">
-                                        <td class="p-3.5 font-bold text-slate-900"><?= esc($s[0]) ?></td>
-                                        <td class="p-3.5 text-slate-600"><?= esc($s[1]) ?></td>
-                                        <td class="p-3.5 font-black text-slate-900"><?= $s[2] ?> <span
-                                                class="font-normal text-slate-400"><?= esc($s[3]) ?></span></td>
-                                        <td class="p-3.5 text-slate-600"><?= $s[4] ?>         <?= esc($s[3]) ?></td>
-                                        <td class="p-3.5 text-slate-600 font-mono"><?= $s[5] ?: 'N/A' ?></td>
-                                        <td class="p-3.5">
-                                            <span
-                                                class="medtech-supply-status px-2.5 py-1 text-[11px] <?= $s[6] === 'critical' ? 'is-critical' : ($s[6] === 'low' ? 'is-low' : 'is-adequate') ?>">
-                                                <?= strtoupper($s[6]) ?>
-                                            </span>
-                                            <details class="mt-3"><summary class="cursor-pointer text-teal-700 font-bold">Record usage</summary>
-                                                <form method="post" class="grid gap-2 mt-2 min-w-[180px]"><input type="hidden" name="csrf_token" value="<?= esc(portalCsrfToken()) ?>">
-                                                    <input type="hidden" name="action" value="adjust_lab_supply"><input type="hidden" name="supply_id" value="<?= (int)$s[7] ?>">
-                                                    <label>Action<select name="stock_action" class="block border rounded p-2 w-full"><option value="use">Record usage</option></select></label>
-                                                    <label>Quantity<input type="number" min="0" step="1" name="amount" required class="block border rounded p-2 w-full"></label>
-                                                    <label>Used at / location<input name="usage_location" required maxlength="200" class="block border rounded p-2 w-full"></label>
-                                                    <label>Reason<input name="reason" required maxlength="500" class="block border rounded p-2 w-full"></label>
-                                                    <button class="rounded bg-teal-700 p-2 text-white">Record usage</button>
-                                                </form>
-                                            </details>
-                                        </td>
+                                        <td class="p-3.5 text-slate-600 font-mono"><?= esc($usage['used_at']) ?></td>
+                                        <td class="p-3.5 font-bold text-slate-900"><?= esc($usage['item_name']) ?></td>
+                                        <td class="p-3.5 font-bold text-slate-900"><?= abs((int)$usage['quantity_change']) ?> <?= esc($usage['unit']) ?></td>
+                                        <td class="p-3.5 text-slate-600"><?= esc(rhuPatientLabel(trim((string)$usage['resident_name']) ?: 'Resident', (int)$usage['resident_id'])) ?></td>
+                                        <td class="p-3.5 text-slate-600"><?= esc($usage['staff_name']) ?></td>
+                                        <td class="p-3.5 text-slate-600"><?= esc($usage['location']) ?></td>
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>

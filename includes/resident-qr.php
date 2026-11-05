@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/appointment-expiry.php';
 require_once dirname(__DIR__) . '/includes/staff-record-departments.php';
 function residentQrCategory(array $row): string
 {
@@ -19,6 +20,7 @@ function residentQrDepartment(array $row): string
 }
 function residentQrPending(array $row): bool
 {
+    if (rhuAppointmentExpired($row)) return false;
     $status = strtolower(trim((string)($row['consultation_status'] ?? $row['status'] ?? '')));
     if (preg_match('/^\s*Status:\s*([^|\r\n]+)/mi', (string)($row['consultation_notes'] ?? '') . "\n" . (string)($row['remarks'] ?? ''), $match)
         && in_array($status, ['', 'scheduled'], true)) $status = strtolower(trim($match[1]));

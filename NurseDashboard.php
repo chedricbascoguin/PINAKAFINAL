@@ -1198,7 +1198,7 @@ if (!empty($pdo)) {
         foreach (($residentAppointmentStmt->fetchAll(PDO::FETCH_ASSOC) ?: []) as $appointmentRow) {
             $opdConsultationsById[(int)($appointmentRow['id'] ?? 0)] = $appointmentRow;
         }
-        $opdConsultations = array_values($opdConsultationsById);
+        $opdConsultations = rhuWithoutExpiredAppointments(array_values($opdConsultationsById));
         foreach ($opdConsultations as &$consultationRow) {
             $clinicalNotes = (string)($consultationRow['consultation_notes'] ?? '');
             // Stop at the code even when legacy notes concatenate the status label.
@@ -4504,7 +4504,7 @@ if (is_file(__DIR__ . '/includes/error_bootstrap.php')) {
 
 <script src="assets/js/staff-record-scroll.js?v=<?= (int) filemtime(__DIR__ . '/staff-record-scroll.js') ?>" defer></script>
 <script src="assets/js/staff-resident-record-groups.js?v=<?= (int) filemtime(__DIR__ . '/staff-resident-record-groups.js') ?>" defer></script>
-<?= rhuIntakeSavedData($pdo) ?>
+<?= $pdo instanceof PDO ? rhuIntakeSavedData($pdo) : '' ?>
 </body>
 
 </html>

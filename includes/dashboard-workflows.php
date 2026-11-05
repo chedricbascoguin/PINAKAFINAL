@@ -1,5 +1,6 @@
 <?php
 require_once dirname(__DIR__) . '/includes/inventory-control.php';
+require_once __DIR__ . '/appointment-expiry.php';
 
 if (!function_exists('workflowDate')) {
     function workflowDate(string $value): string
@@ -130,9 +131,15 @@ if (!function_exists('workflowRecordTest')) {
         if ($usage && ($usageDateTime === '' || trim((string)($post['usage_location'] ?? '')) === '')) throw new InvalidArgumentException('Record where and when the test materials were used.');
         $pdo->beginTransaction();
         try {
-            $patientStmt = $pdo->prepare("SELECT resident_id FROM consultations WHERE {$identity['where']} ORDER BY id DESC LIMIT 1");
+            $patientStmt = $pdo->prepare("SELECT * FROM consultations WHERE {$identity['where']} ORDER BY id DESC LIMIT 1 FOR UPDATE");
             $patientStmt->execute($identity['params']);
-            $usageResidentId = (int)$patientStmt->fetchColumn();
+            $appointment = $patientStmt->fetch(PDO::FETCH_ASSOC);
+            if (!$appointment) throw new RuntimeException('Consultation was not found.');
+            if (rhuAppointmentExpired($appointment)) throw new RuntimeException('This appointment has expired. Select a current appointment.');
+            if (in_array(strtolower(trim((string)($appointment['consultation_status'] ?? ''))), ['completed', 'complete', 'cancelled', 'canceled', 'no-show', 'no show', 'rejected', 'referred'], true)) {
+                throw new RuntimeException('This appointment is no longer open for a laboratory test.');
+            }
+            $usageResidentId = (int)$appointment['resident_id'];
             $usageLines = [];
             foreach ($usage as $itemId => $quantity) {
                 $item = inventoryChange($pdo, $itemId, -$quantity, [
@@ -156,16 +163,18 @@ if (!function_exists('workflowRecordTest')) {
             $residentStmt = $pdo->prepare("SELECT resident_id FROM consultations WHERE {$identity['where']} ORDER BY id DESC LIMIT 1");
             $residentStmt->execute($identity['params']);
             $residentId = (int)($residentStmt->fetchColumn() ?: 0);
-            if ($residentId > 0 && function_exists('portalSaveHealthRecordEntry')) {
-                portalSaveHealthRecordEntry($pdo, $residentId, [
-                    'record_type' => 'Laboratory test result',
-                    'diagnosis' => trim((string)($post['test_name'] ?? 'Laboratory test')) . ' - ' . trim((string)($post['test_status'] ?? 'Normal')),
-                    'notes' => trim("Results: {$results}" . ($usageLines ? "\nMaterials used: " . implode('; ', $usageLines) : '')),
-                    'status' => 'Completed',
-                    'date' => $testDate,
-                    'recorded_by_id' => $staffId ?: null,
-                ]);
+            if ($residentId <= 0 || !function_exists('portalSaveHealthRecordEntry')) {
+                throw new RuntimeException('The resident health history could not be saved.');
             }
+            $healthRecordId = portalSaveHealthRecordEntry($pdo, $residentId, [
+                'record_type' => 'Laboratory test result',
+                'diagnosis' => trim((string)($post['test_name'] ?? 'Laboratory test')) . ' - ' . trim((string)($post['test_status'] ?? 'Normal')),
+                'notes' => trim("Results: {$results}" . ($usageLines ? "\nMaterials used: " . implode('; ', $usageLines) : '')),
+                'status' => 'Completed',
+                'date' => $testDate,
+                'recorded_by_id' => $staffId ?: null,
+            ]);
+            if (!$healthRecordId) throw new RuntimeException('The resident health history could not be saved. No test or stock changes were saved.');
             if (!empty($post['fhsis_inline'])) {
                 require_once dirname(__DIR__) . '/includes/fhsis-services.php';
                 $source = $pdo->prepare("SELECT id, resident_id FROM consultations WHERE {$identity['where']} ORDER BY id DESC LIMIT 1");

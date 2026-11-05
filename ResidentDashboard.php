@@ -15,6 +15,13 @@ require_once __DIR__ . '/includes/portal.php';
 
 // Available on every render path, including database-load failures.
 $residentId = (int) ($_SESSION['user']['resident_id'] ?? 0);
+if ($residentId > 0 && isset($pdo) && $pdo instanceof PDO) {
+  try {
+    rhuNotifyExpiredAppointments($pdo, $residentId);
+  } catch (Throwable $error) {
+    error_log('Resident appointment expiry notification: ' . $error->getMessage());
+  }
+}
 
 if (isset($pdo) && $pdo && function_exists('portalEnsureHealthWorkerIds')) {
   portalEnsureHealthWorkerIds($pdo);
@@ -111,7 +118,7 @@ if ($isResidentDashboardApiRequest) {
          ORDER BY c.consultation_date DESC, c.id DESC"
       );
       $stmt->execute(['resident_id' => $residentId]);
-      $records = $stmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
+      $records = rhuWithoutExpiredAppointments($stmt->fetchAll(PDO::FETCH_ASSOC) ?: []);
       foreach ($records as &$record) {
         $record['consultation_status'] = residentResolveConsultationStatus($record);
         $record['icd10'] = residentExtractConsultationIcd10($record);
@@ -658,6 +665,7 @@ function residentConsultationStatusSql(?PDO $pdo, string $alias = 'c'): string
 
 function residentResolveConsultationStatus(array $consultation): string
 {
+  if (rhuAppointmentExpired($consultation)) return 'Due date expired';
   $status = trim((string)($consultation['consultation_status'] ?? ''));
   $notes = trim((string)($consultation['consultation_notes'] ?? '') . "\n" . (string)($consultation['remarks'] ?? '') . "\n" . (string)($consultation['treatment_plan'] ?? ''));
   $noteStatus = '';
@@ -770,6 +778,7 @@ $isFemaleResident = false;
 $consultations = [];
 $consultationsPage = [];
 $dentalRecords = [];
+$laboratoryRecords = [];
 $residentDentalDashboardRecords = [];
 $vaccinationRecords = [];
 $confidentialLabRecords = [];
@@ -1914,7 +1923,7 @@ if (!empty($pdo)) {
                  ORDER BY c.consultation_date DESC, c.id DESC"
       );
       $statement->execute(['resident_id' => $residentId]);
-      $consultations = $statement->fetchAll(PDO::FETCH_ASSOC);
+      $consultations = rhuWithoutExpiredAppointments($statement->fetchAll(PDO::FETCH_ASSOC));
       foreach ($consultations as &$consultationRow) {
         $consultationRow['consultation_status'] = residentResolveConsultationStatus($consultationRow);
         $consultationRow['icd10'] = residentExtractConsultationIcd10($consultationRow);
@@ -1923,6 +1932,31 @@ if (!empty($pdo)) {
 
       // Confidential examinations are accessible only to the examining medtech.
       $confidentialLabRecords = [];
+
+      // Ordinary laboratory results are saved separately from consultations.
+      // Load only this public record type; private examinations stay excluded.
+      try {
+        $statement = $pdo->prepare("SELECT hr.*, CONCAT_WS(' ', hw.first_name, hw.last_name) AS provider_name
+          FROM health_records hr
+          LEFT JOIN health_workers hw ON hw.id = hr.recorded_by_id
+          WHERE hr.resident_id = :resident_id AND hr.remarks LIKE :record_type
+          ORDER BY hr.last_checkup_date DESC, hr.created_at DESC, hr.id DESC");
+        $statement->execute(['resident_id' => $residentId, 'record_type' => "Record Type: Laboratory test result\n%"]);
+        foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $labRecord) {
+          $fields = [];
+          preg_match_all('/^(Record Type|Chief Complaint|Diagnosis|Treatment|Notes|Status|Follow Up Date): (.*?)(?=^(?:Record Type|Chief Complaint|Diagnosis|Treatment|Notes|Status|Follow Up Date): |\z)/ms', (string)$labRecord['remarks'], $matches, PREG_SET_ORDER);
+          foreach ($matches as $match) $fields[$match[1]] = trim($match[2]);
+          $labRecord['record_type'] = 'Laboratory test result';
+          $labRecord['record_date'] = $labRecord['last_checkup_date'];
+          $labRecord['title'] = $fields['Diagnosis'] ?? 'Laboratory test result';
+          $labRecord['findings'] = $fields['Diagnosis'] ?? '';
+          $labRecord['notes'] = $fields['Notes'] ?? '';
+          $labRecord['status'] = $fields['Status'] ?? 'Completed';
+          $laboratoryRecords[] = $labRecord;
+        }
+      } catch (Throwable $error) {
+        error_log('Resident laboratory history: ' . $error->getMessage());
+      }
 
       if (function_exists('portalEnsureDentalTables')) {
         portalEnsureDentalTables($pdo);
@@ -5112,6 +5146,7 @@ $events = [
                   str_contains($rawSt, 'progress') => 'bg-blue-100 text-blue-800 border-blue-300',
                   str_contains($rawSt, 'referred') => 'bg-purple-100 text-purple-800 border-purple-300',
                   str_contains($rawSt, 'cancel') => 'bg-rose-100 text-rose-800 border-rose-300',
+                  str_contains($rawSt, 'expired') => 'bg-rose-100 text-rose-800 border-rose-300',
                   default => 'bg-amber-100 text-amber-800 border-amber-300'
                 };
                 $stLabel = ucfirst($consultation['consultation_status'] ?? 'Scheduled');
@@ -5186,6 +5221,7 @@ $events = [
           $residentGeneralRecords = [];
           foreach ([
             ['records' => $consultations, 'label' => 'Consultation'],
+            ['records' => $laboratoryRecords, 'label' => 'Laboratory'],
             ['records' => $dentalRecords, 'label' => 'Dental'],
             ['records' => $vaccinationRecords, 'label' => 'Vaccination'],
             ['records' => $familyPlanningRecords, 'label' => 'Family planning'],
@@ -5194,11 +5230,17 @@ $events = [
           ] as $recordGroup) {
             foreach ($recordGroup['records'] as $record) {
               $record['_category'] = $recordGroup['label'];
-              $record['_date'] = $record['record_date'] ?? $record['consultation_date'] ?? $record['vaccination_date'] ?? $record['visit_date'] ?? $record['created_at'] ?? '';
+              // History follows when the entry was recorded, not its appointment date.
+              $record['_date'] = !empty($record['created_at']) ? $record['created_at'] : '';
               $residentGeneralRecords[] = $record;
             }
           }
-          usort($residentGeneralRecords, static fn($a, $b) => strcmp((string)$b['_date'], (string)$a['_date']));
+          // Compare the full recording timestamp, including time of day.
+          usort($residentGeneralRecords, static function (array $a, array $b): int {
+            $dateOrder = strcmp((string)$b['_date'], (string)$a['_date']);
+            if ($dateOrder !== 0) return $dateOrder;
+            return (int)($b['id'] ?? 0) <=> (int)($a['id'] ?? 0);
+          });
         ?>
         <div class="space-y-4">
           <div class="flex items-center justify-between border-b border-slate-100 pb-2">
@@ -5208,7 +5250,7 @@ $events = [
           <?php if (!$residentGeneralRecords): ?>
             <p class="rounded-2xl bg-white p-6 text-sm text-slate-500">No health records recorded yet.</p>
           <?php else: ?>
-            <p id="resident-clinic-scroll-hint" class="text-xs font-semibold text-slate-500">Scroll to view more health records.</p>
+            <p id="resident-clinic-scroll-hint" class="text-xs font-semibold text-slate-500">Latest records first. Scroll to view older health records.</p>
             <div class="resident-general-records" role="region" aria-label="Health record history" aria-describedby="resident-clinic-scroll-hint" tabindex="0">
               <?php foreach ($residentGeneralRecords as $record):
                 $recordType = ucwords(str_replace('_', ' ', (string)($record['record_type'] ?? $record['_category'])));
@@ -5222,7 +5264,7 @@ $events = [
                 <article class="resident-general-card">
                   <header><span class="resident-record-category"><?= esc($record['_category']) ?> / <?= esc($recordType) ?></span><span class="resident-record-status"><?= esc($record['status'] ?? $record['consultation_status'] ?? 'Recorded') ?></span></header>
                   <h5><?= esc($recordTitle) ?></h5>
-                  <div class="resident-record-meta"><span><?= esc(substr((string)$record['_date'], 0, 10) ?: 'Date not recorded') ?></span><span>Provider: <?= esc($record['provider_name'] ?? 'RHU Healthcare Staff') ?></span></div>
+                  <div class="resident-record-meta"><span>Recorded: <?= esc((string)$record['_date'] ?: 'Date not recorded') ?></span><span>Provider: <?= esc($record['provider_name'] ?? 'RHU Healthcare Staff') ?></span></div>
                   <dl>
                     <?php foreach ([
                       'Findings / diagnosis' => $recordFindings,
@@ -6711,7 +6753,7 @@ $events = [
     var closeDependentInfoModal = window.closeDependentInfoModal;
 
     (() => {
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
 
       window.allRhuStaff = <?= json_encode(array_values($rhuStaffList ?? []), JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>;
       let allRhuStaff = Array.isArray(window.allRhuStaff) ? window.allRhuStaff : Object.values(window.allRhuStaff || {});

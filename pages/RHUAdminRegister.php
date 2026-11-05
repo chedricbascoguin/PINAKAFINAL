@@ -2,6 +2,10 @@
 if (session_status() === PHP_SESSION_NONE) session_start();
 require_once dirname(__DIR__) . '/includes/portal.php';
 
+// portal.php normally provides the database connection; keep this page safe
+// when no connection is available.
+$pdo = $pdo ?? null;
+
 function getActiveAdminCount(?PDO $pdo): int {
   if (!$pdo) return 0;
   try {
@@ -104,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <title>Initial Admin Registration - ResiHUnity RHU</title>
   <script src="assets/js/pwa-install.js?v=20260916" defer></script>
   <link rel="stylesheet" href="assets/tailwind-php.css?v=1">
-  <link rel="stylesheet" href="../../styles/login-theme.css">
+  <link rel="stylesheet" href="styles/login-theme.css">
 </head>
 
 <body class="flex min-h-screen items-center justify-center bg-linear-to-br from-slate-900 via-purple-950 to-slate-900 px-4 py-8 text-white">
